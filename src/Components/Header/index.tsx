@@ -1,9 +1,12 @@
-import { useState } from "react"
+import { Dispatch, SetStateAction, useState } from "react"
 import * as Styled from "./style"
 
-const HeaderComponent = () =>{
+interface Selected {
+    active: number,
+    setActive: Dispatch<SetStateAction<number>>
+  }
 
-    const [active, setActive] = useState<number>(0)
+const HeaderComponent = ({active, setActive}:Selected) =>{
 
     return(
         <Styled.Header>

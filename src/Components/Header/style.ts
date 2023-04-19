@@ -24,9 +24,9 @@ export const Header = styled.header`
       background-color: ${theme.colors.cleanBc};
     }
 
-    a:hover{
+    /* a:hover{
       height: 1px;
-    }
+    } */
     
     .active {
       box-shadow: 0px 0px 7px 24px rgba(105, 59, 147, 1);

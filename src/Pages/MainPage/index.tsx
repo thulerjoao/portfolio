@@ -4,11 +4,12 @@ import HeaderComponent from "../../Components/Header"
 
 const MainPage = () =>{
 
+    const [active, setActive] = useState<number>(0)
 
     return(
         <Style.MainPageComponent>
             <section className="mainSection">
-                <HeaderComponent/> 
+                <HeaderComponent active={active} setActive={setActive}/> 
             </section>
            
         </Style.MainPageComponent>
