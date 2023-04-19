@@ -1,11 +1,16 @@
+import { useState } from "react"
 import * as Style from "./style"
+import HeaderComponent from "../../Components/Header"
 
 const MainPage = () =>{
+
+
     return(
         <Style.MainPageComponent>
-           <header>
-
-            </header> 
+            <section className="mainSection">
+                <HeaderComponent/> 
+            </section>
+           
         </Style.MainPageComponent>
         
     )
