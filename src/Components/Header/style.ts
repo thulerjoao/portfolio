@@ -7,7 +7,7 @@ export const Header = styled.header`
     height: 5%;
     color: white;
     display: flex;
-    font-size: 1.1em;
+    font-size: 1.2em;
     justify-content: space-between;
     user-select: none;
     align-items: center;
@@ -15,7 +15,7 @@ export const Header = styled.header`
     a {
       cursor: pointer;
       height: 0;
-      width: 18%;
+      width: 19%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -24,10 +24,12 @@ export const Header = styled.header`
       background-color: ${theme.colors.cleanBc};
     }
 
+    a:hover{
+      height: 1px;
+    }
+    
     .active {
-      box-shadow: 0px 0px 19px 24px rgba(105, 59, 147, 1);
-
-      cursor: default;
+      box-shadow: 0px 0px 7px 24px rgba(105, 59, 147, 1);
     }
   `}
 `;
