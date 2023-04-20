@@ -30,6 +30,8 @@ export const Header = styled.header`
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1.9vh;
+        font-weight: 300;
         text-shadow: 1px 1px 2px black;
         box-shadow: 0px 48px 40px 24px rgba(105, 59, 147, 0);
         transition: box-shadow 0.5s ease-in-out;
