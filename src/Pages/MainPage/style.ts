@@ -9,6 +9,7 @@ export const MainPageComponent = styled.div`
     background-color: ${theme.colors.backgroundColor};
     width: 100%;
     height: 100vh;
+    max-height: 100vh;
     overflow-x: hidden;
     display: flex;
     justify-content: center;

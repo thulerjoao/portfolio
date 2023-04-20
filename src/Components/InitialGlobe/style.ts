@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const BlowUp = styled.div`
   ${({ theme }) => css`
     section {
-      display: flex;
+      display: none;
       position: absolute;
       top: 0;
       left: 0;
