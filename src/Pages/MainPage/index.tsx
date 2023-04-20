@@ -9,27 +9,29 @@ const MainPage = () => {
   const [isBlowing, setIsBlowing] = useState<boolean>(false);
   const [wasClicked, setWasClicked] = useState<boolean>(false);
 
-  useEffect(() => {
+  const handleBlow = () => {
+    setWasClicked(true);
     setTimeout(() => {
-      setIsFinished(true);
-    }, 5000);
-  }, []);
-
-  useEffect(() => {
-    setTimeout(() => {
-        setIsBlowing(true);
-    }, 7500);
-  }, []);
+      setIsBlowing(true);
+      setTimeout(() => {
+        setIsFinished(true);
+      }, 2000);
+    }, 3000);
+  };
 
   return (
     <Style.MainPageComponent>
       <section className="mainSection">
         <HeaderComponent active={active} setActive={setActive} />
         <Style.BlowUp>
+          <section className={isFinished ? "done" : ""}>
             <div className={isBlowing ? "bomb" : ""}></div>
-          <div className={isFinished ? isBlowing? "blow": "finished" : ""}>
-            <img alt="ball" src={ballUp}></img>
-          </div>
+            <div
+              className={wasClicked ? (isBlowing ? "blow" : "finished") : ""}
+            >
+              <img alt="globe" src={ballUp} onClick={() => handleBlow()}></img>
+            </div>
+          </section>
         </Style.BlowUp>
       </section>
     </Style.MainPageComponent>
