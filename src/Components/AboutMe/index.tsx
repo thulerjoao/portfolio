@@ -28,14 +28,14 @@ const AboutMe = () => {
           </p>
         </div>
         <footer>
-          <div>
-            <img></img>
-            <a></a>
-          </div>
-          <div>
-            <img></img>
-            <a></a>
-          </div>
+          <a href="https://github.com/thulerjoao" target="_blank">
+            <Style.BtnGit />
+            <p>GitHub</p>
+          </a>
+          <a href="http://www.linkedin.com/in/thulerjoao" target="_blank">
+            <Style.BtnIn />
+            <p>Linkedin</p>
+          </a>
         </footer>
       </section>
     </Style.AbouMeComponent>
