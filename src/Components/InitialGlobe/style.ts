@@ -33,8 +33,8 @@ export const BlowUp = styled.div`
       }
 
       img {
-        height: 50vh;
-        width: 50vh;
+        height: 25vh;
+        width: 25vh;
         border-radius: 50%;
         cursor: pointer;
         animation: pulse 3s infinite;

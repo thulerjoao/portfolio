@@ -10,10 +10,18 @@ const HeaderComponent = ({active, setActive}:Selected) =>{
 
     return(
         <Styled.Header>
-            <a className={active === 0 ? "active": ""} onClick={()=> setActive(0)}>SOBRE MIM</a>
-            <a className={active === 1 ? "active": ""} onClick={()=> setActive(1)}>PORTFOLIO</a>
-            <a className={active === 2 ? "active": ""} onClick={()=> setActive(2)}>CURRÍCULO</a>
-            <a className={active === 3 ? "active": ""} onClick={()=> setActive(3)}>CONTATO</a>
+            <div onClick={()=> setActive(0)}>
+                <a className={active === 0 ? "active": ""}>SOBRE MIM</a>
+            </div>
+            <div onClick={()=> setActive(1)}>
+                <a className={active === 1 ? "active": ""} >PORTFOLIO</a>
+            </div>
+            <div onClick={()=> setActive(2)}>
+                <a className={active === 2 ? "active": ""} >CURRÍCULO</a>
+            </div>
+            <div onClick={()=> setActive(3)}>
+                <a className={active === 3 ? "active": ""} >CONTATO</a>
+            </div>
         </Styled.Header>
     )
 }

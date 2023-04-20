@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ballUp from "../../assets/image/ballUp.png";
 import * as Style from "./style"
 
@@ -8,6 +8,12 @@ const InitialComponent = () =>{
     const [isFinished, setIsFinished] = useState<boolean>(false);
   const [isBlowing, setIsBlowing] = useState<boolean>(false);
   const [wasClicked, setWasClicked] = useState<boolean>(false);
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      handleBlow()
+    },10500)
+  },[])
 
   const handleBlow = () => {
     setWasClicked(true);
