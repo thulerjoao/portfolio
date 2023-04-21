@@ -41,12 +41,11 @@ export const BlowUp = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: fadeIn 3s 1;
+        animation: fadeIn 4s 1;
 
         p {
           color: white;
           font-size: 1.5vh;
-          transition: 1s ease-in-out;
         }
       }
 

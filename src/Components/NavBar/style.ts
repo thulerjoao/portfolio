@@ -17,6 +17,7 @@ export const Header = styled.header`
     div{
       width: 22%;
       height: 80%;
+      border-radius: 2px 2px 0 0;
       cursor: pointer;
       display: flex;
       align-items: center;

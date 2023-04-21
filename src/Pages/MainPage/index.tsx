@@ -13,7 +13,7 @@ const MainPage = () => {
       <section className="mainSection">
         <InitialComponent/>
         <NavBar active={active} setActive={setActive} />
-        <AboutMe/>
+        <AboutMe active={active}/>
       </section>
     </Style.MainPageComponent>
   );
