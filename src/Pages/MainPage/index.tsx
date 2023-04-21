@@ -1,6 +1,6 @@
 import { useState } from "react";
 import * as Style from "./style";
-import HeaderComponent from "../../Components/Header";
+import NavBar from "../../Components/NavBar";
 import InitialComponent from "../../Components/InitialGlobe";
 import AboutMe from "../../Components/AboutMe";
 
@@ -12,7 +12,7 @@ const MainPage = () => {
     <Style.MainPageComponent>
       <section className="mainSection">
         <InitialComponent/>
-        <HeaderComponent active={active} setActive={setActive} />
+        <NavBar active={active} setActive={setActive} />
         <AboutMe/>
       </section>
     </Style.MainPageComponent>

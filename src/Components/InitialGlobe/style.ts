@@ -32,9 +32,54 @@ export const BlowUp = styled.div`
         position: fixed;
       }
 
+      .textArea {
+        position: fixed;
+        height: 100vh;
+        min-width: 100vw;
+        top: 15vh;
+        left: -8vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 3s 1;
+
+        p {
+          color: white;
+          font-size: 1.5vh;
+          transition: 1s ease-in-out;
+        }
+      }
+
+      .hiden{
+        animation: fadeOut 1s 1;
+        animation-fill-mode: forwards;
+      }
+
+      .done {
+      display: none;
+      } 
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+
       img {
-        height: 25vh;
-        width: 25vh;
+        height: 28vh;
+        width: 28vh;
         border-radius: 50%;
         cursor: pointer;
         animation: pulse 3s infinite;
@@ -69,7 +114,7 @@ export const BlowUp = styled.div`
       }
     }
 
-    .done{
+    .done {
       display: none;
     }
   `}

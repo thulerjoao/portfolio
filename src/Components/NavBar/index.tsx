@@ -6,7 +6,7 @@ interface Selected {
     setActive: Dispatch<SetStateAction<number>>
   }
 
-const HeaderComponent = ({active, setActive}:Selected) =>{
+const NavBar = ({active, setActive}:Selected) =>{
 
     return(
         <Styled.Header>
@@ -26,4 +26,4 @@ const HeaderComponent = ({active, setActive}:Selected) =>{
     )
 }
 
-export default HeaderComponent
+export default NavBar
