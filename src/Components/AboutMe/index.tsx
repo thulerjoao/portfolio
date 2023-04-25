@@ -1,15 +1,20 @@
 import * as Style from "./style";
 import jptl from "../../assets/image/jptl.jpg";
-import 'animate.css';
+import "animate.css";
 
 interface prop {
-  active:number
+  active: number;
 }
 
-const AboutMe = ({active}:prop) => {
+//   className={`animate__animated ${
+//     active === 0 ? "animate__fadeInLeftBig" : "animate__backOutLeft"
+//   }  animate__delay-0.2s`}
+// }
+
+const AboutMe = ({ active }: prop) => {
   return (
-    <Style.AbouMeComponent className={`animate__animated ${active === 0? 'animate__fadeInLeftBig' : 'animate__backOutLeft'}  animate__delay-0.2s`}>
-      <section >
+    <Style.AbouMeComponent>
+      <section>
         <div className="firstBlock">
           <img alt="profile image" src={jptl}></img>
           <div>
