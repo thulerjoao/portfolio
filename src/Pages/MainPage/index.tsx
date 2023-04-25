@@ -11,17 +11,50 @@ const MainPage = () => {
   const [active, setActive] = useState<number>(0); //values from 0 to 3
   const [lastOne, setlastOne] = useState<number>(0); //values from 0 to 3
 
+  const LIMIT = 50;
+
+  const [initialTouch, setInitialTouch] = useState<number | null>(null);
+  const [difference, setDifference] = useState<number>(0);
+
+  const handleTouchStart: React.TouchEventHandler<HTMLDivElement> = (e) => {
+    const initialTouch = e.touches[0].clientX;
+    setInitialTouch(initialTouch);
+  };
+
+  const handleTouchMove: React.TouchEventHandler<HTMLDivElement> = (e) => {
+    if (initialTouch === null) return;
+    const currentTouch = e.touches[0].clientX;
+    const gap = initialTouch - currentTouch;
+    setDifference(gap);
+  };
+
+  const handleTouchEnd: React.TouchEventHandler<HTMLDivElement> = (e) => {
+    if (difference > LIMIT) {
+      const newValue = active + 1
+      setActive(newValue);
+    } else if (difference < -LIMIT) {
+      const newValue = active - 1
+      setActive(newValue);
+    }
+    setInitialTouch(null);
+    setDifference(0);
+  };
+
   return (
     <Style.MainPageComponent>
       <section className="mainSection">
-        {/* <InitialComponent/> */}
+        <InitialComponent/>
         <NavBar active={active} setActive={setActive} setlastOne={setlastOne}/>
-        <section className="mainCards">
+        <div className="mainCards"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
          {<AboutMe active={active} />}
          {(active=== 1 || lastOne === 1) && <Portfolio active={active} lastOne={lastOne}/>}
          {(active=== 2 || lastOne === 2) && <Curriculo active={active} lastOne={lastOne}/>}
          {<Contact active={active}/>}
-        </section>
+        </div>
       </section>
     </Style.MainPageComponent>
   );
