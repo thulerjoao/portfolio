@@ -30,9 +30,11 @@ const MainPage = () => {
 
   const handleTouchEnd: React.TouchEventHandler<HTMLDivElement> = (e) => {
     if (difference > LIMIT) {
+      if(active === 3) return
       const newValue = active + 1
       setActive(newValue);
     } else if (difference < -LIMIT) {
+      if(active === 0) return
       const newValue = active - 1
       setActive(newValue);
     }
