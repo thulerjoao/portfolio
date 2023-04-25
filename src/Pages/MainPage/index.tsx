@@ -9,17 +9,20 @@ import Curriculo from "../../Components/Curriculo";
 
 const MainPage = () => {
   const [active, setActive] = useState<number>(0); //values from 0 to 3
+  const [lastOne, setlastOne] = useState<number>(0); //values from 0 to 3
   
 
   return (
     <Style.MainPageComponent>
       <section className="mainSection">
-        <InitialComponent/>
-        <NavBar active={active} setActive={setActive} />
-         {active=== 0 && <AboutMe active={active}/>}
-         {active=== 1 && <Portfolio active={active}/>}
-         {active=== 2 && <Curriculo active={active}/>}
-         {active=== 3 && <Contact active={active}/>}
+        {/* <InitialComponent/> */}
+        <NavBar active={active} setActive={setActive} setlastOne={setlastOne}/>
+        <section className="mainCards">
+         {<AboutMe active={active} />}
+         {<Portfolio active={active} lastOne={lastOne}/>}
+         {<Curriculo active={active} lastOne={lastOne}/>}
+         {<Contact active={active}/>}
+        </section>
       </section>
     </Style.MainPageComponent>
   );

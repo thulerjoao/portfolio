@@ -15,10 +15,18 @@ export const MainPageComponent = styled.div`
     justify-content: center;
 
     .mainSection {
-      height: 100%;
+      /* height: 100%; */
       width: 65%;
       max-width: 78rem;
-      margin: ;
+      
+
+      .mainCards{
+        position: relative;
+        width: 100%;
+        height: 80%;
+        /* border: 1px solid white */
+
+      }
     }
   `}
 `;

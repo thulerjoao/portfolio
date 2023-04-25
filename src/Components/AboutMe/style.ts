@@ -4,12 +4,13 @@ import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
 export const AbouMeComponent = styled.header`
   ${({ theme }) => css`
     /* border: 1px solid white; */
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 80%;
+    height: 100%;
     color: white;
 
     section {

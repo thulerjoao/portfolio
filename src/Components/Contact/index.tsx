@@ -8,10 +8,12 @@ interface prop {
 
 const Contact = ({ active }: prop) => {
   return (
-    <Style.ContactComponent>
-      <section>
-        
-      </section>
+    <Style.ContactComponent
+      className={`animate__animated ${
+        active === 3 ? "animate__backInRight" : "animate__backOutRight"
+      }  animate__delay-0.2s`}
+    >
+      <section>CONTACT</section>
     </Style.ContactComponent>
   );
 };

@@ -6,14 +6,11 @@ interface prop {
   active: number;
 }
 
-//   className={`animate__animated ${
-//     active === 0 ? "animate__fadeInLeftBig" : "animate__backOutLeft"
-//   }  animate__delay-0.2s`}
-// }
-
 const AboutMe = ({ active }: prop) => {
   return (
-    <Style.AbouMeComponent>
+    <Style.AbouMeComponent className={`animate__animated ${
+      active === 0 ? "animate__backInLeft" : "animate__backOutLeft"
+    }  animate__delay-0.2s`}>
       <section>
         <div className="firstBlock">
           <img alt="profile image" src={jptl}></img>
