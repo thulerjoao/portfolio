@@ -7,18 +7,20 @@ interface prop {
   lastOne: number;
 }
 
+// "animate__bounceInLeft" : "animate__fadeOutLeftBig"
+
 const Portfolio = ({ active, lastOne }: prop) => {
   return (
     <Style.PortfolioComponent
       className={`animate__animated ${
         active === 1
           ? active < lastOne
-            ? "animate__backInLeft"
-            : "animate__backInRight"
-          : lastOne === 1 && active < lastOne
-          ? "animate__backOutRight"
-          : "animate__backOutLeft"
-      }  animate__delay-0.2s`}
+            ? "animate__fadeInLeftBig"
+            : "animate__fadeInRightBig"
+          : active < lastOne
+          ? "animate__fadeOutRightBig"
+          : "animate__fadeOutLeftBig"
+      }  animate__delay-0.5s`}
     >
       <section>
         <iframe

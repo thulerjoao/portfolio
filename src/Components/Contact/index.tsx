@@ -10,8 +10,8 @@ const Contact = ({ active }: prop) => {
   return (
     <Style.ContactComponent
       className={`animate__animated ${
-        active === 3 ? "animate__backInRight" : "animate__backOutRight"
-      }  animate__delay-0.2s`}
+        active === 3 ? "animate__fadeInRightBig" : "animate__fadeOutRightBig"
+      }  animate__delay-0.5s`}
     >
       <section>CONTACT</section>
     </Style.ContactComponent>

@@ -19,6 +19,7 @@ export const PortfolioComponent = styled.header`
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
+
     }
   `}
 `;

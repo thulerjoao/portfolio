@@ -13,12 +13,12 @@ const Curriculo = ({ active, lastOne }: prop) => {
       className={`animate__animated ${
         active === 2
           ? active < lastOne
-            ? "animate__backInLeft"
-            : "animate__backInRight"
-          : lastOne === 2 && active < lastOne
-          ? "animate__backOutRight"
-          : "animate__backOutLeft"
-      }  animate__delay-0.2s`}
+            ? "animate__fadeInLeftBig"
+            : "animate__fadeInRightBig"
+          : active < lastOne
+          ? "animate__fadeOutRightBig"
+          : "animate__fadeOutLeftBig"
+      }  animate__delay-0.5s`}
     >
       <section>CURRICULO</section>
     </Style.CurriculoComponent>
