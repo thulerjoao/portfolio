@@ -5,6 +5,7 @@ import InitialComponent from "../../Components/InitialGlobe";
 import AboutMe from "../../Components/AboutMe";
 import Portfolio from "../../Components/Portfolio";
 import Contact from "../../Components/Contact";
+import Curriculo from "../../Components/Curriculo";
 
 const MainPage = () => {
   const [active, setActive] = useState<number>(0); //values from 0 to 3
@@ -17,6 +18,7 @@ const MainPage = () => {
         <NavBar active={active} setActive={setActive} />
          {active=== 0 && <AboutMe active={active}/>}
          {active=== 1 && <Portfolio active={active}/>}
+         {active=== 2 && <Curriculo active={active}/>}
          {active=== 3 && <Contact active={active}/>}
       </section>
     </Style.MainPageComponent>
