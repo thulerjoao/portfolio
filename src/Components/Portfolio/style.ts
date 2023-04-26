@@ -12,17 +12,7 @@ export const PortfolioComponent = styled.div`
     width: 100%;
     height: calc(100vh - 18.5%);
     color: white;
-
-    
-
-    section {
-      /* z-index: 99; */
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      overflow-y: scroll;
+    overflow-y: scroll;
 
       ::-webkit-scrollbar {
       width: 10px;
@@ -38,6 +28,17 @@ export const PortfolioComponent = styled.div`
     ::-webkit-scrollbar-thumb:hover {
       background: #ed8107;
     }
+
+    
+
+    section {
+      /* z-index: 99; */
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      
 
 
       .mainDiv {
