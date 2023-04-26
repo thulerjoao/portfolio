@@ -9,27 +9,15 @@ export const PortfolioComponent = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
+    left: -26.9%;
     height: calc(100vh - 18.5%);
     color: white;
     overflow-y: scroll;
 
-      ::-webkit-scrollbar {
-      width: 10px;
+    ::-webkit-scrollbar {
+      width: 0px;
     }
-    ::-webkit-scrollbar-track {
-      background: ${theme.colors.inputFontColor};
-      border-radius: 5px;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: ${theme.colors.tertiaryColor};
-      border-radius: 5px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #ed8107;
-    }
-
-    
 
     section {
       /* z-index: 99; */
@@ -38,8 +26,6 @@ export const PortfolioComponent = styled.div`
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      
-
 
       .mainDiv {
         display: flex;
