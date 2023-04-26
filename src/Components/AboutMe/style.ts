@@ -40,7 +40,7 @@ export const AbouMeComponent = styled.header`
           justify-content: center;
 
           h2 {
-            font-size: 4.5vh;
+            font-size: 2.6em;
             font-weight: 400;
           }
 

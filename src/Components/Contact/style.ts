@@ -15,39 +15,36 @@ export const ContactComponent = styled.header`
     color: white;
 
     section {
-        
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 4rem;
+      margin-top: 10%;
+      background-color: #693b9350;
+      box-shadow: 0px 0px 25px 7px rgba(105, 59, 147, 1);
+      border: 1px solid white;
+      border-radius: 15px;
+
+      h3 {
+        margin-bottom: 2rem;
+        font-weight: 400;
+      }
+
+      .divOut {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 4rem;
-        margin-top: 10%;
-        background-color: #693b9350;
-        box-shadow: 0px 0px 25px 7px rgba(105, 59, 147, 1);
-        border: 1px solid white;
-        border-radius: 15px;
+        align-items: start;
+        margin-left: 10%;
+        margin-top: 1rem;
 
-        
-        h3{
-          margin-bottom: 2rem;
-        }
-        
-        .divOut{
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: start;
-          margin-left: 10%;
-          margin-top: 1rem;
-          
-
-        .divIn{
+        .divIn {
           display: flex;
           justify-content: space-between;
           align-items: center;
           width: 90%;
         }
       }
-      
     }
   `}
 `;
@@ -65,4 +62,3 @@ export const LgTel = styled(AiOutlineWhatsApp)`
   color: limegreen;
   margin: 0 0.6rem;
 `;
-
