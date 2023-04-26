@@ -19,7 +19,6 @@ export const ContactComponent = styled.header`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 42%;
         padding: 4rem;
         margin-top: 10%;
         background-color: #693b9350;
