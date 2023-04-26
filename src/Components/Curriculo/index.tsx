@@ -20,7 +20,9 @@ const Curriculo = ({ active, lastOne }: prop) => {
           : "animate__fadeOutLeftBig"
       }  animate__delay-0.5s`}
     >
-      <section>CURRICULO</section>
+      <section>
+        
+      </section>
     </Style.CurriculoComponent>
   );
 };

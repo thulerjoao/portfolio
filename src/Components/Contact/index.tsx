@@ -13,7 +13,23 @@ const Contact = ({ active }: prop) => {
         active === 3 ? "animate__fadeInRightBig" : "animate__fadeOutRightBig"
       }  animate__delay-0.5s`}
     >
-      <section>CONTACT</section>
+      <section>
+        <h3>INFORMÇÕES GERAIS DE CONTATO:</h3>
+        <div className="divOut">
+          <p>Email</p>
+          <div className="divIn">
+            <p>thuler_lima@hotmail.com</p>
+            <Style.LgEmail/>
+          </div>
+        </div>
+        <div className="divOut">
+          <p>Telefone</p>
+          <div className="divIn">
+            <p>+55 (22) 99905-9574</p>
+            <Style.LgTel/>
+          </div>
+        </div>
+      </section>
     </Style.ContactComponent>
   );
 };
