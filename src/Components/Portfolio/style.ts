@@ -13,6 +13,15 @@ export const PortfolioComponent = styled.header`
     height: 100%;
     color: white;
     overflow-y: scroll;
+              ::-webkit-scrollbar {
+                  width: 0px;
+              }
+              ::-webkit-scrollbar-track {
+                  border-radius:0px;
+              }
+              ::-webkit-scrollbar-thumb {
+                  border-radius:0px;
+              }
 
     section {
       display: flex;
