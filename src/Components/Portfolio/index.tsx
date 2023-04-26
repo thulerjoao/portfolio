@@ -24,9 +24,8 @@ const Portfolio = ({ active, lastOne }: prop) => {
     >
       <section>
         <div className="mainDiv">
-
           <h2>FrontEnd</h2>
-          
+
           <h4>
             Aplicação React feita para gerar orçamentos a clientes e também
             gerenciar a carga de trabalho dos funcionários
@@ -39,18 +38,30 @@ const Portfolio = ({ active, lastOne }: prop) => {
 
           <div className="video">VIDEO</div>
 
-          <h4>Confira o figma fiz como base para o projeto:</h4>
+          <h4>Confira o figma que fiz como base para o projeto:</h4>
 
           <iframe
-            
             width="800"
             height="450"
-            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fxz7GoBLP3omHao64Uux4vg%2FUntitled%3Fnode-id%3D0%253A1%26t%3DlpmExDITzmCjBwo9-1"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fxz7GoBLP3omHao64Uux4vg%2FUntitled%3Fnode-id%3D0%253A1%26t%3DBJjPRLJoA8tNPx0w-1"
             allowFullScreen
           ></iframe>
+        </div>
+        <div className="mainDiv last">
+          <h2>BackEnd</h2>
 
+          <h4>
+            API criada para uma pizzaria, com cadastro de  e lançamento de pedidos destinados a uma determinada mesa.
+          </h4>
+
+          <h3>Tecnologias principais:</h3>
+
+          <p>Nest Ts</p>
+          <p>Prisma</p>
+          <p>PostgreSQL</p>
+
+          <div className="video">VIDEO</div>
           </div>
-
 
         {/* <iframe
           width="560"
