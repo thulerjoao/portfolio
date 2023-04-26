@@ -47,7 +47,7 @@ const MainPage = () => {
   return (
     <Style.MainPageComponent>
       <section className="mainSection">
-        {/* <InitialComponent/> */}
+        <InitialComponent/>
         <NavBar active={active} setActive={setActive} setlastOne={setlastOne} />
         <div
           className="mainCards"
