@@ -15,7 +15,6 @@ export const MainPageComponent = styled.div`
     justify-content: center;
 
     .mainSection {
-      /* height: 100%; */
       width: 65%;
       max-width: 78rem;
       

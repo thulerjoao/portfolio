@@ -10,7 +10,7 @@ export const PortfolioComponent = styled.header`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 18.5%);
     color: white;
     overflow-y: scroll;
               ::-webkit-scrollbar {
@@ -24,6 +24,7 @@ export const PortfolioComponent = styled.header`
               }
 
     section {
+      z-index: 99;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
