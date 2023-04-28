@@ -51,7 +51,7 @@ const Portfolio = ({ active, lastOne }: prop) => {
           <h2>BackEnd</h2>
 
           <h4>
-            API criada para uma pizzaria, com cadastro de  e lançamento de pedidos destinados a uma determinada mesa.
+            API criada para uma pizzaria, com cadastro de produtos e lançamento de pedidos destinados a uma determinada mesa.
           </h4>
 
           <h3>Tecnologias principais:</h3>
