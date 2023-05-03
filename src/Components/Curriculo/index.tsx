@@ -1,5 +1,5 @@
 import * as Style from "./style";
-import jptl from "../../assets/image/jptl.jpg";
+import curriculo from "../../assets/image/curriculo.jpg";
 import "animate.css";
 
 interface prop {
@@ -8,6 +8,8 @@ interface prop {
 }
 
 const Curriculo = ({ active, lastOne }: prop) => {
+  const pdfURL = "../../assets/image/curriculo.pdf";
+
   return (
     <Style.CurriculoComponent
       className={`animate__animated ${
@@ -21,7 +23,24 @@ const Curriculo = ({ active, lastOne }: prop) => {
       }  animate__delay-0.5s`}
     >
       <section>
-        
+        <div>
+          <h2>Formação</h2>
+          <h4>2022-2023 | Blue EdTech<br></br> Desenvolvedor Web FullStack</h4>
+          <p>
+            • Curso online, prático e intensivo na formação em Desenvolvimento Web FullStack
+          </p>
+          <p>• Criação de Aplicações FrontEnd com React Ts</p>
+          <p>
+            • Construção de Rest API's utilizando o Express e também o Nest Ts
+          </p>
+          <p>
+            • Consumo de banco de dados relacionais (PostgreSQL) e não
+            relacionais (MongoDB)
+          </p>
+
+          <h4>2012-2019 | Universidade do Estado do Rio de Janeiro (UERJ)</h4>
+          <p>• Graduação em Engenharia Mecânica</p>
+        </div>
       </section>
     </Style.CurriculoComponent>
   );
