@@ -24,7 +24,7 @@ export const BlowUp = styled.div`
         height: 500rem;
         width: 500rem;
         max-width: 100%;
-        max-height: 100vh;
+        /* max-height: 100vh; */
         background-color: white;
         z-index: 100;
         animation: blowUp 2s 1;
@@ -77,8 +77,8 @@ export const BlowUp = styled.div`
       }
 
       img {
-        height: 28vh;
-        width: 28vh;
+        height: 16.5rem;
+        width: 16.5rem;
         border-radius: 50%;
         cursor: pointer;
         animation: pulse 3s infinite;
