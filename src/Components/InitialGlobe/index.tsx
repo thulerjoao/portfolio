@@ -29,7 +29,7 @@ const InitialComponent = () => {
         setTimeout(() => {
           setIsFinished(true);
         }, 2000);
-      }, 3000);
+      }, 2500);
     }, 500);
   };
 
