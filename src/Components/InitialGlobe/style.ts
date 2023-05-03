@@ -49,14 +49,14 @@ export const BlowUp = styled.div`
         }
       }
 
-      .hiden{
+      .hiden {
         animation: fadeOut 1s 1;
         animation-fill-mode: forwards;
       }
 
       .done {
-      display: none;
-      } 
+        display: none;
+      }
 
       @keyframes fadeIn {
         from {
@@ -103,7 +103,18 @@ export const BlowUp = styled.div`
         }
       }
 
+      
       @keyframes blowUp {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(50);
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        @keyframes blowUp {
         0% {
           transform: scale(0);
         }
@@ -111,6 +122,8 @@ export const BlowUp = styled.div`
           transform: scale(1500);
         }
       }
+      }
+
     }
 
     .done {
