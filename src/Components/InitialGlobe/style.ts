@@ -36,7 +36,7 @@ export const BlowUp = styled.div`
         position: fixed;
         height: 100vh;
         min-width: 100vw;
-        top: 15vh;
+        top: 9rem;
         left: -8vw;
         display: flex;
         justify-content: center;
@@ -108,7 +108,7 @@ export const BlowUp = styled.div`
           transform: scale(0);
         }
         100% {
-          transform: scale(50);
+          transform: scale(200);
         }
       }
     }
