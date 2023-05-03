@@ -108,7 +108,7 @@ export const BlowUp = styled.div`
           transform: scale(0);
         }
         100% {
-          transform: scale(200);
+          transform: scale(400);
         }
       }
     }
