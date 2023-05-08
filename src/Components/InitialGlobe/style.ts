@@ -5,7 +5,7 @@ export const BlowUp = styled.div`
     section {
       display: flex;
       position: absolute;
-      top: 0;
+      top: 0rem;
       left: 0;
       height: 100vh;
       min-width: 100vw;
@@ -24,7 +24,6 @@ export const BlowUp = styled.div`
         height: 500rem;
         width: 500rem;
         max-width: 100%;
-        /* max-height: 100vh; */
         background-color: white;
         z-index: 100;
         animation: blowUp 2s 1;
@@ -113,16 +112,16 @@ export const BlowUp = styled.div`
       }
 
       @media screen and (max-width: 767px) {
+        top: -15vh;
+        height: calc(100vh + 15vh) ;
 
 
         .textArea {
         position: fixed;
         height: 100vh;
         min-width: 100vw;
-        top: 11rem;
+        top: 7rem;
         left: -6rem;
-
-
 
         p {
           font-size: 0.8em;
