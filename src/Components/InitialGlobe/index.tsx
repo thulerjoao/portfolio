@@ -8,17 +8,17 @@ const InitialComponent = () => {
   const [wasClicked, setWasClicked] = useState<boolean>(false);
   const [isText, setIsText] = useState<boolean>(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      handleBlow();
-    }, 10400);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     handleBlow();
+  //   }, 10400);
+  // }, []);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsText(false);
-    }, 10000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsText(false);
+  //   }, 10000);
+  // }, []);
 
   const handleBlow = () => {
     setIsText(false);

@@ -36,8 +36,8 @@ export const BlowUp = styled.div`
         position: fixed;
         height: 100vh;
         min-width: 100vw;
-        top: 9rem;
-        left: -8vw;
+        top: 10rem;
+        left: -8rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -103,7 +103,6 @@ export const BlowUp = styled.div`
         }
       }
 
-      
       @keyframes blowUp {
         0% {
           transform: scale(0);
@@ -114,16 +113,32 @@ export const BlowUp = styled.div`
       }
 
       @media screen and (max-width: 767px) {
-        @keyframes blowUp {
-        0% {
-          transform: scale(0);
+
+
+        .textArea {
+        position: fixed;
+        height: 100vh;
+        min-width: 100vw;
+        top: 11rem;
+        left: -6rem;
+
+
+
+        p {
+          font-size: 0.8em;
         }
-        100% {
-          transform: scale(1500);
-        }
-      }
       }
 
+
+        @keyframes blowUp {
+          0% {
+            transform: scale(0);
+          }
+          100% {
+            transform: scale(1500);
+          }
+        }
+      }
     }
 
     .done {
