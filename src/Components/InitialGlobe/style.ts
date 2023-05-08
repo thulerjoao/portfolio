@@ -113,28 +113,23 @@ export const BlowUp = styled.div`
 
       @media screen and (max-width: 767px) {
         top: -20vh;
-        height: calc(100vh + 20vh) ;
-
+        height: calc(100vh + 20vh);
 
         .textArea {
-        position: fixed;
-        height: 100vh;
-        min-width: 100vw;
-        top: 5.5rem;
-        left: -6rem;
+          top: 5.5rem;
+          left: -6rem;
 
-        p {
-          font-size: 0.8em;
+          p {
+            font-size: 0.8em;
+          }
         }
-      }
-
 
         @keyframes blowUp {
           0% {
             transform: scale(0);
           }
           100% {
-            transform: scale(1500);
+            transform: scale(50);
           }
         }
       }
@@ -142,6 +137,13 @@ export const BlowUp = styled.div`
 
     .done {
       display: none;
+    }
+
+    @media screen and (max-width: 600px){
+      img {
+          height: 60vw;
+          width: 60vw;
+        }
     }
   `}
 `;

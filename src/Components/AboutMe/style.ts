@@ -189,7 +189,6 @@ export const AbouMeComponent = styled.header`
       }
       .mainText {
         margin-top: 3vh;
-        max-width: 85%;
         
         p {
           font-size: 1em;
@@ -246,7 +245,7 @@ export const AbouMeComponent = styled.header`
       }
       .mainText {
         margin-top: 3vh;
-        width: 98vw;
+        min-width: 88vw;
         
         p {
           font-size: 1em;
