@@ -81,6 +81,57 @@ export const PortfolioComponent = styled.div`
       }
     }
 
+
+    @media screen and (max-width: 992px) {
+      padding: 0;
+      height: 96vh;
+      min-width: 100vw;
+      left: 0;
+
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+
+      section {
+        /* z-index: 99; */
+        width: 90%;
+        
+        
+        
+        .mainDiv {
+
+          h2 {
+            font-size: 2em;
+          }
+
+          h4 {
+            font-weight: 300;
+            margin: 3.4vh 0;
+          }
+
+          .figma{
+            height: 22rem;
+            width: 100%;
+          }
+
+          h3 {
+            margin-bottom: 1.7vh;
+            font-weight: 400;
+          }
+
+          .video {
+            height: 22rem;
+          }
+
+          p {
+          }
+        }
+
+        .last {
+        }
+      }
+    }
+
     @media screen and (max-width: 768px) {
       padding: 0;
       height: 96vh;

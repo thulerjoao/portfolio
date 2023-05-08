@@ -54,7 +54,7 @@ export const AbouMeComponent = styled.header`
         }
       }
       .mainText {
-        width: 60%;
+        width: 60vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -97,6 +97,62 @@ export const AbouMeComponent = styled.header`
           transform: scale(1.01);
         }
       }
+    }
+
+    @media screen and (max-width: 992px) {
+      min-width: 100%;
+
+      section {
+        width: 80vw;
+        
+
+      .firstBlock {
+        margin-top: 5vh;
+
+        img {
+          margin: 0;
+          margin-bottom: 5vh;
+          width: 14rem;
+          height: 14rem;
+
+        }
+
+        div {
+          max-width: 75%;
+          text-align: center;
+
+          h2 {
+            
+            font-size: 2em;
+          }
+
+          p {
+            font-size: 1em;
+          }
+        }
+      }
+      .mainText {
+        margin-top: 3vh;
+        max-width: 85%;
+        
+        p {
+          font-size: 1em;
+        }
+      }
+
+      footer {
+        margin-bottom: 22vh;
+
+        a {
+          margin: 2vh 4%;
+          padding: 0.2rem 0;
+          width: 30vw;
+
+          div {
+          }
+        }
+      }
+    }
     }
 
     @media screen and (max-width: 768px) {

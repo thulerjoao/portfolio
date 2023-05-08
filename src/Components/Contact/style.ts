@@ -47,6 +47,28 @@ export const ContactComponent = styled.header`
       }
     }
 
+    @media screen and (max-width: 992px) {
+      section {
+        width: 40vw;
+        padding: 2rem 0;
+        align-items: center;
+        margin-top: 10%;
+
+        h3 {
+          font-size: 1.1em;
+        }
+
+        p {
+          font-size: 1em;
+        }
+
+        .divOut {
+          .divIn {
+          }
+        }
+      }
+    }
+
     @media screen and (max-width: 768px) {
       section {
         width: 60vw;

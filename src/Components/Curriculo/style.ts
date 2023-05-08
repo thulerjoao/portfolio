@@ -51,6 +51,29 @@ export const CurriculoComponent = styled.header`
       }
     }
 
+    @media screen and (max-width: 992px) {
+      section {
+        width: 80%;
+        margin-top: 0vh;
+
+        div {
+          padding: 2.5rem 2rem;
+
+          h2 {
+            font-size: 1.5em;
+            font-weight: 400;
+          }
+
+          h4 {
+          }
+
+          p {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+
     @media screen and (max-width: 768px) {
       section {
         width: 95%;
