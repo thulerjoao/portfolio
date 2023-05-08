@@ -148,7 +148,7 @@ export const AbouMeComponent = styled.header`
         display: flex;
         justify-content: center;
         width: 100%;
-        padding-bottom: 12vh;
+        margin-bottom: 22vh;
 
         a {
           margin: 2vh 3%;

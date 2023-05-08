@@ -77,7 +77,7 @@ export const PortfolioComponent = styled.div`
 
       .last {
         margin-top: 10vh;
-        margin-bottom: 20vh;
+        margin-bottom: 25vh;
       }
     }
 

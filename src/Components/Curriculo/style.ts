@@ -57,6 +57,7 @@ export const CurriculoComponent = styled.header`
 
     section {
       width: 95%;
+      margin-top:5vh;
 
 
 
