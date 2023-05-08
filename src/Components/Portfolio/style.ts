@@ -83,7 +83,7 @@ export const PortfolioComponent = styled.div`
 
     @media screen and (max-width: 600px) {
       padding: 0;
-      height: 93vh;
+      height: 96vh;
       min-width: 100vw;
       left: 0;
 

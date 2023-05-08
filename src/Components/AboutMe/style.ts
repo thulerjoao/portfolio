@@ -24,7 +24,7 @@ export const AbouMeComponent = styled.header`
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
-        margin-top: 7vh;
+        margin-top: 9vh;
         
 
         img {
@@ -52,10 +52,11 @@ export const AbouMeComponent = styled.header`
         }
       }
       .mainText {
-        width: 100%;
+        width: 60%;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 7vh;
 
         p {
           width: 100%;
@@ -68,7 +69,7 @@ export const AbouMeComponent = styled.header`
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-top: 5vh;
+        margin-top: 7vh;
 
         a {
           margin: 0 4vh;

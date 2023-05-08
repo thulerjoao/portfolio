@@ -23,7 +23,7 @@ export const MainPageComponent = styled.div`
       .mainCards {
         position: relative;
         width: 100%;
-        height: calc(90vh - 0.1rem);
+        height: calc(94vh - 0.1rem);
       }
     }
 

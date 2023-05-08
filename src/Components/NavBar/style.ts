@@ -48,6 +48,8 @@ export const Header = styled.header`
     }
 
     @media screen and (max-width: 600px) {
+      max-height: 5vh;
+      min-height: 5vh;
       max-height: 10vh;
       padding-left: 0.2rem;
       padding-right: 0.2rem;
