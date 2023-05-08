@@ -112,15 +112,15 @@ export const BlowUp = styled.div`
       }
 
       @media screen and (max-width: 767px) {
-        top: -15vh;
-        height: calc(100vh + 15vh) ;
+        top: -20vh;
+        height: calc(100vh + 20vh) ;
 
 
         .textArea {
         position: fixed;
         height: 100vh;
         min-width: 100vw;
-        top: 7rem;
+        top: 5.5rem;
         left: -6rem;
 
         p {
