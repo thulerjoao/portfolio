@@ -31,8 +31,6 @@ export const MainPageComponent = styled.div`
 
       .mainSection {
         width: 100%;
-        
-        
 
         .mainCards {
           width: 100%;

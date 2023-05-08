@@ -3,8 +3,6 @@ import styled, { css } from "styled-components";
 export const Header = styled.header`
   ${({ theme }) => css`
     padding: 0 10%;
-    padding-top: 3rem;
-    margin-top: 0;
     max-height: 10vh;
     min-height: 10vh;
     color: white;
@@ -50,13 +48,14 @@ export const Header = styled.header`
     }
 
     @media screen and (max-width: 600px) {
+      max-height: 10vh;
       padding-left: 0.2rem;
       padding-right: 0.2rem;
       font-size: 1em;
 
       div {
         /* width: 100%; */
-        height: 2rem;
+        height: 2.5rem;
         width: 24vw;
 
         a {
