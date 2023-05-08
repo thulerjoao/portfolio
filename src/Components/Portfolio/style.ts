@@ -12,6 +12,7 @@ export const PortfolioComponent = styled.div`
     width: 100vw;
     left: -26.9%;
     height: calc(100vh - 18.5%);
+    height: 100%;
     color: white;
     overflow-y: scroll;
 
@@ -45,6 +46,12 @@ export const PortfolioComponent = styled.div`
           margin: 3.4vh 0;
         }
 
+        .figma{
+            height: 40vh;
+            width: 100%;
+
+          }
+
         h3 {
           margin-bottom: 1.7vh;
           font-weight: 400;
@@ -53,7 +60,7 @@ export const PortfolioComponent = styled.div`
         .video {
           margin-top: 1.7vh;
           border: 1px solid white;
-          height: 24rem;
+          height: 40vh;
           width: 100%;
           display: flex;
           justify-content: center;
@@ -71,6 +78,75 @@ export const PortfolioComponent = styled.div`
       .last {
         margin-top: 10vh;
         margin-bottom: 20vh;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      padding: 0;
+      height: 93vh;
+      min-width: 100vw;
+      left: 0;
+
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+
+      section {
+        /* z-index: 99; */
+        width: 95%;
+        
+        
+        
+        .mainDiv {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+
+          h2 {
+            margin-top: 6.5vh;
+            font-size: 2em;
+            font-weight: 400;
+            width: 100%;
+            text-align: center;
+          }
+
+          h4 {
+            font-weight: 300;
+            margin: 3.4vh 0;
+          }
+
+          .figma{
+            height: 15rem;
+            width: 100%;
+
+          }
+
+
+          h3 {
+            margin-bottom: 1.7vh;
+            font-weight: 400;
+          }
+
+          .video {
+            margin-top: 1.7vh;
+            border: 1px solid white;
+            height: 14rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          p {
+            width: 100%;
+            display: flex;
+            padding: 0.2rem 1rem;
+            font-weight: 300;
+          }
+        }
+
+        .last {
+        }
       }
     }
   `}

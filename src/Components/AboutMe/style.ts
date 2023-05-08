@@ -14,20 +14,21 @@ export const AbouMeComponent = styled.header`
     color: white;
 
     section {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
 
       .firstBlock {
+        flex-wrap: wrap;
         display: flex;
         justify-content: center;
-        margin-top: 5vh;
+        margin-top: 3vh;
 
         img {
-          width: 27vh;
-          height: 27vh;
+          width: 16rem;
+          height: 16rem;
           border-radius: 10px;
           border: 2px solid white;
           margin-right: 3rem;
@@ -50,8 +51,8 @@ export const AbouMeComponent = styled.header`
         }
       }
       .mainText {
-        width: 90vh;
-        
+        width: 100vw;
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -61,18 +62,16 @@ export const AbouMeComponent = styled.header`
           font-size: 2vh;
           font-weight: 300;
           text-align: justify;
-
         }
       }
       footer {
-        
         display: flex;
         justify-content: center;
         width: 100%;
 
         a {
           margin: 0 4vh;
-          padding: .6vh 0;
+          padding: 0.6vh 0;
           border: 2px solid white;
           width: 25vh;
           display: flex;
@@ -88,13 +87,78 @@ export const AbouMeComponent = styled.header`
             width: 100%;
             margin-left: 1rem;
             font-size: 1.8vh;
-            
           }
         }
-        & :hover{
-            transform: scale(1.01);
+        & :hover {
+          transform: scale(1.01);
         }
       }
+    }
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      overflow-y: auto;
+      
+
+      section {
+        width: 95vw;
+
+      .firstBlock {
+        margin-top: 5vh;
+
+        img {
+          margin: 0;
+          margin-top: 20vh;
+          margin-bottom: 5vh;
+          width: 12rem;
+          height: 12rem;
+          z-index: 99;
+
+        }
+
+        div {
+          max-width: 75%;
+          text-align: center;
+
+          h2 {
+            
+            font-size: 2em;
+          }
+
+          p {
+            font-size: 1em;
+          }
+        }
+      }
+      .mainText {
+        margin: 5vh 0;
+        width: 98vw;
+        
+        p {
+
+        }
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 7vh;
+
+        a {
+          margin: 2vh 3%;
+          padding: 0.2rem 0;
+          border: 2px solid white;
+          width: 40vw;
+          color: white;
+          text-decoration: none;
+
+          div {
+            width: 100%;
+            margin-left: 1rem;
+            font-size: 1.8vh;
+          }
+        }
+      }
+    }
     }
   `}
 `;
@@ -104,7 +168,6 @@ export const BtnGit = styled(AiOutlineGithub)`
   height: 5vh;
   color: #fff;
   margin: 0 0.6rem;
-  
 `;
 export const BtnIn = styled(AiFillLinkedin)`
   width: 5vh;

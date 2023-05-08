@@ -30,7 +30,7 @@ const NavBar = ({ active, setActive, setlastOne }: Selected) => {
       <div
         onClick={() => handleChange(active, 2)}
       >
-        <a className={active === 2 ? "active" : ""}>CURRÍCULO</a>
+        <a className={active === 2 ? "active" : ""}>FORMAÇÃO</a>
       </div>
       <div
         onClick={() => handleChange(active, 3)}
