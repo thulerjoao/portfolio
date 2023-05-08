@@ -14,7 +14,7 @@ export const AbouMeComponent = styled.header`
     color: white;
 
     section {
-      height: 100%;
+      
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -24,7 +24,7 @@ export const AbouMeComponent = styled.header`
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
-        margin-top: 3vh;
+        margin: 7vh 0;
 
         img {
           width: 16rem;
@@ -51,15 +51,14 @@ export const AbouMeComponent = styled.header`
         }
       }
       .mainText {
-        width: 100vw;
-
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
 
         p {
           width: 100%;
-          font-size: 2vh;
+          font-size: 1.2em;
           font-weight: 300;
           text-align: justify;
         }
@@ -68,6 +67,7 @@ export const AbouMeComponent = styled.header`
         display: flex;
         justify-content: center;
         width: 100%;
+        margin-top: 5vh;
 
         a {
           margin: 0 4vh;
@@ -96,18 +96,23 @@ export const AbouMeComponent = styled.header`
     }
     @media screen and (max-width: 600px) {
       width: 100%;
+      
       overflow-y: auto;
       
 
       section {
         width: 95vw;
+        top: 0;
+        
+        /* margin: 30%; */
+        
 
       .firstBlock {
         margin-top: 5vh;
 
         img {
           margin: 0;
-          margin-top: 20vh;
+          /* margin-top: 17vh; */
           margin-bottom: 5vh;
           width: 12rem;
           height: 12rem;
@@ -134,7 +139,7 @@ export const AbouMeComponent = styled.header`
         width: 98vw;
         
         p {
-
+          font-size: 1em;
         }
       }
       footer {
