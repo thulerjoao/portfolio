@@ -47,6 +47,30 @@ export const Header = styled.header`
       box-shadow: 0px 2px 7px 24px rgba(105, 59, 147, 1);
     }
 
+    @media screen and (max-width: 768px) {
+      max-height: 5vh;
+      min-height: 5vh;
+      max-height: 10vh;
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
+      font-size: 1em;
+
+      div {
+        /* width: 100%; */
+        height: 2.5rem;
+        width: 24vw;
+
+        a {
+          /* display: none; */
+          width: 100%;
+        }
+
+        .active {
+          display: flex;
+        }
+      }
+    }
+
     @media screen and (max-width: 600px) {
       max-height: 5vh;
       min-height: 5vh;

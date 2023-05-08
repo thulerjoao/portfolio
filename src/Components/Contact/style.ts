@@ -23,7 +23,7 @@ export const ContactComponent = styled.header`
       background-color: #693b9320;
       box-shadow: 0px 0px 15px 3px rgba(105, 59, 147, 1);
       border: 1px solid white;
-      border-radius: 15px;
+      border-radius: 8px;
 
       h3 {
         margin-bottom: 2rem;
@@ -47,40 +47,47 @@ export const ContactComponent = styled.header`
       }
     }
 
+    @media screen and (max-width: 768px) {
+      section {
+        width: 60vw;
+        padding: 2rem 0;
+        align-items: center;
+        margin-top: 10%;
+
+        h3 {
+          font-size: 1.1em;
+        }
+
+        p {
+          font-size: 1em;
+        }
+
+        .divOut {
+          .divIn {
+          }
+        }
+      }
+    }
+
     @media screen and (max-width: 600px) {
-      
-      section{
+      section {
         width: 90vw;
         padding: 2rem 0;
         align-items: center;
         margin-top: 30%;
 
-
         h3 {
           font-size: 1.1em;
-          margin-bottom: 2rem;
-          font-weight: 400;
-      }
-
-      p{
-        font-size: 1em;
-      }
-
-      .divOut {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: start;
-        margin-left: 10%;
-        margin-top: 1rem;
-
-        .divIn {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 90%;
         }
 
+        p {
+          font-size: 1em;
+        }
+
+        .divOut {
+          .divIn {
+          }
+        }
       }
     }
   `}

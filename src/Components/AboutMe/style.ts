@@ -12,6 +12,8 @@ export const AbouMeComponent = styled.header`
     width: 100%;
     height: 100%;
     color: white;
+    overflow-y: auto;
+    
 
     section {
       
@@ -96,17 +98,12 @@ export const AbouMeComponent = styled.header`
         }
       }
     }
-    @media screen and (max-width: 600px) {
-      width: 100%;
-      
-      overflow-y: auto;
-      
+
+    @media screen and (max-width: 768px) {
+      min-width: 100%;
 
       section {
-        width: 95vw;
-        top: 0;
-        
-        /* margin: 30%; */
+        min-width: 90vw;
         
 
       .firstBlock {
@@ -114,11 +111,66 @@ export const AbouMeComponent = styled.header`
 
         img {
           margin: 0;
-          /* margin-top: 17vh; */
           margin-bottom: 5vh;
           width: 12rem;
           height: 12rem;
-          z-index: 99;
+
+        }
+
+        div {
+          max-width: 75%;
+          text-align: center;
+
+          h2 {
+            
+            font-size: 2em;
+          }
+
+          p {
+            font-size: 1em;
+          }
+        }
+      }
+      .mainText {
+        margin-top: 3vh;
+        max-width: 85%;
+        
+        p {
+          font-size: 1em;
+        }
+      }
+
+      footer {
+        margin-bottom: 22vh;
+
+        a {
+          margin: 2vh 4%;
+          padding: 0.2rem 0;
+          width: 30vw;
+
+          div {
+          }
+        }
+      }
+    }
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 100%;   
+      
+
+      section {
+        width: 95vw;
+        
+
+      .firstBlock {
+        margin-top: 5vh;
+
+        img {
+          margin: 0;
+          margin-bottom: 5vh;
+          width: 12rem;
+          height: 12rem;
 
         }
 
@@ -145,23 +197,14 @@ export const AbouMeComponent = styled.header`
         }
       }
       footer {
-        display: flex;
-        justify-content: center;
-        width: 100%;
         margin-bottom: 22vh;
 
         a {
           margin: 2vh 3%;
           padding: 0.2rem 0;
-          border: 2px solid white;
           width: 40vw;
-          color: white;
-          text-decoration: none;
 
           div {
-            width: 100%;
-            margin-left: 1rem;
-            font-size: 1.8vh;
           }
         }
       }

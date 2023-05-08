@@ -27,16 +27,28 @@ export const MainPageComponent = styled.div`
       }
     }
 
-    @media screen and (max-width: 600px) {
-
+    @media screen and (max-width: 768px) {
       .mainSection {
         width: 100%;
 
         .mainCards {
           width: 100%;
-          
 
-          div{
+          div {
+            width: 90%;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .mainSection {
+        width: 100%;
+
+        .mainCards {
+          width: 100%;
+
+          div {
             width: 90%;
           }
         }

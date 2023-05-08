@@ -81,6 +81,56 @@ export const PortfolioComponent = styled.div`
       }
     }
 
+    @media screen and (max-width: 768px) {
+      padding: 0;
+      height: 96vh;
+      min-width: 100vw;
+      left: 0;
+
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+
+      section {
+        /* z-index: 99; */
+        width: 95%;
+        
+        
+        
+        .mainDiv {
+
+          h2 {
+            font-size: 2em;
+          }
+
+          h4 {
+            font-weight: 300;
+            margin: 3.4vh 0;
+          }
+
+          .figma{
+            height: 19rem;
+            width: 100%;
+          }
+
+          h3 {
+            margin-bottom: 1.7vh;
+            font-weight: 400;
+          }
+
+          .video {
+            height: 19rem;
+          }
+
+          p {
+          }
+        }
+
+        .last {
+        }
+      }
+    }
+
     @media screen and (max-width: 600px) {
       padding: 0;
       height: 96vh;
@@ -98,16 +148,9 @@ export const PortfolioComponent = styled.div`
         
         
         .mainDiv {
-          display: flex;
-          flex-direction: column;
-          align-items: start;
 
           h2 {
-            margin-top: 6.5vh;
             font-size: 2em;
-            font-weight: 400;
-            width: 100%;
-            text-align: center;
           }
 
           h4 {
@@ -118,9 +161,7 @@ export const PortfolioComponent = styled.div`
           .figma{
             height: 15rem;
             width: 100%;
-
           }
-
 
           h3 {
             margin-bottom: 1.7vh;
@@ -128,20 +169,10 @@ export const PortfolioComponent = styled.div`
           }
 
           .video {
-            margin-top: 1.7vh;
-            border: 1px solid white;
             height: 14rem;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
           }
 
           p {
-            width: 100%;
-            display: flex;
-            padding: 0.2rem 1rem;
-            font-weight: 300;
           }
         }
 
