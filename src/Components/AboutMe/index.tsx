@@ -19,7 +19,7 @@ const AboutMe = ({ active, isEua }: prop) => {
           <img alt="profile image" src={jptl}></img>
           <div>
             <h2>João Pedro Thuler Lima</h2>
-            <p>Full Stack Developer</p>
+            <p>{isEua ? "Full-Stack Developer": "Desenvolvedor Full-stack"}</p>
           </div>
         </div>
         <div className="mainText">

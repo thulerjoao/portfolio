@@ -31,7 +31,7 @@ export const Header = styled.header`
         cursor: pointer;
         padding-bottom: 0.5vh;
         box-sizing: border-box;
-        border-bottom: 3px solid ${theme.colors.backgroundColor};
+        border-bottom: 3px solid #ffffff00;
       }
 
       .selected{
