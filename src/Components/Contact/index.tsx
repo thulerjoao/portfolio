@@ -14,7 +14,7 @@ const Contact = ({ active }: prop) => {
       }  animate__delay-0.5s`}
     >
       <section>
-        <h3>INFORMAÇÕES GERAIS DE CONTATO:</h3>
+        <h3>Informações gerais de contato:</h3>
         <div className="divOut">
           <p>Email</p>
           <div className="divIn">

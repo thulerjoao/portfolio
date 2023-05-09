@@ -13,6 +13,25 @@ export const Header = styled.header`
     align-items: end;
     border-bottom: 2px solid ${theme.colors.cleanBc};
     margin-bottom: 0.1rem;
+    position: relative;
+
+    .idiom{
+      z-index: 10;
+      position: absolute;
+      right: 1vh;
+      bottom: -4vh;
+      display: flex;
+      user-select: default;
+
+
+      img{
+        width: 4vh;
+        height: 3vh;
+        margin-left: 1vh;
+        cursor: pointer;
+
+      }
+    }
 
     div {
       width: 22%;

@@ -1,5 +1,7 @@
 import { Dispatch, SetStateAction, useState } from "react";
 import * as Styled from "./style";
+import euaFlag from "../../assets/image/euaFlag.png";
+import braFlag from "../../assets/image/braFlag.png";
 
 interface Selected {
   active: number;
@@ -37,6 +39,10 @@ const NavBar = ({ active, setActive, setlastOne }: Selected) => {
       >
         <a className={active === 3 ? "active" : ""}>CONTATO</a>
       </div>
+      <section className="idiom">
+        <img alt="flag eua"src={euaFlag} onClick={()=> console.log("funcionei")}></img>
+        <img alt="flag brazil"src={braFlag}  onClick={()=> console.log("funcionei2")}></img>
+      </section>
     </Styled.Header>
   );
 };
