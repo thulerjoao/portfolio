@@ -1,10 +1,12 @@
 {
   "name": "portfolio",
-  "homepage": "portfolio/",
+  "homepage": "https://thulerjoao.github.io/portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "yarn add",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
@@ -12,6 +14,7 @@
   "dependencies": {
     "@types/styled-components": "^5.1.26",
     "animate.css": "^4.1.1",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
