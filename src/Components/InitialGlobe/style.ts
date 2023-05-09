@@ -143,6 +143,7 @@ export const BlowUp = styled.div`
       img {
           height: 60vw;
           width: 60vw;
+          z-index: 99;
         }
     }
   `}

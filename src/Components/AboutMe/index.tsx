@@ -8,9 +8,11 @@ interface prop {
 
 const AboutMe = ({ active }: prop) => {
   return (
-    <Style.AbouMeComponent className={`animate__animated ${
-      active === 0 ? "animate__fadeInLeftBig" : "animate__fadeOutLeftBig"
-    }  animate__delay-0.5s`}>
+    <Style.AbouMeComponent
+      className={`animate__animated ${
+        active === 0 ? "animate__fadeInLeftBig" : "animate__fadeOutLeftBig"
+      }  animate__delay-0.5s`}
+    >
       <section>
         <div className="firstBlock">
           <img alt="profile image" src={jptl}></img>
@@ -21,17 +23,16 @@ const AboutMe = ({ active }: prop) => {
         </div>
         <div className="mainText">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            voluptas iusto soluta rerum unde tempore incidunt praesentium,
-            distinctio quaerat earum nihil, beatae nobis sit quia asperiores
-            ratione et odit facilis!Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Voluptates voluptas iusto soluta rerum unde
-            tempore incidunt praesentium, distinctio quaerat earum nihil, beatae
-            nobis sit quia asperiores ratione et odit facilis!Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Voluptates voluptas iusto
-            soluta rerum unde tempore incidunt praesentium, distinctio quaerat
-            earum nihil, beatae nobis sit quia asperiores ratione et odit
-            facilis!
+            Engenheiro mecânico completamente apaixonado por tecnologia. Em 2022
+            fui apresentado mais a fundo ao mundo da programação e fiquei
+            completamente encatado com todas as possibilidades. Perante a isso,
+            resolvi abandonar a carreira de engenheiro e mergulhar de cabeça
+            nessa jornada que quero levar pelo resto da vida. Comecei então, a
+            estudar arquitetura de software, NodeJS e alguns frameworks back-end
+            como NestJS e Express, e também front-end como ReactJS, que até
+            então foi o que mais me identifiquei. Atualmente estou a procura de uma
+            primeira oportunidade para ingressar na área e assim dar
+            continuidade a minha carreira de desenvolvedor.
           </p>
         </div>
         <footer>
