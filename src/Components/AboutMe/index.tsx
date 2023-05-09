@@ -38,16 +38,16 @@ const AboutMe = ({ active, isEua }: prop) => {
             </p>
           ) : (
             <p>
-              I am a mechanical engineer completely passionate about technology. In
-              2022 I was introduced to the world of programming more deeply and
-              I was completely delighted with all the possibilities. Faced with
-              this, I decided to abandon my career as an engineer and dive
+              I am a mechanical engineer completely passionate about technology.
+              In 2022 I was introduced to the world of programming more deeply
+              and I was completely delighted with all the possibilities. Faced
+              with this, I decided to abandon my career as an engineer and dive
               headlong into this journey that I want to take for the rest of my
               life. So I started to study software architecture, NodeJS and some
               back-end frameworks like NestJS and Express, and also front-end
-              like ReactJS, which until then was what I most identified with.
-              I'm currently looking for a first opportunity to join the area and
-              thus continue my career as a developer.
+              like ReactJS, that is so far the technology I identified the
+              most. I'm currently looking for a first opportunity to join the
+              area and thus continue my career as a developer.
             </p>
           )}
         </div>
