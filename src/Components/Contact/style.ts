@@ -37,6 +37,8 @@ export const ContactComponent = styled.header`
         align-items: start;
         margin-left: 10%;
         margin-top: 1rem;
+        font-weight: 300;
+
 
         .divIn {
           display: flex;

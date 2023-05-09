@@ -12,6 +12,8 @@ export const CurriculoComponent = styled.header`
     width: 100%;
     height: 100%;
     color: white;
+    font-weight: 300;
+
 
     section {
       width: 80%;
@@ -47,6 +49,7 @@ export const CurriculoComponent = styled.header`
           text-align: justify;
           margin-left: 10%;
           margin-bottom: 0.5vh;
+          
         }
       }
     }
@@ -54,7 +57,7 @@ export const CurriculoComponent = styled.header`
     @media screen and (max-width: 992px) {
       section {
         width: 80%;
-        margin-top: 0vh;
+        margin-top: 4vh;
 
         div {
           padding: 2.5rem 2rem;
@@ -77,7 +80,7 @@ export const CurriculoComponent = styled.header`
     @media screen and (max-width: 768px) {
       section {
         width: 95%;
-        margin-top: 0vh;
+
 
         div {
           padding: 1.5rem 1rem;
@@ -100,7 +103,7 @@ export const CurriculoComponent = styled.header`
     @media screen and (max-width: 600px) {
       section {
         width: 95%;
-        margin-top: 0vh;
+ 
 
         div {
           padding: 1.5rem 1rem;
