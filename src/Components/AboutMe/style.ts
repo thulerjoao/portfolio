@@ -54,7 +54,8 @@ export const AbouMeComponent = styled.header`
         }
       }
       .mainText {
-        width: 45vw;
+        width: 55vw;
+        max-width: 70rem;
         display: flex;
         justify-content: center;
         align-items: center;

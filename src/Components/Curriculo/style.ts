@@ -24,22 +24,20 @@ export const CurriculoComponent = styled.header`
       justify-content: flex-start;
 
       div {
-        width: auto;
-        margin-top: 7%;
+        margin-top: 4%;
         background-color: #693b9320;
         box-shadow: 0px 0px 15px 3px rgba(105, 59, 147, 1);
         border: 1px solid white;
         border-radius: 8px;
-        padding: 5vh;
+        padding: 4vh;
 
         h2 {
           width: 100%;
-          margin-bottom: 3vh;
           font-weight: 500;
         }
 
         h4 {
-          margin-top: 5vh;
+          margin-top: 2vh;
           margin-bottom: 0.5vh;
           margin-left: 5%;
           font-weight: 400;

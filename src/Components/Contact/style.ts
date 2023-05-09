@@ -18,12 +18,13 @@ export const ContactComponent = styled.header`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 4rem;
+      padding: 4vh;
       margin-top: 15%;
       background-color: #693b9320;
       box-shadow: 0px 0px 15px 3px rgba(105, 59, 147, 1);
       border: 1px solid white;
       border-radius: 8px;
+      max-width: 85vw;
 
       h3 {
         margin-bottom: 2rem;
@@ -35,16 +36,17 @@ export const ContactComponent = styled.header`
         flex-direction: column;
         justify-content: space-between;
         align-items: start;
-        margin-left: 10%;
-        margin-top: 1rem;
+        margin-left: 5%;
+        margin-top: 2vh;
         font-weight: 300;
+        max-width: 60vw;
 
 
         .divIn {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          width: 90%;
+          width: 100%;
         }
       }
     }
