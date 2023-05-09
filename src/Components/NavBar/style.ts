@@ -19,17 +19,23 @@ export const Header = styled.header`
       z-index: 10;
       position: absolute;
       right: 1vh;
-      bottom: -4vh;
+      bottom: -4.5vh;
       display: flex;
       user-select: default;
 
 
       img{
-        width: 4vh;
-        height: 3vh;
+        max-width: 4vh;
+        max-height: 3.5vh;
         margin-left: 1vh;
         cursor: pointer;
+        padding-bottom: 0.5vh;
+        box-sizing: border-box;
+        border-bottom: 3px solid ${theme.colors.backgroundColor};
+      }
 
+      .selected{
+        border-bottom: 3px solid ${theme.colors.cleanBc};
       }
     }
 

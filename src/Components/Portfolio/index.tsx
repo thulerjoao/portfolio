@@ -5,11 +5,12 @@ import { DiReact } from "react-icons/di";
 interface prop {
   active: number;
   lastOne: number;
+  isEua: boolean;
 }
 
 // "animate__bounceInLeft" : "animate__fadeOutLeftBig"
 
-const Portfolio = ({ active, lastOne }: prop) => {
+const Portfolio = ({ active, lastOne, isEua }: prop) => {
   return (
     <Style.PortfolioComponent
       className={`animate__animated ${

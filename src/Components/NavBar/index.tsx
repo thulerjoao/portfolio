@@ -7,9 +7,12 @@ interface Selected {
   active: number;
   setActive: Dispatch<SetStateAction<number>>;
   setlastOne: Dispatch<SetStateAction<number>>;
+  isEua: boolean;
+  setIsEua: Dispatch<SetStateAction<boolean>>;
 }
 
-const NavBar = ({ active, setActive, setlastOne }: Selected) => {
+
+const NavBar = ({ active, setActive, setlastOne, isEua, setIsEua }: Selected) => {
 
 
     const handleChange = (current: number, newOne: number) =>{
@@ -22,7 +25,7 @@ const NavBar = ({ active, setActive, setlastOne }: Selected) => {
       <div
         onClick={() => handleChange(active, 0)}
       >
-        <a className={active === 0 ? "active" : ""}>SOBRE MIM</a>
+        <a className={active === 0 ? "active" : ""}>{!isEua? "SOBRE MIM": "ABOUT ME"}</a>
       </div>
       <div
         onClick={() => handleChange(active, 1)}
@@ -32,16 +35,16 @@ const NavBar = ({ active, setActive, setlastOne }: Selected) => {
       <div
         onClick={() => handleChange(active, 2)}
       >
-        <a className={active === 2 ? "active" : ""}>FORMAÇÃO</a>
+        <a className={active === 2 ? "active" : ""}>{!isEua? "FORMAÇÃO":"EDUCATION"}</a>
       </div>
       <div
         onClick={() => handleChange(active, 3)}
       >
-        <a className={active === 3 ? "active" : ""}>CONTATO</a>
+        <a className={active === 3 ? "active" : ""}>{!isEua? "CONTATO":"CONTACT"}</a>
       </div>
       <section className="idiom">
-        <img alt="flag eua"src={euaFlag} onClick={()=> console.log("funcionei")}></img>
-        <img alt="flag brazil"src={braFlag}  onClick={()=> console.log("funcionei2")}></img>
+        <img className={isEua? "selected": ""} alt="flag eua"src={euaFlag} onClick={()=> setIsEua(true)}></img>
+        <img className={!isEua? "selected": ""} alt="flag brazil"src={braFlag}  onClick={()=> setIsEua(false)}></img>
       </section>
     </Styled.Header>
   );

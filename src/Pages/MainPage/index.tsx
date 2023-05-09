@@ -10,6 +10,7 @@ import Curriculo from "../../Components/Curriculo";
 const MainPage = () => {
   const [active, setActive] = useState<number>(0); //values from 0 to 3
   const [lastOne, setlastOne] = useState<number>(0); //values from 0 to 3
+  const [isEua, setIsEua] = useState<boolean>(false);
 
   const LIMIT = 50;
 
@@ -47,22 +48,22 @@ const MainPage = () => {
   return (
     <Style.MainPageComponent>
       <section className="mainSection">
-        <InitialComponent/>
-        <NavBar active={active} setActive={setActive} setlastOne={setlastOne} />
+        <InitialComponent />
+        <NavBar active={active} setActive={setActive} setlastOne={setlastOne} isEua={isEua} setIsEua={setIsEua} />
         <div
           className="mainCards"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-          {<AboutMe active={active} />}
+          {<AboutMe active={active} isEua={isEua}/>}
           {(active === 1 || lastOne === 1) && (
-            <Portfolio active={active} lastOne={lastOne} />
+            <Portfolio active={active} lastOne={lastOne} isEua={isEua}/>
           )}
           {(active === 2 || lastOne === 2) && (
-            <Curriculo active={active} lastOne={lastOne} />
+            <Curriculo active={active} lastOne={lastOne} isEua={isEua}/>
           )}
-          {<Contact active={active} />}
+          {<Contact active={active} isEua={isEua}/>}
         </div>
       </section>
     </Style.MainPageComponent>
