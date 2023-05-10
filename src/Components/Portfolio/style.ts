@@ -36,8 +36,8 @@ export const PortfolioComponent = styled.div`
 
         .title{
           display: flex;
-          margin-top: 4vh;
-          justify-content: center;
+          margin-top: 3vh;
+          justify-content: flex-start;
           align-items: center;
           flex-wrap: wrap;
 
@@ -45,6 +45,8 @@ export const PortfolioComponent = styled.div`
             margin: 0;
             min-width: 11.5rem;
             font-size: 1.8em;
+            margin-top: 1vh;
+
 
           }
 
@@ -62,6 +64,7 @@ export const PortfolioComponent = styled.div`
             color: white;
             cursor: pointer;
             text-decoration: none;
+            margin-top: 1vh;
 
             :hover {
               transform: scale(1.02);

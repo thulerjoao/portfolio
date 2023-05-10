@@ -50,7 +50,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
         <div className="mainDiv last">
           <h2>BackEnd</h2>
           <div className="title">
-            <h3>- PizzaFresh</h3>
+            <h3>• PizzaFresh</h3>
             {!isEua ? (
               <a
                 href="https://github.com/thulerjoao/nest_ts-pizza_fresh_api.git"
