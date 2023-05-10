@@ -52,11 +52,17 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
           <div className="title">
             <h3>- PizzaFresh</h3>
             {!isEua ? (
-              <a href="https://github.com/thulerjoao/nest_ts-pizza_fresh_api.git" target="_blank">
+              <a
+                href="https://github.com/thulerjoao/nest_ts-pizza_fresh_api.git"
+                target="_blank"
+              >
                 Repositório
               </a>
             ) : (
-              <a href="https://github.com/thulerjoao/nest_ts-pizza_fresh_api.git" target="_blank">
+              <a
+                href="https://github.com/thulerjoao/nest_ts-pizza_fresh_api.git"
+                target="_blank"
+              >
                 Repository
               </a>
             )}
@@ -65,16 +71,20 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
           {!isEua ? (
             <h4>
               API Nest.ts criada para servir de sistema a uma pizzaria. A
-              aplicação ambrange rotas desde a criação de um usuário (atendente)
+              aplicação abrange rotas desde a criação de um usuário (atendente)
               até cadastro de mesas e produtos. Também são lançados pedidos e
-              devem estar atrelados as entidades anteriores.
+              devem estar atrelados as entidades anteriores. Uma aplicação
+              simples, com poucas entidades, mas que carrega conceitos bastante
+              úteis e práticos.
             </h4>
           ) : (
             <h4>
               API Nest.ts created to serve as a system for a restaurant. The
               application covers routes from creating a user (attendant) to
               registering tables and products. Orders are also launched and must
-              be linked to the previous entities.
+              be linked to the previous entities. An simple application, with
+              few entities, but which carries concepts quite useful and
+              practical.
             </h4>
           )}
 
