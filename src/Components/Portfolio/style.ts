@@ -32,6 +32,42 @@ export const PortfolioComponent = styled.div`
         display: flex;
         flex-direction: column;
         align-items: start;
+        max-width: 65rem;
+
+        .title{
+          display: flex;
+          margin-top: 4vh;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+
+          h3{
+            margin: 0;
+            min-width: 11.5rem;
+            font-size: 1.8em;
+
+          }
+
+          a{
+            padding: 0;
+            background-color: ${theme.colors.cleanBc};;
+            border: 1px solid white;
+            border-radius: 15px;
+            font-size: 0.9em;
+            width: 7rem;
+            height: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+
+            :hover {
+              transform: scale(1.02);
+            }
+          }
+        }
 
         h2 {
           margin-top: 6.5vh;
@@ -46,11 +82,10 @@ export const PortfolioComponent = styled.div`
           margin: 3.4vh 0;
         }
 
-        .figma{
-            height: 40vh;
-            width: 100%;
-
-          }
+        .figma {
+          height: 50vh;
+          width: 100%;
+        }
 
         h3 {
           margin-bottom: 1.7vh;
@@ -60,11 +95,20 @@ export const PortfolioComponent = styled.div`
         .video {
           margin-top: 1.7vh;
           border: 1px solid white;
-          height: 40vh;
+          height: 50vh;
           width: 100%;
           display: flex;
           justify-content: center;
-          align-items: center;
+          align-items: start;
+          overflow-y: auto;
+
+          ::-webkit-scrollbar {
+            width: 0px;
+          }
+
+          img {
+            width: 100%;
+          }
         }
 
         p {
@@ -81,7 +125,6 @@ export const PortfolioComponent = styled.div`
       }
     }
 
-
     @media screen and (max-width: 992px) {
       padding: 0;
       height: 96vh;
@@ -95,11 +138,8 @@ export const PortfolioComponent = styled.div`
       section {
         /* z-index: 99; */
         width: 90%;
-        
-        
-        
-        .mainDiv {
 
+        .mainDiv {
           h2 {
             font-size: 2em;
           }
@@ -109,7 +149,7 @@ export const PortfolioComponent = styled.div`
             margin: 3.4vh 0;
           }
 
-          .figma{
+          .figma {
             height: 22rem;
             width: 100%;
           }
@@ -145,11 +185,8 @@ export const PortfolioComponent = styled.div`
       section {
         /* z-index: 99; */
         width: 95%;
-        
-        
-        
-        .mainDiv {
 
+        .mainDiv {
           h2 {
             font-size: 2em;
           }
@@ -159,7 +196,7 @@ export const PortfolioComponent = styled.div`
             margin: 3.4vh 0;
           }
 
-          .figma{
+          .figma {
             height: 19rem;
             width: 100%;
           }
@@ -195,11 +232,8 @@ export const PortfolioComponent = styled.div`
       section {
         /* z-index: 99; */
         width: 95%;
-        
-        
-        
-        .mainDiv {
 
+        .mainDiv {
           h2 {
             font-size: 2em;
           }
@@ -209,7 +243,7 @@ export const PortfolioComponent = styled.div`
             margin: 3.4vh 0;
           }
 
-          .figma{
+          .figma {
             height: 15rem;
             width: 100%;
           }
