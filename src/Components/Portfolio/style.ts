@@ -82,6 +82,8 @@ export const PortfolioComponent = styled.div`
         h4 {
           font-weight: 300;
           margin: 3.4vh 0;
+          text-align: justify;
+
         }
 
         .figma {
