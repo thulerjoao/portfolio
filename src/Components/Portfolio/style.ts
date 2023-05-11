@@ -34,25 +34,23 @@ export const PortfolioComponent = styled.div`
         align-items: start;
         max-width: 65rem;
 
-        .title{
+        .title {
           display: flex;
           margin-top: 3vh;
           justify-content: flex-start;
           align-items: center;
           flex-wrap: wrap;
 
-          h3{
+          h3 {
             margin: 0;
             min-width: 11.5rem;
             font-size: 1.8em;
             margin-top: 1vh;
-
-
           }
 
-          a{
+          a {
             padding: 0;
-            background-color: ${theme.colors.cleanBc};;
+            background-color: ${theme.colors.cleanBc};
             border: 1px solid white;
             border-radius: 15px;
             font-size: 0.9em;
@@ -105,10 +103,9 @@ export const PortfolioComponent = styled.div`
           align-items: start;
           overflow-y: auto;
 
-          video{
+          video {
             width: 100%;
             height: 100%;
-            border: 1px solid white;
           }
 
           ::-webkit-scrollbar {
@@ -120,10 +117,10 @@ export const PortfolioComponent = styled.div`
           }
         }
 
-        .front{
-          overflow-y: hidden;
-          border: none;
-        }
+        .front {
+            overflow-y: hidden;
+            height: auto;
+          }
 
         p {
           width: 100%;
@@ -177,6 +174,11 @@ export const PortfolioComponent = styled.div`
             height: 22rem;
           }
 
+          .front {
+            overflow-y: hidden;
+            height: auto;
+          }
+
           p {
           }
         }
@@ -224,6 +226,11 @@ export const PortfolioComponent = styled.div`
             height: 19rem;
           }
 
+          .front {
+            overflow-y: hidden;
+            height: auto;
+          }
+
           p {
           }
         }
@@ -269,6 +276,11 @@ export const PortfolioComponent = styled.div`
 
           .video {
             height: 14rem;
+          }
+
+          .front {
+            overflow-y: hidden;
+            height: auto;
           }
 
           p {
