@@ -151,7 +151,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
             <h4>
               API Nest.ts criada para servir de sistema a uma pizzaria. A
               aplicação abrange rotas desde a criação de um usuário (atendente)
-              até cadastro de mesas e produtos. Também são lançados pedidos e
+              até cadastro de mesas e produtos. Também são lançados pedidos que
               devem estar atrelados as entidades anteriores. Uma aplicação
               simples, com poucas entidades, mas que carrega conceitos bastante
               úteis e práticos.
