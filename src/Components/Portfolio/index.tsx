@@ -80,14 +80,32 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
             <h3>Main technologies:</h3>
           )}
 
-          <p>React Ts</p>
+          <p>React.Ts</p>
           {!isEua ? (
-            <p>Styled Components - Ferramenta de estilização</p>
+            <>
+              <p>Styled Components - Ferramenta de estilização</p>
+              <p>
+                Mui material - Lib usada na criação dos botões e barra de
+                progresso do formulário
+              </p>
+              <p>pdfmake - Gerar arquivos pdf com dados dos orçamentos</p>
+            </>
           ) : (
-            <p>Styled Components - Styling tool</p>
+            <>
+              <p>Styled Components - Styling tool</p>
+              <p>
+                Mui material - Lib used to create buttons and toolbar
+                form progress
+              </p>
+              <p>pdfmake - Generate pdf files with budget data</p>
+            </>
           )}
 
-          {!isEua?<h4>Visão geral do projeto:</h4>:<h4>Application overview:</h4>}
+          {!isEua ? (
+            <h4>Visão geral do projeto:</h4>
+          ) : (
+            <h4>Application overview:</h4>
+          )}
 
           <div className="video front">
             <video controls>
