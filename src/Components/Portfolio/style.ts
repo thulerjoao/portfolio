@@ -43,6 +43,7 @@ export const PortfolioComponent = styled.div`
 
           h3 {
             margin: 0;
+            margin-right: 1vw;
             min-width: 11.5rem;
             font-size: 1.8em;
             margin-top: 1vh;

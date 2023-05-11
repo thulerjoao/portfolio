@@ -1,7 +1,7 @@
 import * as Style from "./style";
 import "animate.css";
 import swaggerImg from "../../assets/image/swaggerImg.png";
-import video01 from "../../assets/media/video01.mp4"
+import video01 from "../../assets/media/video01.mp4";
 
 interface prop {
   active: number;
@@ -27,16 +27,67 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
       <section>
         <div className="mainDiv">
           <h2>FrontEnd</h2>
+          <div className="title">
+            <h3>• dataRain tool</h3>
+            {!isEua ? (
+              <a
+                href="https://github.com/thulerjoao/FrontEnd-finance-tool-dataRain.git"
+                target="_blank"
+              >
+                Repositório
+              </a>
+            ) : (
+              <a
+                href="https://github.com/thulerjoao/FrontEnd-finance-tool-dataRain.git"
+                target="_blank"
+              >
+                Repository
+              </a>
+            )}
+          </div>
 
-          <h4>
-            Aplicação React feita para gerar orçamentos a clientes e também
-            gerenciar a carga de trabalho dos funcionários
-          </h4>
+          {!isEua ? (
+            <h4>
+              Projeto feito para a empresa dataRain e vencedor de um bootcamp
+              onde fui responsável pelo front-end. A principal funcionalidade da
+              aplicação é criar um formulário, onde cada resposta objetiva tem
+              atribuindo a ela uma equipe de desenvolvedores, e também um valor
+              pre-determinado de horas para aquela função. Com a resposta deste
+              formulário é possível editar os valores, e então gerar um
+              orçamento para o cliente. Além disto, a aplicação também faz
+              gestão dos funcionário, clientes e projetos ativos na empresa.
+              Também é possível ter o controle do cartão de ponto e pedidos de
+              hora extra dos colaboradores.
+            </h4>
+          ) : (
+            <h4>
+              Project made for the company dataRain and winner of a bootcamp
+              where I was responsible for the front end. The main functionality
+              of the application is to create a form, where each objective
+              answer has attributing to it a team of developers, and also a
+              predetermined amount of hours for that function. With the answer
+              of this form it is possible to edit the values, and then generate
+              a budget for the client. In addition, the application also manages
+              employees, customers and active projects in the company. It is
+              also possible to have time card control and overtime requests from
+              employees.
+            </h4>
+          )}
 
-          <h3>Tecnologias principais:</h3>
+          {!isEua ? (
+            <h3>Tecnologias principais:</h3>
+          ) : (
+            <h3>Main technologies:</h3>
+          )}
 
           <p>React Ts</p>
-          <p>Styled Components</p>
+          {!isEua ? (
+            <p>Styled Components - Ferramenta de estilização</p>
+          ) : (
+            <p>Styled Components - Styling tool</p>
+          )}
+
+          {!isEua?<h4>Visão geral do projeto:</h4>:<h4>Application overview:</h4>}
 
           <div className="video front">
             <video controls>
@@ -45,7 +96,11 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
             </video>
           </div>
 
-          <h4>Confira o figma que fiz como base para o projeto:</h4>
+          {!isEua ? (
+            <h4>Confira o figma que fiz como base para o projeto:</h4>
+          ) : (
+            <h4>Check out the figma I made as a basis for the project:</h4>
+          )}
 
           <iframe
             className="figma"
