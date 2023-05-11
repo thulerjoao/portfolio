@@ -1,6 +1,7 @@
 import * as Style from "./style";
 import "animate.css";
 import swaggerImg from "../../assets/image/swaggerImg.png";
+import video01 from "../../assets/media/video01.mp4"
 
 interface prop {
   active: number;
@@ -37,7 +38,12 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
           <p>React Ts</p>
           <p>Styled Components</p>
 
-          <div className="video">VIDEO</div>
+          <div className="video front">
+            <video controls>
+              <source src={video01} type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </div>
 
           <h4>Confira o figma que fiz como base para o projeto:</h4>
 
@@ -109,7 +115,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
               <h4>Swagger with API routers:</h4>
             </>
           )}
-          <div className="video">
+          <div className="video back">
             <img src={swaggerImg}></img>
           </div>
         </div>

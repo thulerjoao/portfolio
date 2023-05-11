@@ -105,6 +105,12 @@ export const PortfolioComponent = styled.div`
           align-items: start;
           overflow-y: auto;
 
+          video{
+            width: 100%;
+            height: 100%;
+            border: 1px solid white;
+          }
+
           ::-webkit-scrollbar {
             width: 0px;
           }
@@ -112,6 +118,11 @@ export const PortfolioComponent = styled.div`
           img {
             width: 100%;
           }
+        }
+
+        .front{
+          overflow-y: hidden;
+          border: none;
         }
 
         p {
