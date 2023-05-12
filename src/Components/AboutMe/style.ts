@@ -3,7 +3,7 @@ import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
 
 export const AbouMeComponent = styled.header`
   ${({ theme }) => css`
-    padding-bottom: 12vh;
+    padding-bottom: 10vh;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -32,8 +32,8 @@ export const AbouMeComponent = styled.header`
         margin-top: 7vh;
 
         img {
-          width: 16rem;
-          height: 16rem;
+          width: 28vh;
+          height: 28vh;
           border-radius: 10px;
           border: 2px solid white;
           margin-right: 3rem;
@@ -107,14 +107,14 @@ export const AbouMeComponent = styled.header`
       overflow-y: auto;
 
       section {
-        padding-bottom: 10vh;
+        padding-bottom: 8vh;
 
         .firstBlock {
           margin-top: 6vh;
 
           img {
-            width: 14rem;
-            height: 14rem;
+            /* width: 14rem;
+            height: 14rem; */
             margin-bottom: 4vh;
           }
         }
@@ -218,7 +218,7 @@ export const AbouMeComponent = styled.header`
         }
 
         footer {
-          margin-bottom: 22vh;
+          margin-bottom: 10vh;
 
           a {
             margin: 2vh 4%;
@@ -270,7 +270,7 @@ export const AbouMeComponent = styled.header`
           }
         }
         footer {
-          margin-bottom: 22vh;
+          margin-bottom: 7vh;
 
           a {
             margin: 2vh 3%;
