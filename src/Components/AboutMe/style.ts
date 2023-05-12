@@ -3,7 +3,7 @@ import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
 
 export const AbouMeComponent = styled.header`
   ${({ theme }) => css`
-    /* border: 1px solid white; */
+    padding-bottom: 12vh;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,10 @@ export const AbouMeComponent = styled.header`
     height: 100%;
     color: white;
     overflow-y: auto;
-    
+
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
 
     section {
       height: auto;
@@ -27,7 +30,6 @@ export const AbouMeComponent = styled.header`
         display: flex;
         justify-content: center;
         margin-top: 9vh;
-        
 
         img {
           width: 16rem;
@@ -106,29 +108,23 @@ export const AbouMeComponent = styled.header`
 
       section {
         padding-bottom: 10vh;
-        
 
-      .firstBlock {
-        margin-top: 6vh;
-        
-        
+        .firstBlock {
+          margin-top: 6vh;
 
-        img {
-          width: 14rem;
-          height: 14rem;
-          margin-bottom: 4vh;
+          img {
+            width: 14rem;
+            height: 14rem;
+            margin-bottom: 4vh;
+          }
+        }
+        .mainText {
+          margin-top: 4vh;
+        }
+        footer {
+          margin-top: 6vh;
         }
       }
-      .mainText {
-        margin-top: 4vh;
-
-      }
-      footer {
-        margin-top: 6vh;
-        
-      }
-    }
-
     }
 
     @media screen and (max-width: 992px) {
@@ -136,55 +132,52 @@ export const AbouMeComponent = styled.header`
 
       section {
         width: 80vw;
-        
 
-      .firstBlock {
-        margin-top: 5vh;
+        .firstBlock {
+          margin-top: 5vh;
 
-        img {
-          margin: 0;
-          margin-bottom: 5vh;
-          width: 14rem;
-          height: 14rem;
-
-        }
-
-        div {
-          max-width: 75%;
-          text-align: center;
-
-          h2 {
-            
-            font-size: 2em;
+          img {
+            margin: 0;
+            margin-bottom: 5vh;
+            width: 14rem;
+            height: 14rem;
           }
+
+          div {
+            max-width: 75%;
+            text-align: center;
+
+            h2 {
+              font-size: 2em;
+            }
+
+            p {
+              font-size: 1em;
+            }
+          }
+        }
+        .mainText {
+          margin-top: 3vh;
+          max-width: 85%;
 
           p {
             font-size: 1em;
           }
         }
-      }
-      .mainText {
-        margin-top: 3vh;
-        max-width: 85%;
-        
-        p {
-          font-size: 1em;
-        }
-      }
 
-      footer {
-        margin-bottom: 22vh;
+        footer {
+          margin-bottom: 22vh;
 
-        a {
-          margin: 2vh 4%;
-          padding: 0.2rem 0;
-          width: 30vw;
+          a {
+            margin: 2vh 4%;
+            padding: 0.2rem 0;
+            width: 30vw;
 
-          div {
+            div {
+            }
           }
         }
       }
-    }
     }
 
     @media screen and (max-width: 768px) {
@@ -192,110 +185,103 @@ export const AbouMeComponent = styled.header`
 
       section {
         min-width: 90vw;
-        
 
-      .firstBlock {
-        margin-top: 5vh;
+        .firstBlock {
+          margin-top: 5vh;
 
-        img {
-          margin: 0;
-          margin-bottom: 5vh;
-          width: 12rem;
-          height: 12rem;
-
-        }
-
-        div {
-          max-width: 75%;
-          text-align: center;
-
-          h2 {
-            
-            font-size: 2em;
+          img {
+            margin: 0;
+            margin-bottom: 5vh;
+            width: 12rem;
+            height: 12rem;
           }
+
+          div {
+            max-width: 75%;
+            text-align: center;
+
+            h2 {
+              font-size: 2em;
+            }
+
+            p {
+              font-size: 1em;
+            }
+          }
+        }
+        .mainText {
+          margin-top: 3vh;
 
           p {
             font-size: 1em;
           }
         }
-      }
-      .mainText {
-        margin-top: 3vh;
-        
-        p {
-          font-size: 1em;
-        }
-      }
 
-      footer {
-        margin-bottom: 22vh;
+        footer {
+          margin-bottom: 22vh;
 
-        a {
-          margin: 2vh 4%;
-          padding: 0.2rem 0;
-          width: 30vw;
+          a {
+            margin: 2vh 4%;
+            padding: 0.2rem 0;
+            width: 30vw;
 
-          div {
+            div {
+            }
           }
         }
       }
-    }
     }
 
     @media screen and (max-width: 600px) {
-      width: 100%;   
-      
+      width: 100%;
 
       section {
         width: 95vw;
-        
 
-      .firstBlock {
-        margin-top: 5vh;
+        .firstBlock {
+          margin-top: 5vh;
 
-        img {
-          margin: 0;
-          margin-bottom: 5vh;
-          width: 12rem;
-          height: 12rem;
-
-        }
-
-        div {
-          max-width: 75%;
-          text-align: center;
-
-          h2 {
-            
-            font-size: 2em;
+          img {
+            margin: 0;
+            margin-bottom: 5vh;
+            width: 12rem;
+            height: 12rem;
           }
+
+          div {
+            max-width: 75%;
+            text-align: center;
+
+            h2 {
+              font-size: 2em;
+            }
+
+            p {
+              font-size: 1em;
+            }
+          }
+        }
+        .mainText {
+          margin-top: 3vh;
+          min-width: 88vw;
 
           p {
             font-size: 1em;
           }
         }
-      }
-      .mainText {
-        margin-top: 3vh;
-        min-width: 88vw;
-        
-        p {
-          font-size: 1em;
-        }
-      }
-      footer {
-        margin-bottom: 22vh;
+        footer {
+          margin-bottom: 22vh;
 
-        a {
-          margin: 2vh 3%;
-          padding: 0.2rem 0;
-          width: 40vw;
+          a {
+            margin: 2vh 3%;
+            padding: 0.2rem 0;
+            width: 40vw;
 
-          div {
+            div {
+            }
           }
         }
       }
-    }
     }
   `}
 `;
