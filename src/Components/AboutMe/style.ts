@@ -29,7 +29,7 @@ export const AbouMeComponent = styled.header`
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
-        margin-top: 9vh;
+        margin-top: 7vh;
 
         img {
           width: 16rem;
