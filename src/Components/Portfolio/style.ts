@@ -23,6 +23,7 @@ export const PortfolioComponent = styled.div`
     section {
       /* z-index: 99; */
       width: 100%;
+      max-width: 60vw;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -152,6 +153,7 @@ export const PortfolioComponent = styled.div`
       section {
         /* z-index: 99; */
         width: 90%;
+        max-width: 90%;
 
         .mainDiv {
           h2 {

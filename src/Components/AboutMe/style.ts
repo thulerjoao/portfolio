@@ -16,7 +16,7 @@ export const AbouMeComponent = styled.header`
     
 
     section {
-      
+      height: auto;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -79,6 +79,7 @@ export const AbouMeComponent = styled.header`
           padding: 0.6vh 0;
           border: 2px solid white;
           width: 25vh;
+          max-width: 13rem;
           display: flex;
           align-items: center;
           cursor: pointer;
@@ -98,6 +99,36 @@ export const AbouMeComponent = styled.header`
           transform: scale(1.01);
         }
       }
+    }
+
+    @media screen and (max-width: 1440px) {
+      overflow-y: auto;
+
+      section {
+        padding-bottom: 10vh;
+        
+
+      .firstBlock {
+        margin-top: 6vh;
+        
+        
+
+        img {
+          width: 14rem;
+          height: 14rem;
+          margin-bottom: 4vh;
+        }
+      }
+      .mainText {
+        margin-top: 4vh;
+
+      }
+      footer {
+        margin-top: 6vh;
+        
+      }
+    }
+
     }
 
     @media screen and (max-width: 992px) {
