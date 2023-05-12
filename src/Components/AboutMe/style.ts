@@ -166,7 +166,7 @@ export const AbouMeComponent = styled.header`
         }
 
         footer {
-          margin-bottom: 22vh;
+          margin-bottom: 10vh;
 
           a {
             margin: 2vh 4%;
@@ -218,7 +218,6 @@ export const AbouMeComponent = styled.header`
         }
 
         footer {
-          margin-bottom: 10vh;
 
           a {
             margin: 2vh 4%;
