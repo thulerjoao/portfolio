@@ -32,8 +32,8 @@ export const AbouMeComponent = styled.header`
         margin-top: 7vh;
 
         img {
-          width: 28vh;
-          height: 28vh;
+          width: 25vh;
+          height: 25vh;
           border-radius: 10px;
           border: 2px solid white;
           margin-right: 3rem;
