@@ -10,7 +10,7 @@ import Curriculo from "../../Components/Curriculo";
 const MainPage = () => {
   const [active, setActive] = useState<number>(0); //values from 0 to 3
   const [lastOne, setlastOne] = useState<number>(0); //values from 0 to 3
-  const [isEua, setIsEua] = useState<boolean>(false);
+  const [isEua, setIsEua] = useState<boolean>(true);
 
   const LIMIT = 50;
 
