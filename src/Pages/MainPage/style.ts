@@ -14,11 +14,12 @@ export const MainPageComponent = styled.div`
     display: flex;
     justify-content: center;
     overflow-y: hidden;
-
+    
     .mainSection {
       height: 100vh;
       width: 65%;
       max-width: 78rem;
+
 
       .mainCards {
         position: relative;

@@ -6,11 +6,13 @@ import AboutMe from "../../Components/AboutMe";
 import Portfolio from "../../Components/Portfolio";
 import Contact from "../../Components/Contact";
 import Curriculo from "../../Components/Curriculo";
+import startDust from "../../assets/image/start-dust.png";
+
 
 const MainPage = () => {
   const [active, setActive] = useState<number>(0); //values from 0 to 3
   const [lastOne, setlastOne] = useState<number>(0); //values from 0 to 3
-  const [isEua, setIsEua] = useState<boolean>(true);
+  const [isEua, setIsEua] = useState<boolean>(false);
 
   const LIMIT = 50;
 
@@ -48,6 +50,7 @@ const MainPage = () => {
   return (
     <Style.MainPageComponent>
       <section className="mainSection">
+        {/* <img src={startDust}></img> */}
         <InitialComponent />
         <NavBar active={active} setActive={setActive} setlastOne={setlastOne} isEua={isEua} setIsEua={setIsEua} />
         <div
