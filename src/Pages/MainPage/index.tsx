@@ -12,7 +12,7 @@ import startDust from "../../assets/image/start-dust.png";
 const MainPage = () => {
   const [active, setActive] = useState<number>(0); //values from 0 to 3
   const [lastOne, setlastOne] = useState<number>(0); //values from 0 to 3
-  const [isEua, setIsEua] = useState<boolean>(false);
+  const [isEua, setIsEua] = useState<boolean>(true);
 
   const LIMIT = 50;
 
@@ -45,7 +45,7 @@ const MainPage = () => {
     }
     setInitialTouch(null);
     setDifference(0);
-  };
+  }; 
 
   return (
     <Style.MainPageComponent>
