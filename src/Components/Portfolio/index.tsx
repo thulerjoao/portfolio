@@ -57,7 +57,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
             </h4>
           ) : (
             <h4>
-              Project made from a programming school challenge Rocketseat. The
+              Project made from a Rocketseat programming school challenge. The
               application was made with the aim of demonstrating the
               possibilities of the framework in following a design as well,
               showing the interaction between screens. Therefore, there is
