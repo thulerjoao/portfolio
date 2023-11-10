@@ -32,9 +32,7 @@ const AboutMe = ({ active, isEua }: prop) => {
               cabeça nessa jornada que quero levar pelo resto da vida. Comecei
               então, a estudar arquitetura de software, NodeJS e alguns
               frameworks back-end como NestJS e Express, e também front-end como
-              ReactJS, que até então foi o que mais me identifiquei. Atualmente
-              estou a procura de uma primeira oportunidade para ingressar na
-              área e assim dar continuidade a minha carreira de desenvolvedor.
+              ReactJS, que até então foi o que mais me identifiquei
             </p>
           ) : (
             <p>
@@ -46,8 +44,7 @@ const AboutMe = ({ active, isEua }: prop) => {
               life. So I started to study software architecture, NodeJS and some
               back-end frameworks like NestJS and Express, and also front-end
               like ReactJS, that is so far the technology I identified the
-              most. I'm currently looking for a first opportunity to join the
-              area and thus continue my career as a developer.
+              most.
             </p>
           )}
         </div>
