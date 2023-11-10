@@ -1,7 +1,8 @@
 import * as Style from "./style";
 import "animate.css";
 import swaggerImg from "../../assets/image/swaggerImg.png";
-import video01 from "../../assets/media/video01.mp4";
+import DataRainVideo from "../../assets/media/DataRainVideo.mp4";
+import CoffeAppVideo from "../../assets/media/CoffeAppVideo.mp4";
 
 interface prop {
   active: number;
@@ -27,8 +28,96 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
       <section>
         <div className="mainDiv">
           <h2>FrontEnd</h2>
+
           <div className="title">
-            <h3>• dataRain tool</h3>
+            <h3>• [Reat Native] Coffee Delivery</h3>
+            {!isEua ? (
+              <a
+                href="https://github.com/thulerjoao/CoffeeProject-Native"
+                target="_blank"
+              >
+                Repositório
+              </a>
+            ) : (
+              <a
+                href="https://github.com/thulerjoao/CoffeeProject-Native"
+                target="_blank"
+              >
+                Repository
+              </a>
+            )}
+          </div>
+          {!isEua ? (
+            <h4>
+              Projeto feito a partir de um desafio da escola de programação
+              Rocketseat. A aplicação foi feita com o intuito de demonstrar as
+              possíbilidades do framework em seguir um design também, mostrar as
+              interação entre as telas. Portanto, não há até o momento interação
+              com alguma API.
+            </h4>
+          ) : (
+            <h4>
+              Project made from a programming school challenge Rocketseat. The
+              application was made with the aim of demonstrating the
+              possibilities of the framework in following a design as well,
+              showing the interaction between screens. Therefore, there is
+              currently no interaction with some API.
+            </h4>
+          )}
+          {!isEua ? (
+            <h3>Tecnologias principais:</h3>
+          ) : (
+            <h3>Main technologies:</h3>
+          )}
+
+          <p>React Native</p>
+          {!isEua ? (
+            <>
+              <p>Styled Components - Ferramenta de estilização</p>
+              <p>
+                React Native Snap Carousel - Utilizado para fazer slide dos
+                cards
+              </p>
+              <p>React Native Animatable - Responsável pelas animações</p>
+              <p>React Redux - Ferramenta de gerenciamento de estado global</p>
+            </>
+          ) : (
+            <>
+              <p>Styled Components - Styling tool</p>
+              <p>React Native Snap Carousel - Used to slide cards</p>
+              <p>React Native Animatable - Responsible for animations</p>
+              <p>React Redux - Global State Management Tool</p>
+            </>
+          )}
+
+          {!isEua ? (
+            <h4>Visão geral do projeto:</h4>
+          ) : (
+            <h4>Application overview:</h4>
+          )}
+
+          <div className="video front native">
+            <video controls>
+              <source src={CoffeAppVideo} type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </div>
+
+          {!isEua ? (
+            <h4>Confira o figma que fiz como base para o projeto:</h4>
+          ) : (
+            <h4>Check out the figma I made as a basis for the project:</h4>
+          )}
+
+          <iframe
+            className="figma"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2QegOxAYZLb5UmANQsO0en%2FUntitled%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DyT6y2Vyu5rt9l7FT-1"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div className="mainDiv">
+          <div className="title">
+            <h3>• [Reat.js] dataRain tool</h3>
             {!isEua ? (
               <a
                 href="https://github.com/thulerjoao/FrontEnd-finance-tool-dataRain.git"
@@ -94,8 +183,8 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
             <>
               <p>Styled Components - Styling tool</p>
               <p>
-                Mui material - Lib used to create buttons and toolbar
-                form progress
+                Mui material - Lib used to create buttons and toolbar form
+                progress
               </p>
               <p>pdfmake - Generate pdf files with budget data</p>
             </>
@@ -109,7 +198,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
 
           <div className="video front">
             <video controls>
-              <source src={video01} type="video/mp4" />
+              <source src={DataRainVideo} type="video/mp4" />
               Seu navegador não suporta o elemento de vídeo.
             </video>
           </div>
@@ -129,7 +218,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
         <div className="mainDiv last">
           <h2>BackEnd</h2>
           <div className="title">
-            <h3>• PizzaFresh</h3>
+            <h3>• [Nest.js] PizzaFresh</h3>
             {!isEua ? (
               <a
                 href="https://github.com/thulerjoao/nest_ts-pizza_fresh_api.git"

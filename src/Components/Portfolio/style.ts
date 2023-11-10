@@ -34,11 +34,13 @@ export const PortfolioComponent = styled.div`
         flex-direction: column;
         align-items: start;
         max-width: 65rem;
+        margin-bottom: 20vh;
 
         .title {
           display: flex;
-          margin-top: 3vh;
-          justify-content: flex-start;
+          margin-top: 6vh;
+          width: 100%;
+          justify-content: space-between;
           align-items: center;
           flex-wrap: wrap;
 
@@ -84,7 +86,6 @@ export const PortfolioComponent = styled.div`
           font-weight: 300;
           margin: 3.4vh 0;
           text-align: justify;
-
         }
 
         .figma {
@@ -122,9 +123,14 @@ export const PortfolioComponent = styled.div`
         }
 
         .front {
-            overflow-y: hidden;
-            height: auto;
-          }
+          overflow-y: hidden;
+          height: auto;
+        }
+
+        .native {
+          width: 20rem;
+          margin-left: calc(20vw);
+        }
 
         p {
           width: 100%;
@@ -135,7 +141,6 @@ export const PortfolioComponent = styled.div`
       }
 
       .last {
-        margin-top: 10vh;
         margin-bottom: 25vh;
       }
     }
@@ -177,6 +182,10 @@ export const PortfolioComponent = styled.div`
 
           .video {
             height: 22rem;
+          }
+
+          .native {
+            width: 15rem;
           }
 
           .front {
@@ -231,10 +240,16 @@ export const PortfolioComponent = styled.div`
             height: 19rem;
           }
 
+          .native {
+            width: 12rem;
+          }
+
           .front {
             overflow-y: hidden;
             height: auto;
           }
+
+          
 
           p {
           }
