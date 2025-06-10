@@ -23,6 +23,9 @@ export const MainPageComponent = styled.div`
 
       .mainCards {
         position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
         height: calc(94vh - 0.1rem);
       }

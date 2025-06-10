@@ -2,16 +2,11 @@ import styled, { css } from "styled-components";
 
 export const ProjectsComponent = styled.div`
   ${({ theme }) => css`
-    position: absolute;
-    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    left: -26.9%;
-    height: calc(100vh - 18.5%);
-    height: 100%;
     color: white;
     overflow-y: scroll;
 
@@ -20,20 +15,20 @@ export const ProjectsComponent = styled.div`
     }
 
     section {
-      /* z-index: 99; */
       width: 100%;
-      max-width: 60vw;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-
+      max-width: 78rem;
+      
       .mainDiv {
+        max-width: 65rem;
         display: flex;
         flex-direction: column;
         align-items: start;
-        max-width: 65rem;
-        margin-bottom: 20vh;
+        width: 100%;
+        margin-bottom: 8rem;
 
         .title {
           display: flex;

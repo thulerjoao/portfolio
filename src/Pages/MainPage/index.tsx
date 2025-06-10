@@ -50,7 +50,7 @@ const MainPage = () => {
     <Style.MainPageComponent>
       <section className="mainSection">
         {/* <img src={startDust}></img> */}
-        <InitialComponent />
+        {/* <InitialComponent /> */}
         <NavBar
           active={active}
           setActive={setActive}
