@@ -18,18 +18,17 @@ export const Header = styled.header`
     .idiom{
       z-index: 10;
       position: absolute;
-      right: 1vh;
-      bottom: -4.5vh;
+      right: 4px;
+      bottom: -42px;
       display: flex;
       user-select: default;
 
 
       img{
-        max-width: 4vh;
-        max-height: 3.5vh;
-        margin-left: 1vh;
+        max-width: 36px;
+        margin-left: 8px;
         cursor: pointer;
-        padding-bottom: 0.5vh;
+        padding-bottom: 4px;
         box-sizing: border-box;
         border-bottom: 3px solid #ffffff00;
       }
