@@ -3,8 +3,8 @@ import styled, { css } from "styled-components";
 export const Header = styled.header`
   ${({ theme }) => css`
     padding: 0 10%;
-    max-height: 10vh;
-    min-height: 10vh;
+    height: 10vh;
+    /* height: 10rem; */
     color: white;
     display: flex;
     font-size: 1.1em;
@@ -15,25 +15,24 @@ export const Header = styled.header`
     margin-bottom: 0.1rem;
     position: relative;
 
-    .idiom{
+    .idiom {
       z-index: 10;
       position: absolute;
-      right: 4px;
+      right: 0px;
       bottom: -42px;
       display: flex;
       user-select: default;
 
-
-      img{
-        max-width: 36px;
-        margin-left: 8px;
+      img {
+        width: 36px;
+        margin-left: 9px;
         cursor: pointer;
         padding-bottom: 4px;
         box-sizing: border-box;
         border-bottom: 3px solid #ffffff00;
       }
 
-      .selected{
+      .selected {
         border-bottom: 3px solid ${theme.colors.cleanBc};
       }
     }
@@ -79,6 +78,10 @@ export const Header = styled.header`
       padding-right: 0.2rem;
       font-size: 1em;
 
+      .idiom {
+        right: 4px;
+      }
+
       div {
         /* width: 100%; */
         height: 2.5rem;
@@ -102,6 +105,10 @@ export const Header = styled.header`
       padding-left: 0.2rem;
       padding-right: 0.2rem;
       font-size: 1em;
+
+      .idiom {
+        right: 4px;
+      }
 
       div {
         /* width: 100%; */

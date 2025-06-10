@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
+import styled, { css } from "styled-components";
 
 export const AbouMeComponent = styled.header`
   ${({ theme }) => css`
@@ -46,7 +46,7 @@ export const AbouMeComponent = styled.header`
           justify-content: center;
 
           h2 {
-            font-size: 2.6em;
+            font-size: 32px;
             font-weight: 400;
           }
 
@@ -56,8 +56,8 @@ export const AbouMeComponent = styled.header`
         }
       }
       .mainText {
-        width: 55vw;
-        max-width: 70rem;
+        width: 100%;
+        max-width: 48rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -74,20 +74,20 @@ export const AbouMeComponent = styled.header`
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-top: 7vh;
+        margin-top: 4rem;
 
         a {
-          margin: 0 4vh;
-          padding: 0.6vh 0;
+          margin: 0 5%;
+          padding: 4px 0;
           border: 2px solid white;
-          width: 25vh;
+          width: 50%;
           max-width: 13rem;
           display: flex;
           align-items: center;
           cursor: pointer;
           border-radius: 4px;
           background-color: ${theme.colors.cleanBc};
-          box-shadow: 3px 3px 5px ${theme.colors.cleanBc};
+
           color: white;
           text-decoration: none;
 
@@ -98,7 +98,7 @@ export const AbouMeComponent = styled.header`
           }
         }
         & :hover {
-          transform: scale(1.01);
+          box-shadow: 0px 0px 5px 3px ${theme.colors.cleanBc};
         }
       }
     }
@@ -218,7 +218,6 @@ export const AbouMeComponent = styled.header`
         }
 
         footer {
-
           a {
             margin: 2vh 4%;
             padding: 0.2rem 0;
@@ -235,28 +234,32 @@ export const AbouMeComponent = styled.header`
       width: 100%;
 
       section {
-        width: 95vw;
+        width: 100%;
+        padding-top: 2rem;
 
         .firstBlock {
           margin-top: 5vh;
-
+          width: 100%;
+          
+          
           img {
             margin: 0;
             margin-bottom: 5vh;
             width: 12rem;
             height: 12rem;
           }
-
+          
           div {
-            max-width: 75%;
+            min-width: 100%;
             text-align: center;
 
             h2 {
-              font-size: 2em;
+              font-size: 24px;
+              width: 100%;
             }
 
             p {
-              font-size: 1em;
+              font-size: 16px;
             }
           }
         }
