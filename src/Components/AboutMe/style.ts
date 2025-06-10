@@ -51,7 +51,7 @@ export const AbouMeComponent = styled.header`
           }
 
           p {
-            font-size: 2vh;
+            font-size: 16px;
           }
         }
       }
@@ -94,7 +94,7 @@ export const AbouMeComponent = styled.header`
           div {
             width: 100%;
             margin-left: 1rem;
-            font-size: 1.8vh;
+            font-size: 16px;
           }
         }
         & :hover {

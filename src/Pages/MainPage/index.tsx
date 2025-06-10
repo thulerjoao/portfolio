@@ -1,18 +1,17 @@
 import { useState } from "react";
-import * as Style from "./style";
-import NavBar from "../../Components/NavBar";
-import InitialComponent from "../../Components/InitialGlobe";
 import AboutMe from "../../Components/AboutMe";
-import Portfolio from "../../Components/Portfolio";
 import Contact from "../../Components/Contact";
 import Curriculo from "../../Components/Curriculo";
-import startDust from "../../assets/image/start-dust.png";
-
+import InitialComponent from "../../Components/InitialGlobe";
+import NavBar from "../../Components/NavBar";
+import Projects from "../../Components/Projects";
+import { LanguageType } from "../../types/languageType";
+import * as Style from "./style";
 
 const MainPage = () => {
   const [active, setActive] = useState<number>(0); //values from 0 to 3
   const [lastOne, setlastOne] = useState<number>(0); //values from 0 to 3
-  const [isEua, setIsEua] = useState<boolean>(true);
+  const [language, setLanguage] = useState<LanguageType>("eua");
 
   const LIMIT = 50;
 
@@ -45,28 +44,35 @@ const MainPage = () => {
     }
     setInitialTouch(null);
     setDifference(0);
-  }; 
+  };
 
   return (
     <Style.MainPageComponent>
       <section className="mainSection">
         {/* <img src={startDust}></img> */}
         <InitialComponent />
-        <NavBar active={active} setActive={setActive} setlastOne={setlastOne} isEua={isEua} setIsEua={setIsEua} />
+        <NavBar
+          active={active}
+          setActive={setActive}
+          setlastOne={setlastOne}
+          language={language}
+          setLanguage={setLanguage}
+        />
         <div
           className="mainCards"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-          {<AboutMe active={active} isEua={isEua}/>}
+          {/* <div className="test"/> */}
+          {<AboutMe active={active} language={language} />}
           {(active === 1 || lastOne === 1) && (
-            <Portfolio active={active} lastOne={lastOne} isEua={isEua}/>
+            <Projects active={active} lastOne={lastOne} language={language} />
           )}
           {(active === 2 || lastOne === 2) && (
-            <Curriculo active={active} lastOne={lastOne} isEua={isEua}/>
+            <Curriculo active={active} lastOne={lastOne} language={language} />
           )}
-          {<Contact active={active} isEua={isEua}/>}
+          {<Contact active={active} language={language} />}
         </div>
       </section>
     </Style.MainPageComponent>

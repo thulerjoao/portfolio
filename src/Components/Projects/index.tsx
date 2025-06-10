@@ -1,20 +1,21 @@
-import * as Style from "./style";
 import "animate.css";
 import swaggerImg from "../../assets/image/swaggerImg.png";
-import DataRainVideo from "../../assets/media/DataRainVideo.mp4";
 import CoffeAppVideo from "../../assets/media/CoffeAppVideo.mp4";
+import DataRainVideo from "../../assets/media/DataRainVideo.mp4";
+import { LanguageType } from "../../types/languageType";
+import * as Style from "./style";
 
 interface prop {
   active: number;
   lastOne: number;
-  isEua: boolean;
+  language: LanguageType;
 }
 
 // "animate__bounceInLeft" : "animate__fadeOutLeftBig"
 
-const Portfolio = ({ active, lastOne, isEua }: prop) => {
+const Projects = ({ active, lastOne, language }: prop) => {
   return (
-    <Style.PortfolioComponent
+    <Style.ProjectsComponent
       className={`animate__animated ${
         active === 1
           ? active < lastOne
@@ -31,7 +32,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
 
           <div className="title">
             <h3>• [Reat Native] Coffee Delivery</h3>
-            {!isEua ? (
+            {language === "bra" ? (
               <a
                 href="https://github.com/thulerjoao/CoffeeProject-Native"
                 target="_blank"
@@ -47,7 +48,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
               </a>
             )}
           </div>
-          {!isEua ? (
+          {language === "bra" ? (
             <h4>
               Projeto feito a partir de um desafio da escola de programação
               Rocketseat. A aplicação foi feita com o intuito de demonstrar as
@@ -64,14 +65,14 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
               currently no interaction with some API.
             </h4>
           )}
-          {!isEua ? (
+          {language === "bra" ? (
             <h3>Tecnologias principais:</h3>
           ) : (
             <h3>Main technologies:</h3>
           )}
 
           <p>React Native</p>
-          {!isEua ? (
+          {language === "bra" ? (
             <>
               <p>Styled Components - Ferramenta de estilização</p>
               <p>
@@ -90,7 +91,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
             </>
           )}
 
-          {!isEua ? (
+          {language === "bra" ? (
             <h4>Visão geral do projeto:</h4>
           ) : (
             <h4>Application overview:</h4>
@@ -103,7 +104,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
             </video>
           </div>
 
-          {!isEua ? (
+          {language === "bra" ? (
             <h4>Confira o figma que fiz como base para o projeto:</h4>
           ) : (
             <h4>Check out the figma I made as a basis for the project:</h4>
@@ -118,7 +119,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
         <div className="mainDiv">
           <div className="title">
             <h3>• [Reat.js] dataRain tool</h3>
-            {!isEua ? (
+            {language === "bra" ? (
               <a
                 href="https://github.com/thulerjoao/FrontEnd-finance-tool-dataRain.git"
                 target="_blank"
@@ -135,7 +136,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
             )}
           </div>
 
-          {!isEua ? (
+          {language === "bra" ? (
             <h4>
               Projeto feito para a empresa dataRain e vencedor de um bootcamp
               onde fui responsável pelo front-end. A principal funcionalidade da
@@ -163,14 +164,14 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
             </h4>
           )}
 
-          {!isEua ? (
+          {language === "bra" ? (
             <h3>Tecnologias principais:</h3>
           ) : (
             <h3>Main technologies:</h3>
           )}
 
           <p>React.Ts</p>
-          {!isEua ? (
+          {language === "bra" ? (
             <>
               <p>Styled Components - Ferramenta de estilização</p>
               <p>
@@ -190,7 +191,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
             </>
           )}
 
-          {!isEua ? (
+          {language === "bra" ? (
             <h4>Visão geral do projeto:</h4>
           ) : (
             <h4>Application overview:</h4>
@@ -203,7 +204,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
             </video>
           </div>
 
-          {!isEua ? (
+          {language === "bra" ? (
             <h4>Confira o figma que fiz como base para o projeto:</h4>
           ) : (
             <h4>Check out the figma I made as a basis for the project:</h4>
@@ -219,7 +220,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
           <h2>BackEnd</h2>
           <div className="title">
             <h3>• [Nest.js] PizzaFresh</h3>
-            {!isEua ? (
+            {language === "bra" ? (
               <a
                 href="https://github.com/thulerjoao/nest_ts-pizza_fresh_api.git"
                 target="_blank"
@@ -236,7 +237,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
             )}
           </div>
 
-          {!isEua ? (
+          {language === "bra" ? (
             <h4>
               API Nest.ts criada para servir de sistema a uma pizzaria. A
               aplicação abrange rotas desde a criação de um usuário (atendente)
@@ -256,7 +257,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
             </h4>
           )}
 
-          {!isEua ? (
+          {language === "bra" ? (
             <h3>Tecnologias principais:</h3>
           ) : (
             <h3>Main technologies:</h3>
@@ -264,7 +265,7 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
           <p>Nest.Ts</p>
           <p>Prisma - ORM</p>
           <p>PostgreSQL - DB</p>
-          {!isEua ? (
+          {language === "bra" ? (
             <>
               <p>Bcrypt - Criptografar senhas de usuários</p>
               <p>JWT - Gerar tokens de autenticação para login</p>
@@ -291,8 +292,8 @@ const Portfolio = ({ active, lastOne, isEua }: prop) => {
           allowFullScreen
         ></iframe> */}
       </section>
-    </Style.PortfolioComponent>
+    </Style.ProjectsComponent>
   );
 };
 
-export default Portfolio;
+export default Projects;

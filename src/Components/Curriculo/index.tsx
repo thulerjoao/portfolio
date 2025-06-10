@@ -1,14 +1,14 @@
-import * as Style from "./style";
-import curriculo from "../../assets/image/curriculo.jpg";
 import "animate.css";
+import { LanguageType } from "../../types/languageType";
+import * as Style from "./style";
 
 interface prop {
   active: number;
   lastOne: number;
-  isEua: boolean;
+  language: LanguageType;
 }
 
-const Curriculo = ({ active, lastOne, isEua }: prop) => {
+const Curriculo = ({ active, lastOne, language }: prop) => {
   const pdfURL = "../../assets/image/curriculo.pdf";
 
   return (
@@ -24,7 +24,7 @@ const Curriculo = ({ active, lastOne, isEua }: prop) => {
       }  animate__delay-0.5s`}
     >
       <section>
-        {!isEua ? (
+        {language === "bra" ? (
           <div>
             <h2>Formação</h2>
             <h4>
@@ -53,13 +53,11 @@ const Curriculo = ({ active, lastOne, isEua }: prop) => {
               2022-2023 | Blue EdTech<br></br> FullStack Web Developer
             </h4>
             <p>
-              • Online, practical and intensive course in FullStack
-              Web Development
+              • Online, practical and intensive course in FullStack Web
+              Development
             </p>
             <p>• Creating FrontEnd Applications with React Ts</p>
-            <p>
-              • Building Rest API's using Express and also Nest Ts
-            </p>
+            <p>• Building Rest API's using Express and also Nest Ts</p>
             <p>
               • Consumption of relational database (PostgreSQL) and not
               relational (MongoDB)

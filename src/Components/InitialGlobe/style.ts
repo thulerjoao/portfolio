@@ -44,7 +44,7 @@ export const BlowUp = styled.div`
 
         p {
           color: white;
-          font-size: 1.5vh;
+          font-size: 16px;
         }
       }
 

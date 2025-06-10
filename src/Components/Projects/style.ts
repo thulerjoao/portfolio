@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
-import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
 
-export const PortfolioComponent = styled.div`
+export const ProjectsComponent = styled.div`
   ${({ theme }) => css`
     position: absolute;
     /* border: 1px solid white; */
@@ -248,8 +247,6 @@ export const PortfolioComponent = styled.div`
             overflow-y: hidden;
             height: auto;
           }
-
-          
 
           p {
           }

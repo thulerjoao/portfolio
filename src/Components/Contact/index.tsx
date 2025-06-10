@@ -1,13 +1,13 @@
-import * as Style from "./style";
-import jptl from "../../assets/image/jptl.jpg";
 import "animate.css";
+import * as Style from "./style";
+import { LanguageType } from "../../types/languageType";
 
 interface prop {
   active: number;
-  isEua: boolean;
+  language: LanguageType;
 }
 
-const Contact = ({ active, isEua }: prop) => {
+const Contact = ({ active, language }: prop) => {
   return (
     <Style.ContactComponent
       className={`animate__animated ${
@@ -15,7 +15,11 @@ const Contact = ({ active, isEua }: prop) => {
       }  animate__delay-0.5s`}
     >
       <section>
-        <h3>{!isEua? "Informações gerais de contato:":" General contact information:"}</h3>
+        <h3>
+          {language === "bra"
+            ? "Informações gerais de contato:"
+            : " General contact information:"}
+        </h3>
         <div className="divOut">
           <p>Email</p>
           <div className="divIn">
@@ -24,7 +28,7 @@ const Contact = ({ active, isEua }: prop) => {
           </div>
         </div>
         <div className="divOut">
-          <p>{!isEua? "Telefone":"Phone"}</p>
+          <p>{language === "bra" ? "Telefone" : "Phone"}</p>
           <div className="divIn">
             <p>+55 (22) 99905-9574</p>
             <Style.LgTel />

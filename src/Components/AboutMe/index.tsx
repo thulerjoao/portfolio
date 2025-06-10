@@ -1,13 +1,14 @@
-import * as Style from "./style";
-import jptl from "../../assets/image/jptl.jpg";
 import "animate.css";
+import jptl from "../../assets/image/jptl.jpg";
+import { LanguageType } from "../../types/languageType";
+import * as Style from "./style";
 
 interface prop {
   active: number;
-  isEua: boolean;
+  language: LanguageType;
 }
 
-const AboutMe = ({ active, isEua }: prop) => {
+const AboutMe = ({ active, language }: prop) => {
   return (
     <Style.AbouMeComponent
       className={`animate__animated ${
@@ -19,11 +20,11 @@ const AboutMe = ({ active, isEua }: prop) => {
           <img alt="profile image" src={jptl}></img>
           <div>
             <h2>João Pedro Thuler Lima</h2>
-            <p>{isEua ? "Full-Stack Developer": "Desenvolvedor Full-stack"}</p>
+            <p>{language === "bra"? "Desenvolvedor Full-stack" : "Full-Stack Developer"}</p>
           </div>
         </div>
         <div className="mainText">
-          {!isEua ? (
+          {language === "bra" ? (
             <p>
               Engenheiro mecânico completamente apaixonado por tecnologia. Em
               2022 fui apresentado mais a fundo ao mundo da programação e fiquei
@@ -43,8 +44,7 @@ const AboutMe = ({ active, isEua }: prop) => {
               headlong into this journey that I want to take for the rest of my
               life. So I started to study software architecture, NodeJS and some
               back-end frameworks like NestJS and Express, and also front-end
-              like ReactJS, that is so far the technology I identified the
-              most.
+              like ReactJS, that is so far the technology I identified the most.
             </p>
           )}
         </div>
