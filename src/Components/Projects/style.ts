@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 
 export const ProjectsComponent = styled.div`
   ${({ theme }) => css`
+    padding: 0 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -14,15 +15,15 @@ export const ProjectsComponent = styled.div`
       width: 0px;
     }
 
-    section {
+    .projectsList {
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
       max-width: 78rem;
-      
-      .mainDiv {
+
+      .project {
         max-width: 65rem;
         display: flex;
         flex-direction: column;
@@ -42,18 +43,19 @@ export const ProjectsComponent = styled.div`
             margin: 0;
             margin-right: 1vw;
             min-width: 11.5rem;
-            font-size: 1.8em;
+            font-size: 28px;
+            font-weight: 500;
             margin-top: 1vh;
+            
           }
 
           a {
-            padding: 0;
+            padding: 6px 0;
             background-color: ${theme.colors.cleanBc};
-            border: 1px solid white;
+            border: 1px solid ${theme.colors.tranparent30};
             border-radius: 15px;
-            font-size: 0.9em;
+            font-size: 12px;
             width: 7rem;
-            height: 1.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -63,74 +65,59 @@ export const ProjectsComponent = styled.div`
             margin-top: 1vh;
 
             :hover {
-              transform: scale(1.02);
+              box-shadow: 0px 0px 5px 1px ${theme.colors.white};
             }
           }
         }
 
-        h2 {
-          margin-top: 6.5vh;
-          font-size: 2.6em;
-          font-weight: 400;
-          width: 100%;
-          text-align: center;
-        }
-
         h4 {
           font-weight: 300;
-          margin: 3.4vh 0;
+          margin: 32px 0;
           text-align: justify;
         }
 
-        .figma {
-          height: 50vh;
-          width: 100%;
+        .tecnologies {
+          padding: 16px;
+          padding-bottom: 0;
+          min-width: 100%;
+
+          p {
+            margin: 4px 0;
+          }
         }
 
-        h3 {
-          margin-bottom: 1.7vh;
-          font-weight: 400;
-        }
-
-        .video {
-          margin-top: 1.7vh;
-          border: 1px solid white;
-          height: 50vh;
-          width: 100%;
+        .mediaContainer {
           display: flex;
           justify-content: center;
-          align-items: start;
-          overflow-y: auto;
+          min-width: 100%;
+          height: 35rem;
+          margin-bottom: 40rem;
 
-          video {
-            width: 100%;
-            height: 100%;
+          .leftContainer {
+            min-width: 50%;
+
+            .video {
+              max-width: 100%;
+              overflow: hidden;
+              display: flex;
+              justify-content: center;
+
+              video {
+                max-width: 100%;
+                height: 35rem;
+              }
+            }
           }
 
-          ::-webkit-scrollbar {
-            width: 0px;
+          .rightContainer {
+            min-width: 50%;
+
+            .figma {
+              border: 0px;
+              width: 100%;
+              height: 100%;
+            }
           }
-
-          img {
-            width: 100%;
-          }
-        }
-
-        .front {
-          overflow-y: hidden;
-          height: auto;
-        }
-
-        .native {
-          width: 20rem;
-          margin-left: calc(20vw);
-        }
-
-        p {
-          width: 100%;
-          display: flex;
-          padding: 0.2rem 1rem;
-          font-weight: 300;
         }
       }
 
@@ -138,60 +125,49 @@ export const ProjectsComponent = styled.div`
         margin-bottom: 25vh;
       }
     }
-
-    @media screen and (max-width: 992px) {
-      padding: 0;
-      height: 96vh;
-      min-width: 100vw;
-      left: 0;
-
+    
+    @media screen and (max-width: 1025px) {
+      padding: 0 16px;
+      
       ::-webkit-scrollbar {
         width: 0px;
       }
+      
+      .projectsList {
+        .project {
+          .title {
+            h3 {
+            }
 
-      section {
-        /* z-index: 99; */
-        width: 90%;
-        max-width: 90%;
-
-        .mainDiv {
-          h2 {
-            font-size: 2em;
+            a {
+            }
           }
 
           h4 {
-            font-weight: 300;
-            margin: 3.4vh 0;
           }
 
-          .figma {
-            height: 22rem;
-            width: 100%;
+          .tecnologies {
+            p {
+            }
           }
 
-          h3 {
-            margin-bottom: 1.7vh;
-            font-weight: 400;
-          }
+          .mediaContainer {
+            .leftContainer {
+              .video {
+                video {
+                }
+              }
+            }
 
-          .video {
-            height: 22rem;
-          }
-
-          .native {
-            width: 15rem;
-          }
-
-          .front {
-            overflow-y: hidden;
-            height: auto;
-          }
-
-          p {
+            .rightContainer {
+              .figma {
+              }
+            }
           }
         }
 
         .last {
+          margin-bottom: 25vh;
         }
       }
     }
@@ -206,102 +182,154 @@ export const ProjectsComponent = styled.div`
         width: 0px;
       }
 
-      section {
-        /* z-index: 99; */
-        width: 95%;
+      .projectsList {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 78rem;
 
-        .mainDiv {
-          h2 {
-            font-size: 2em;
+        .projectsList {
+          .project {
+            .title {
+              h3 {
+              }
+
+              a {
+              }
+            }
+            
+            h4 {
+            }
+            
+            .tecnologies {
+              padding: 12px 0;
+              p {
+              }
+            }
+            
+            .mediaContainer {
+              flex-direction: column;
+              height: auto;
+
+              .leftContainer {
+                width: 100%;
+                
+                .video {
+                  width: 100%;
+                  height: 50vh;
+
+                  video {
+                    max-width: 100%;
+                    max-height: 100%;
+                  }
+                }
+              }
+
+              .rightContainer {
+                width: 100%;
+                height: 40vh;
+                .figma {
+                }
+              }
+            }
           }
-
-          h4 {
-            font-weight: 300;
-            margin: 3.4vh 0;
-          }
-
-          .figma {
-            height: 19rem;
-            width: 100%;
-          }
-
-          h3 {
-            margin-bottom: 1.7vh;
-            font-weight: 400;
-          }
-
-          .video {
-            height: 19rem;
-          }
-
-          .native {
-            width: 12rem;
-          }
-
-          .front {
-            overflow-y: hidden;
-            height: auto;
-          }
-
-          p {
-          }
-        }
-
-        .last {
         }
       }
-    }
 
-    @media screen and (max-width: 600px) {
-      padding: 0;
-      height: 96vh;
-      min-width: 100vw;
-      left: 0;
+      @media screen and (max-width: 600px) {
+        padding: 0;
+        height: 96vh;
+        min-width: 100vw;
+        left: 0;
 
-      ::-webkit-scrollbar {
-        width: 0px;
-      }
-
-      section {
-        /* z-index: 99; */
-        width: 95%;
-
-        .mainDiv {
-          h2 {
-            font-size: 2em;
-          }
-
-          h4 {
-            font-weight: 300;
-            margin: 3.4vh 0;
-          }
-
-          .figma {
-            height: 15rem;
-            width: 100%;
-          }
-
-          h3 {
-            margin-bottom: 1.7vh;
-            font-weight: 400;
-          }
-
-          .video {
-            height: 14rem;
-          }
-
-          .front {
-            overflow-y: hidden;
-            height: auto;
-          }
-
-          p {
-          }
+        ::-webkit-scrollbar {
+          width: 0px;
         }
 
-        .last {
+        .projectsList {
+          .project {
+            .title {
+              h3 {
+              }
+
+              a {
+              }
+            }
+            
+            h4 {
+            }
+            
+            .tecnologies {
+              padding: 12px 0;
+              p {
+              }
+            }
+            
+            .mediaContainer {
+              flex-direction: column;
+              height: auto;
+
+              .leftContainer {
+                width: 100%;
+                
+                .video {
+                  width: 100%;
+                  height: 50vh;
+
+                  video {
+                    max-width: 100%;
+                    max-height: 100%;
+                  }
+                }
+              }
+
+              .rightContainer {
+                width: 100%;
+                height: 40vh;
+                .figma {
+                }
+              }
+            }
+          }
         }
       }
     }
   `}
 `;
+
+
+// .mediaContainer {
+//           display: flex;
+//           justify-content: center;
+//           min-width: 100%;
+//           height: 35rem;
+//           margin-bottom: 40rem;
+
+//           .leftContainer {
+//             min-width: 50%;
+
+//             .video {
+//               max-width: 100%;
+//               overflow: hidden;
+//               display: flex;
+//               justify-content: center;
+
+//               video {
+//                 max-width: 100%;
+//                 height: 35rem;
+//               }
+//             }
+//           }
+
+//           .rightContainer {
+//             min-width: 50%;
+
+//             .figma {
+//               border: 0px;
+//               width: 100%;
+//               height: 100%;
+//             }
+//           }
+//         }

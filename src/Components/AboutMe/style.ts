@@ -113,8 +113,6 @@ export const AbouMeComponent = styled.header`
           margin-top: 6vh;
 
           img {
-            /* width: 14rem;
-            height: 14rem; */
             margin-bottom: 4vh;
           }
         }
