@@ -37,9 +37,9 @@ const InitialComponent = ({ setStart }: Props) => {
     }, 500);
   };
 
-  useEffect(()=>{
-    setStart(true)
-  },[isFinished])
+  useEffect(() => {
+    isFinished && setStart(true);
+  }, [isFinished]);
 
   return (
     <Style.BlowUp>
