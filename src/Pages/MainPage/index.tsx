@@ -6,6 +6,7 @@ import NavBar from "../../Components/NavBar";
 import Projects from "../../Components/Projects";
 import { LanguageType } from "../../types/languageType";
 import * as Style from "./style";
+import InitialComponent from "../../Components/InitialGlobe";
 
 const MainPage = () => {
   const [active, setActive] = useState<number>(0); //values from 0 to 3
@@ -49,7 +50,7 @@ const MainPage = () => {
     <Style.MainPageComponent>
       <section className="mainSection">
         {/* <img src={startDust}></img> */}
-        {/* <InitialComponent /> */}
+        <InitialComponent />
         <NavBar
           active={active}
           setActive={setActive}
