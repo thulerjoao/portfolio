@@ -68,7 +68,6 @@ export const DatarainContainer = styled.div`
     justify-content: center;
     min-width: 100%;
     height: auto;
-    /* gap: 16px; */
 
     .leftContainer {
       min-width: 50%;
@@ -97,30 +96,40 @@ export const DatarainContainer = styled.div`
         height: 25rem;
       }
     }
+  }
+  @media (min-width: 540px) and (max-width: 1025px) {
+  }
 
-    @media (min-width: 540px) and (max-width: 1025px) {
-      padding: 0;
-      height: 96vh;
-      min-width: 100vw;
-      left: 0;
-
-      ::-webkit-scrollbar {
-        width: 0px;
-      }
+  @media (max-width: 539px) {
+    .title {
+      flex-direction: column;
+      align-items: flex-start;
     }
 
-    @media (max-width: 539px) {
-      padding: 0;
-      height: 96vh;
-      min-width: 100vw;
-      left: 0;
+    .tecnologies {
+      padding: 16px 0;
+    }
 
-      ::-webkit-scrollbar {
-        width: 0px;
+    .mediaContainer {
+      flex-direction: column;
+
+      .leftContainer {
+        min-width: 100%;
+        padding: 0;
+
+        .video {
+          width: 100%;
+        }
       }
 
-      .projectsList {
-        
+      .rightContainer {
+        min-width: 100%;
+        padding: 0;
+
+        .figma {
+          min-height: 50svh;
+          max-height: 50svh;
+        }
       }
     }
   }

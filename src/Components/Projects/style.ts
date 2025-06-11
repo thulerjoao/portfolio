@@ -10,7 +10,6 @@ export const ProjectsComponent = styled.div`
     width: 100vw;
     color: white;
     overflow-y: scroll;
-    padding-bottom: 4rem;
 
     ::-webkit-scrollbar {
       width: 0px;
@@ -23,6 +22,7 @@ export const ProjectsComponent = styled.div`
       justify-content: flex-start;
       align-items: center;
       max-width: 78rem;
+      padding-bottom: 4rem;
     }
     
     @media screen and (max-width: 1025px) {

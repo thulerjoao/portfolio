@@ -69,7 +69,6 @@ export const CoffeeAppContainer = styled.div`
     justify-content: center;
     min-width: 100%;
     height: auto;
-    /* gap: 16px; */
 
     .leftContainer {
       min-width: 50%;
@@ -97,6 +96,52 @@ export const CoffeeAppContainer = styled.div`
         border: 0px;
         width: 100%;
         height: 25rem;
+      }
+    }
+  }
+  @media (min-width: 540px) and (max-width: 1025px) {
+  }
+
+  @media (max-width: 539px) {
+    .title {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .tecnologies {
+      padding: 16px 0;
+    }
+
+    .mediaContainer {
+      flex-direction: column;
+      align-items: center;
+
+      .leftContainer {
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        .video {
+          width: 100%;
+
+          video {
+            min-height: 60svh;
+            max-height: 60svh;
+          }
+        }
+      }
+
+      .rightContainer {
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        .figma {
+          min-height: 50svh;
+          max-height: 50svh;
+        }
       }
     }
   }

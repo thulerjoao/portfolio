@@ -12,7 +12,7 @@ const MainPage = () => {
   const [lastOne, setlastOne] = useState<number>(0); //values from 0 to 3
   const [language, setLanguage] = useState<LanguageType>("eua");
 
-  const LIMIT = 50;
+  const LIMIT = 100;
 
   const [initialTouch, setInitialTouch] = useState<number | null>(null);
   const [difference, setDifference] = useState<number>(0);
