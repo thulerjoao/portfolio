@@ -22,7 +22,7 @@ export const MainPageComponent = styled.div`
         align-items: center;
         flex-direction: column;
         width: 100%;
-        height: 93vh;
+        height: calc(93vh - 0.1rem);
       }
     }
 
