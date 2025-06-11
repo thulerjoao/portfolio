@@ -3,8 +3,7 @@ import styled, { css } from "styled-components";
 export const Header = styled.header`
   ${({ theme }) => css`
     padding: 0 10%;
-    height: 10vh;
-    /* height: 10rem; */
+    height: 7vh;
     color: white;
     display: flex;
     font-size: 1.1em;
@@ -71,34 +70,6 @@ export const Header = styled.header`
     }
 
     @media screen and (max-width: 768px) {
-      max-height: 5vh;
-      min-height: 5vh;
-      max-height: 10vh;
-      padding-left: 0.2rem;
-      padding-right: 0.2rem;
-      font-size: 1em;
-
-      .idiom {
-        right: 4px;
-      }
-
-      div {
-        /* width: 100%; */
-        height: 2.5rem;
-        width: 24vw;
-
-        a {
-          /* display: none; */
-          width: 100%;
-        }
-
-        .active {
-          display: flex;
-        }
-      }
-    }
-
-    @media screen and (max-width: 600px) {
       max-height: 5vh;
       min-height: 5vh;
       max-height: 10vh;

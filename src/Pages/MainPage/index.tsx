@@ -2,7 +2,6 @@ import { useState } from "react";
 import AboutMe from "../../Components/AboutMe";
 import Contact from "../../Components/Contact";
 import Curriculo from "../../Components/Curriculo";
-import InitialComponent from "../../Components/InitialGlobe";
 import NavBar from "../../Components/NavBar";
 import Projects from "../../Components/Projects";
 import { LanguageType } from "../../types/languageType";

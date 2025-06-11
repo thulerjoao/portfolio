@@ -1,8 +1,4 @@
-import styled, {
-  StyledComponentProps,
-  ThemedStyledProps,
-  css,
-} from "styled-components";
+import styled, { css } from "styled-components";
 
 export const MainPageComponent = styled.div`
   ${({ theme }) => css`
@@ -14,12 +10,11 @@ export const MainPageComponent = styled.div`
     display: flex;
     justify-content: center;
     overflow-y: hidden;
-    
+
     .mainSection {
       height: 100vh;
       width: 65%;
       max-width: 78rem;
-
 
       .mainCards {
         position: relative;
@@ -27,11 +22,11 @@ export const MainPageComponent = styled.div`
         align-items: center;
         flex-direction: column;
         width: 100%;
-        height: calc(94vh - 0.1rem);
+        height: 93vh;
       }
     }
 
-    @media screen and (max-width: 992px) {
+    @media (min-width: 540px) and (max-width: 1025px) {
       .mainSection {
         width: 100%;
 
@@ -45,21 +40,7 @@ export const MainPageComponent = styled.div`
       }
     }
 
-    @media screen and (max-width: 768px) {
-      .mainSection {
-        width: 100%;
-
-        .mainCards {
-          width: 100%;
-
-          div {
-            width: 90%;
-          }
-        }
-      }
-    }
-
-    @media screen and (max-width: 600px) {
+    (max-width: 539px) {
       .mainSection {
         width: 100%;
 
