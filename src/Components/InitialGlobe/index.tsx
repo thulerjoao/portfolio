@@ -1,8 +1,12 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ballUp from "../../assets/image/ballUp.png";
 import * as Style from "./style";
 
-const InitialComponent = () => {
+interface Props {
+  setStart: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const InitialComponent = ({ setStart }: Props) => {
   const [isFinished, setIsFinished] = useState<boolean>(false);
   const [isBlowing, setIsBlowing] = useState<boolean>(false);
   const [wasClicked, setWasClicked] = useState<boolean>(false);
@@ -32,6 +36,10 @@ const InitialComponent = () => {
       }, 3000);
     }, 500);
   };
+
+  useEffect(()=>{
+    setStart(true)
+  },[isFinished])
 
   return (
     <Style.BlowUp>
