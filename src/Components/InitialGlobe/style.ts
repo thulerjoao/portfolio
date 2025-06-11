@@ -7,7 +7,7 @@ export const BlowUp = styled.div`
       position: absolute;
       top: 0rem;
       left: 0;
-      height: 100vh;
+      height: 100svh;
       min-width: 100vw;
       background-color: ${theme.colors.backgroundColor};
       z-index: 99;
@@ -33,7 +33,7 @@ export const BlowUp = styled.div`
 
       .textArea {
         position: fixed;
-        height: 100vh;
+        height: 100svh;
         min-width: 100vw;
         top: 10rem;
         left: -8rem;
@@ -112,8 +112,8 @@ export const BlowUp = styled.div`
       }
 
       @media screen and (max-width: 767px) {
-        top: -20vh;
-        height: calc(100vh + 20vh);
+        top: -20svh;
+        height: calc(100svh + 20svh);
 
         .textArea {
           top: 5.5rem;
