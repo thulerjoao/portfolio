@@ -10,12 +10,12 @@ export const MainPageComponent = styled.div`
     display: flex;
     justify-content: center;
     overflow-y: hidden;
-
+    
     .mainSection {
       height: 100vh;
       width: 65%;
       max-width: 78rem;
-
+      
       .mainCards {
         position: relative;
         display: flex;
@@ -40,7 +40,7 @@ export const MainPageComponent = styled.div`
       }
     }
 
-    (max-width: 539px) {
+    @media (max-width: 539px) {
       .mainSection {
         width: 100%;
 
