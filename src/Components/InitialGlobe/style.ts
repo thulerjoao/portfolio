@@ -49,7 +49,7 @@ export const BlowUp = styled.div`
       }
 
       .hiden {
-        animation: fadeOut 1s 1;
+        animation: fadeOut 0.5s 1;
         animation-fill-mode: forwards;
       }
 
