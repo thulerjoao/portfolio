@@ -64,10 +64,6 @@ export const ProjectsComponent = styled.div`
             }
           }
         }
-
-        .last {
-          margin-bottom: 25vh;
-        }
       }
     }
 

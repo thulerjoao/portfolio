@@ -1,12 +1,13 @@
-import MainPage from './Pages/MainPage'
-
+import StarsBackground from "./Components/StarBackground";
+import MainPage from "./Pages/MainPage";
 
 const App = () => {
   return (
     <div>
-      <MainPage/>
+      <StarsBackground />
+      <MainPage />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

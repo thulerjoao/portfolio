@@ -97,5 +97,31 @@ export const DatarainContainer = styled.div`
         height: 25rem;
       }
     }
+
+    @media (min-width: 540px) and (max-width: 1025px) {
+      padding: 0;
+      height: 96vh;
+      min-width: 100vw;
+      left: 0;
+
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+    }
+
+    @media (max-width: 539px) {
+      padding: 0;
+      height: 96vh;
+      min-width: 100vw;
+      left: 0;
+
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+
+      .projectsList {
+        
+      }
+    }
   }
 `;

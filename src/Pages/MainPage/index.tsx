@@ -7,6 +7,7 @@ import Projects from "../../Components/Projects";
 import { LanguageType } from "../../types/languageType";
 import * as Style from "./style";
 import InitialComponent from "../../Components/InitialGlobe";
+import StarsBackground from "../../Components/StarBackground";
 
 const MainPage = () => {
   const [active, setActive] = useState<number>(0); //values from 0 to 3

@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const MainPageComponent = styled.div`
   ${({ theme }) => css`
-    background-color: ${theme.colors.backgroundColor};
+    /* background-color: ${theme.colors.backgroundColor}; */
     width: 100%;
     min-height: 100svh;
     max-height: 100svh;
