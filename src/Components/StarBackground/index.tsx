@@ -1,5 +1,6 @@
-import React, { useRef, useEffect } from 'react';
-import styled from 'styled-components';
+import { useEffect, useRef } from "react";
+import styled from "styled-components";
+import theme from "../../styles/theme";
 
 const Canvas = styled.canvas`
   position: fixed;
@@ -12,12 +13,13 @@ const Canvas = styled.canvas`
 
 const StarsBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const animationFrameId = useRef<number>(0);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     let width = window.innerWidth;
     let height = window.innerHeight;
     canvas.width = width;
@@ -29,17 +31,17 @@ const StarsBackground = () => {
       y: Math.random() * height,
       radius: Math.random() * 1.5,
       alpha: Math.random(),
-      delta: Math.random() * 0.005 + 0.001
+      delta: Math.random() * 0.005 + 0.001,
     }));
 
     const animate = () => {
       if (!ctx) return;
 
       ctx.clearRect(0, 0, width, height);
-      ctx.fillStyle = '#11071f';
+      ctx.fillStyle = theme.colors.backgroundColor;
       ctx.fillRect(0, 0, width, height);
 
-      stars.forEach(star => {
+      stars.forEach((star) => {
         star.alpha += star.delta;
         if (star.alpha <= 0 || star.alpha >= 1) star.delta *= -1;
 
@@ -49,7 +51,7 @@ const StarsBackground = () => {
         ctx.fill();
       });
 
-      requestAnimationFrame(animate);
+      animationFrameId.current = requestAnimationFrame(animate);
     };
 
     animate();
@@ -61,8 +63,12 @@ const StarsBackground = () => {
       canvas.height = height;
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      cancelAnimationFrame(animationFrameId.current);
+    };
   }, []);
 
   return <Canvas ref={canvasRef} />;
