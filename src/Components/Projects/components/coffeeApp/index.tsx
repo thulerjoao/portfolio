@@ -1,5 +1,5 @@
-import { LanguageType } from "../../../../types/languageType";
 import CoffeAppVideo from "../../../../assets/media/CoffeAppVideo.mp4";
+import { LanguageType } from "../../../../types/languageType";
 import { CoffeeAppContainer } from "./style";
 
 interface Props {
@@ -79,7 +79,7 @@ const CoffeeApp = ({ language }: Props) => {
             <h4>Application overview:</h4>
           )}
           <div className="video front native">
-            <video controls>
+            <video controls autoPlay muted loop>
               <source src={CoffeAppVideo} type="video/mp4" />
               Seu navegador não suporta o elemento de vídeo.
             </video>
