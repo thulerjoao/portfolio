@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 
 export const AbouMeComponent = styled.header`
   ${({ theme }) => css`
-    padding-bottom: 10vh;
+    padding-bottom: 4rem;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -103,52 +103,28 @@ export const AbouMeComponent = styled.header`
       }
     }
 
-    @media screen and (max-width: 1440px) {
-      overflow-y: auto;
-
-      section {
-        padding-bottom: 8vh;
-
-        .firstBlock {
-          margin-top: 6vh;
-
-          img {
-            margin-bottom: 4vh;
-          }
-        }
-        .mainText {
-          margin-top: 4vh;
-        }
-        footer {
-          margin-top: 6vh;
-        }
-      }
-    }
-
-    @media screen and (max-width: 992px) {
+    @media (min-width: 540px) and (max-width: 1025px) {
       min-width: 100%;
-
       section {
         width: 80vw;
-
+        
         .firstBlock {
-          margin-top: 5vh;
-
+          
           img {
             margin: 0;
             margin-bottom: 5vh;
             width: 14rem;
             height: 14rem;
           }
-
+          
           div {
             max-width: 75%;
             text-align: center;
-
+            
             h2 {
               font-size: 2em;
             }
-
+            
             p {
               font-size: 1em;
             }
@@ -156,16 +132,15 @@ export const AbouMeComponent = styled.header`
         }
         .mainText {
           margin-top: 3vh;
-          max-width: 85%;
-
+          
           p {
             font-size: 1em;
           }
         }
-
+        
         footer {
-          margin-bottom: 10vh;
-
+          /* background-color: pink; */
+          
           a {
             margin: 2vh 4%;
             padding: 0.2rem 0;
@@ -178,7 +153,7 @@ export const AbouMeComponent = styled.header`
       }
     }
 
-    @media screen and (max-width: 768px) {
+    /* @media screen and (max-width: 768px) {
       min-width: 100%;
 
       section {
@@ -226,18 +201,16 @@ export const AbouMeComponent = styled.header`
           }
         }
       }
-    }
+    } */
 
-    @media screen and (max-width: 600px) {
+    @media (max-width: 600px) {
       width: 100%;
-
+      
       section {
         width: 100%;
         padding-top: 2rem;
-
+        
         .firstBlock {
-          margin-top: 5vh;
-          width: 100%;
           
           
           img {
@@ -250,12 +223,12 @@ export const AbouMeComponent = styled.header`
           div {
             min-width: 100%;
             text-align: center;
-
+            
             h2 {
               font-size: 24px;
               width: 100%;
             }
-
+            
             p {
               font-size: 16px;
             }
@@ -263,9 +236,11 @@ export const AbouMeComponent = styled.header`
         }
         .mainText {
           margin-top: 3vh;
-          min-width: 88vw;
-
+          min-width: 100%;
+          padding: 0;
+          
           p {
+            min-width: 100%;
             font-size: 1em;
           }
         }

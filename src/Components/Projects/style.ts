@@ -193,38 +193,3 @@ export const ProjectsComponent = styled.div`
     }
   `}
 `;
-
-
-// .mediaContainer {
-//           display: flex;
-//           justify-content: center;
-//           min-width: 100%;
-//           height: 35rem;
-//           margin-bottom: 40rem;
-
-//           .leftContainer {
-//             min-width: 50%;
-
-//             .video {
-//               max-width: 100%;
-//               overflow: hidden;
-//               display: flex;
-//               justify-content: center;
-
-//               video {
-//                 max-width: 100%;
-//                 height: 35rem;
-//               }
-//             }
-//           }
-
-//           .rightContainer {
-//             min-width: 50%;
-
-//             .figma {
-//               border: 0px;
-//               width: 100%;
-//               height: 100%;
-//             }
-//           }
-//         }

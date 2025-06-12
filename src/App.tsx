@@ -8,7 +8,7 @@ const App = () => {
   console.log(start)
   return (
     <div>
-      <InitialComponent setStart={setStart} />
+      {!start && <InitialComponent setStart={setStart} />}
       {start && <StarsBackground />}
       <MainPage />
     </div>
