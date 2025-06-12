@@ -27,8 +27,8 @@ const Projects = ({ active, lastOne, language }: prop) => {
       }  animate__delay-0.5s`}
     >
       <section className="projectsList">
-        <CoffeeApp language={language} />
-        <Datarain language={language} />
+        {/* <CoffeeApp language={language} />
+        <Datarain language={language} /> */}
         {/* <div className="project">
           <div className="title">
             <h3>• [Reat Native] Coffee Delivery</h3>
