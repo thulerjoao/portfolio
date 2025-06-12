@@ -72,7 +72,7 @@ const CoffeeApp = ({ language }: Props) => {
       </div>
 
       <section className="mediaContainer">
-        <div className="leftContainer">
+        {/* <div className="leftContainer">
           {language === "bra" ? (
             <h4>Visão geral do projeto:</h4>
           ) : (
@@ -97,7 +97,7 @@ const CoffeeApp = ({ language }: Props) => {
             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2QegOxAYZLb5UmANQsO0en%2FUntitled%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DyT6y2Vyu5rt9l7FT-1"
             allowFullScreen
           ></iframe>
-        </div>
+        </div> */}
       </section>
     </CoffeeAppContainer>
   );
