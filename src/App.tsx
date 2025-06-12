@@ -5,11 +5,10 @@ import MainPage from "./Pages/MainPage";
 
 const App = () => {
   const [start, setStart] = useState<boolean>(false);
-  console.log(start)
   return (
     <div>
       {!start && <InitialComponent setStart={setStart} />}
-      {start && <StarsBackground />}
+      {/* {start && <StarsBackground />} */}
       <MainPage />
     </div>
   );
