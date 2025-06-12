@@ -94,6 +94,7 @@ export const DatarainContainer = styled.div`
         border: 0px;
         width: 100%;
         height: 25rem;
+        border: 1px solid ${theme.colors.tranparent30};
       }
     }
   }
