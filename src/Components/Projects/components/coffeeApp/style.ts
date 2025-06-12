@@ -76,7 +76,6 @@ export const CoffeeAppContainer = styled.div`
 
       .video {
         max-width: 100%;
-        overflow: hidden;
         display: flex;
         justify-content: center;
 
@@ -128,8 +127,8 @@ export const CoffeeAppContainer = styled.div`
           width: 100%;
 
           video {
-            min-height: 60svh;
-            max-height: 60svh;
+            min-height: 60vh;
+            max-height: 60vh;
           }
         }
       }
@@ -141,8 +140,8 @@ export const CoffeeAppContainer = styled.div`
         padding: 0;
 
         .figma {
-          min-height: 50svh;
-          max-height: 50svh;
+          min-height: 50vh;
+          max-height: 50vh;
         }
       }
     }

@@ -31,40 +31,6 @@ export const ProjectsComponent = styled.div`
       ::-webkit-scrollbar {
         width: 0px;
       }
-      
-      .projectsList {
-        .project {
-          .title {
-            h3 {
-            }
-
-            a {
-            }
-          }
-
-          h4 {
-          }
-
-          .tecnologies {
-            p {
-            }
-          }
-
-          .mediaContainer {
-            .leftContainer {
-              .video {
-                video {
-                }
-              }
-            }
-
-            .rightContainer {
-              .figma {
-              }
-            }
-          }
-        }
-      }
     }
 
     @media screen and (max-width: 768px) {
@@ -84,53 +50,6 @@ export const ProjectsComponent = styled.div`
         justify-content: space-around;
         align-items: center;
         max-width: 78rem;
-
-        .projectsList {
-          .project {
-            .title {
-              h3 {
-              }
-
-              a {
-              }
-            }
-            
-            h4 {
-            }
-            
-            .tecnologies {
-              padding: 12px 0;
-              p {
-              }
-            }
-            
-            .mediaContainer {
-              flex-direction: column;
-              height: auto;
-
-              .leftContainer {
-                width: 100%;
-                
-                .video {
-                  width: 100%;
-                  height: 50vh;
-
-                  video {
-                    max-width: 100%;
-                    max-height: 100%;
-                  }
-                }
-              }
-
-              .rightContainer {
-                width: 100%;
-                height: 40vh;
-                .figma {
-                }
-              }
-            }
-          }
-        }
       }
 
       @media screen and (max-width: 600px) {
@@ -141,53 +60,6 @@ export const ProjectsComponent = styled.div`
 
         ::-webkit-scrollbar {
           width: 0px;
-        }
-
-        .projectsList {
-          .project {
-            .title {
-              h3 {
-              }
-
-              a {
-              }
-            }
-            
-            h4 {
-            }
-            
-            .tecnologies {
-              padding: 12px 0;
-              p {
-              }
-            }
-            
-            .mediaContainer {
-              flex-direction: column;
-              height: auto;
-
-              .leftContainer {
-                width: 100%;
-                
-                .video {
-                  width: 100%;
-                  height: 50vh;
-
-                  video {
-                    max-width: 100%;
-                    max-height: 100%;
-                  }
-                }
-              }
-
-              .rightContainer {
-                width: 100%;
-                height: 40vh;
-                .figma {
-                }
-              }
-            }
-          }
         }
       }
     }

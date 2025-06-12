@@ -42,8 +42,8 @@ const StarsBackground = () => {
       radius: Math.random() * 1.3 + 0.5, // Algumas estrelas um pouco maiores
       alpha: Math.random(),
       delta: (Math.random() * 0.003 + 0.001), // Piscar suave
-      speedX: (Math.random() - 0.5) * 0.075, // movimento horizontal lento
-      speedY: (Math.random() - 0.5) * 0.04  // movimento vertical lento
+      speedX: (Math.random() - 0.5) * 0.1, // movimento horizontal lento
+      speedY: (Math.random() - 0.5) * 0.05  // movimento vertical lento
     }));
 
     const animate = () => {
