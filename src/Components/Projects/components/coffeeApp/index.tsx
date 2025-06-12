@@ -79,7 +79,7 @@ const CoffeeApp = ({ language }: Props) => {
             <h4>Application overview:</h4>
           )}
           <div className="video front native">
-            <video controls autoPlay playsInline muted loop>
+            <video controls loop>
               <source src={CoffeAppVideo} type="video/mp4" />
               Seu navegador não suporta o elemento de vídeo.
             </video>

@@ -8,38 +8,6 @@ interface Props {
 }
 
 const Datarain = ({ language }: Props) => {
-  const [isMuted, setIsMuted] = useState(true);
-const videoRef = useRef<HTMLVideoElement>(null);
-
-useEffect(() => {
-  const video = videoRef.current;
-
-  const handleFullscreenChange = () => {
-    const fullscreenElement = 
-      document.fullscreenElement ||
-      (document as any).webkitFullscreenElement ||
-      (document as any).mozFullScreenElement ||
-      (document as any).msFullscreenElement;
-
-    if (fullscreenElement === video) {
-      setIsMuted(false);  // desmutar no fullscreen
-    } else {
-      setIsMuted(true);   // mutar fora do fullscreen (opcional)
-    }
-  };
-
-  document.addEventListener("fullscreenchange", handleFullscreenChange);
-  document.addEventListener("webkitfullscreenchange", handleFullscreenChange);
-  document.addEventListener("mozfullscreenchange", handleFullscreenChange);
-  document.addEventListener("MSFullscreenChange", handleFullscreenChange);
-
-  return () => {
-    document.removeEventListener("fullscreenchange", handleFullscreenChange);
-    document.removeEventListener("webkitfullscreenchange", handleFullscreenChange);
-    document.removeEventListener("mozfullscreenchange", handleFullscreenChange);
-    document.removeEventListener("MSFullscreenChange", handleFullscreenChange);
-  };
-}, []);
 
   return (
     <DatarainContainer>
@@ -125,7 +93,7 @@ useEffect(() => {
             <h4>Application overview:</h4>
           )}
           <div className="video front native">
-            <video ref={videoRef} controls autoPlay playsInline muted={isMuted} loop>
+            <video controls loop>
               <source src={DataRainVideo} type="video/mp4" />
               Seu navegador não suporta o elemento de vídeo.
             </video>

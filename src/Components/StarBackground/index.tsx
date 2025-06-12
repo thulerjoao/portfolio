@@ -35,7 +35,7 @@ const StarsBackground = () => {
     canvas.width = width;
     canvas.height = height;
 
-    const numStars = 150;
+    const numStars = 120;
     const stars: Star[] = Array.from({ length: numStars }).map(() => ({
       x: Math.random() * width,
       y: Math.random() * height,
