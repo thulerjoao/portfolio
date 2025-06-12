@@ -81,6 +81,7 @@ export const DatarainContainer = styled.div`
 
         video {
           width: 100%;
+          border: 1px solid ${theme.colors.tranparent30};
         }
       }
     }

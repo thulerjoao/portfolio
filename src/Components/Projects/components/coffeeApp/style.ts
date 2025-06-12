@@ -83,6 +83,7 @@ export const CoffeeAppContainer = styled.div`
         video {
           max-width: 100%;
           height: 35rem;
+          border: 1px solid ${theme.colors.tranparent30};
         }
       }
     }
