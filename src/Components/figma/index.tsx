@@ -14,41 +14,23 @@ const Figma = ({ figmaURL }: Props) => {
     const handleFullscreenChange = () => {
       if (!document.fullscreenElement) {
         setShowFigma(false);
-        setLoading(true); // reseta o loading pro próximo uso
+        setLoading(true);
       }
     };
 
-    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
     return () => {
-      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+      document.removeEventListener('fullscreenchange', handleFullscreenChange);
     };
   }, []);
 
-  const handleOpen = async () => {
+  const handleOpen = () => {
     setShowFigma(true);
-
     setTimeout(() => {
       if (iframeContainerRef.current) {
-        const elem = iframeContainerRef.current as HTMLDivElement & {
-          requestFullscreen?: () => Promise<void>;
-          webkitRequestFullscreen?: () => Promise<void>;
-          msRequestFullscreen?: () => Promise<void>;
-        };
-
-        // Tentativa com suporte cross-browser
-        if (elem.requestFullscreen) {
-          elem.requestFullscreen().catch((err) => {
-            console.error("Erro no requestFullscreen", err);
-          });
-        } else if (elem.webkitRequestFullscreen) {
-          elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) {
-          elem.msRequestFullscreen();
-        } else {
-          // Fullscreen não suportado, fallback
-          window.open(figmaURL, "_blank");
-          setShowFigma(false);
-        }
+        iframeContainerRef.current.requestFullscreen?.().catch((err) => {
+          console.error('Erro ao tentar fullscreen:', err);
+        });
       }
     }, 0);
   };
@@ -59,12 +41,19 @@ const Figma = ({ figmaURL }: Props) => {
 
   return (
     <>
-      {!showFigma && <Button onClick={handleOpen}>Figma</Button>}
-
+      {!showFigma && (
+        <Button onClick={handleOpen}>
+          Figma
+        </Button>
+      )}
       {showFigma && (
         <Container ref={iframeContainerRef}>
           {loading && <LoadingOverlay>Loading...</LoadingOverlay>}
-          <Iframe src={figmaURL} allowFullScreen onLoad={handleIframeLoad} />
+          <Iframe
+            src={figmaURL}
+            allowFullScreen
+            onLoad={handleIframeLoad}
+          />
         </Container>
       )}
     </>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import theme from "../../styles/theme";
 
 export const Button = styled.button`
@@ -17,6 +17,7 @@ export const Button = styled.button`
   }
 `;
 
+
 export const Container = styled.div`
   width: 100%;
   height: 100%;
@@ -24,23 +25,20 @@ export const Container = styled.div`
   position: relative;
 `;
 
-export const LoadingOverlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: ${theme.colors.backgroundColor};
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  font-size: 20px;
-`;
-
 export const Iframe = styled.iframe`
   width: 100%;
   height: 100%;
   border: none;
+`;
+
+export const LoadingOverlay = styled.div`
+  position: absolute;
+  inset: 0;
+  background: ${theme.colors.backgroundColor};
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
 `;
