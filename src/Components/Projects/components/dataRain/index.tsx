@@ -93,10 +93,10 @@ const Datarain = ({ language }: Props) => {
             <h4>Application overview:</h4>
           )}
           <div className="video front native">
-            <video controls loop>
+            {/* <video controls loop>
               <source src={DataRainVideo} type="video/mp4" />
               Seu navegador não suporta o elemento de vídeo.
-            </video>
+            </video> */}
           </div>
         </div>
         <div className="rightContainer">
