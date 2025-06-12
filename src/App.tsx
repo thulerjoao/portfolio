@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div>
       {!start && <InitialComponent setStart={setStart} />}
-      {/* {start && <StarsBackground />} */}
+      {start && <StarsBackground />}
       <MainPage />
     </div>
   );
