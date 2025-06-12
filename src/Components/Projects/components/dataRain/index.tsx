@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import DataRainVideo from "../../../../assets/media/DataRainVideo.mp4";
 import { LanguageType } from "../../../../types/languageType";
 import { DatarainContainer } from "./style";
+import Figma from "../../../figma";
 
 interface Props {
   language: LanguageType;
@@ -86,7 +87,7 @@ const Datarain = ({ language }: Props) => {
       </div>
 
       <section className="mediaContainer">
-        {/* <div className="leftContainer">
+        <div className="leftContainer">
           {language === "bra" ? (
             <h4>Visão geral do projeto:</h4>
           ) : (
@@ -105,13 +106,13 @@ const Datarain = ({ language }: Props) => {
           ) : (
             <h4>Check out the figma that was used in the project:</h4>
           )}
-
-          <iframe
+          <Figma figmaURL="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fxz7GoBLP3omHao64Uux4vg%2FUntitled%3Fnode-id%3D0%253A1%26t%3DBJjPRLJoA8tNPx0w-1" />
+          {/* <iframe
             className="figma"
             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fxz7GoBLP3omHao64Uux4vg%2FUntitled%3Fnode-id%3D0%253A1%26t%3DBJjPRLJoA8tNPx0w-1"
             allowFullScreen
-          ></iframe>
-        </div> */}
+          ></iframe> */}
+        </div>
       </section>
     </DatarainContainer>
   );

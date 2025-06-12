@@ -1,5 +1,7 @@
+import { useEffect, useRef, useState } from "react";
 import CoffeAppVideo from "../../../../assets/media/CoffeAppVideo.mp4";
 import { LanguageType } from "../../../../types/languageType";
+import Figma from "../../../figma";
 import { CoffeeAppContainer } from "./style";
 
 interface Props {
@@ -7,6 +9,37 @@ interface Props {
 }
 
 const CoffeeApp = ({ language }: Props) => {
+  const [showFigma, setShowFigma] = useState(false);
+  const iframeContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      if (!document.fullscreenElement) {
+        // Saiu do fullscreen
+        setShowFigma(false);
+      }
+    };
+
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+    };
+  }, []);
+
+  const handleOpen = async () => {
+    setShowFigma(true);
+
+    // Aguarda o próximo tick para garantir que o DOM atualizou
+    setTimeout(() => {
+      if (iframeContainerRef.current) {
+        iframeContainerRef.current.requestFullscreen().catch((err) => {
+          console.error("Erro ao tentar fullscreen:", err);
+        });
+      }
+    }, 0);
+  };
+
   return (
     <CoffeeAppContainer>
       <div className="title">
@@ -72,7 +105,7 @@ const CoffeeApp = ({ language }: Props) => {
       </div>
 
       <section className="mediaContainer">
-        {/* <div className="leftContainer">
+        <div className="leftContainer">
           {language === "bra" ? (
             <h4>Visão geral do projeto:</h4>
           ) : (
@@ -91,13 +124,8 @@ const CoffeeApp = ({ language }: Props) => {
           ) : (
             <h4>Check out the figma that was used in the project:</h4>
           )}
-
-          <iframe
-            className="figma"
-            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2QegOxAYZLb5UmANQsO0en%2FUntitled%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DyT6y2Vyu5rt9l7FT-1"
-            allowFullScreen
-          ></iframe>
-        </div> */}
+          <Figma figmaURL="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2QegOxAYZLb5UmANQsO0en%2FUntitled%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DyT6y2Vyu5rt9l7FT-1" />
+        </div>
       </section>
     </CoffeeAppContainer>
   );
