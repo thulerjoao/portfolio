@@ -126,7 +126,7 @@ export const AsideMenuContainer = styled.div<Props>`
         animation: ${({ isOpen }) => (isOpen ? expand : shrink)} 0.5s forwards;
         background-color: ${theme.colors.backgroundColor};
         box-shadow: ${({ isOpen }) =>
-        isOpen && `-100px 0px 100px 1px ${theme.colors.white}`};
+        isOpen && `-90px 0px 100px 1px ${theme.colors.white}`};
 
         .picAndName {
           width: 100%;
