@@ -42,14 +42,14 @@ const InitialComponent = ({ setStart }: Props) => {
   }, [isFinished]);
 
   return (
-    <Style.BlowUp>
+    <Style.BlowUp onClick={() => handleBlow()} wasClicked={wasClicked}>
       <section className={isFinished ? "done" : ""}>
         <div className={isBlowing ? "bomb" : ""}></div>
         <div className={wasClicked ? (isBlowing ? "blow" : "finished") : ""}>
           <div className={`textArea ${!isText ? "hiden" : ""}`}>
             <p>WHERE IT ALL BEGAN</p>
           </div>
-          <img alt="globe" src={ballUp} onClick={() => handleBlow()}></img>
+          <img alt="globe" src={ballUp}></img>
         </div>
       </section>
     </Style.BlowUp>

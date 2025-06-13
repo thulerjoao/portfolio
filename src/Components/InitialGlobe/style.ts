@@ -1,6 +1,11 @@
 import styled, { css } from "styled-components";
 
-export const BlowUp = styled.div`
+interface Props {
+  wasClicked: boolean;
+}
+
+export const BlowUp = styled.div<Props>`
+  cursor: ${({ wasClicked }) => (!wasClicked && "pointer")};
   ${({ theme }) => css`
     section {
       display: flex;
@@ -79,7 +84,6 @@ export const BlowUp = styled.div`
         height: 16.5rem;
         width: 16.5rem;
         border-radius: 50%;
-        cursor: pointer;
         animation: pulse 3s infinite;
       }
 
