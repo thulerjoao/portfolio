@@ -29,7 +29,7 @@ export const AsideMenuContainer = styled.div<Props>`
     .menuContent {
       z-index: 2;
       /* background-color: #111111; */
-      height: 100vh;
+      height: 100svh;
       width: 350px;
       padding: 60px 30px;
       color: white;
@@ -126,7 +126,7 @@ export const AsideMenuContainer = styled.div<Props>`
         animation: ${({ isOpen }) => (isOpen ? expand : shrink)} 0.5s forwards;
         background-color: ${theme.colors.backgroundColor};
         box-shadow: ${({ isOpen }) =>
-        isOpen && `-80px 0px 100px 1px ${theme.colors.gold}`};
+        isOpen && `-100px 0px 100px 1px ${theme.colors.white}`};
 
         .picAndName {
           width: 100%;
@@ -185,6 +185,7 @@ export const AsideMenuContainer = styled.div<Props>`
 
 export const MenuButton = styled.button`
   background-color: ${theme.colors.fontColor};
+  color: ${theme.colors.fontColor2};
   height: 42px;
   border-radius: 19px;
   width: 100%;
