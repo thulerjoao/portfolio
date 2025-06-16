@@ -16,7 +16,7 @@ export const ContentListContainer = styled.div`
     justify-content: flex-end;
     
     .contentList {
-      background-color: ${theme.colors.tranparent30};
+      /* background-color: ${theme.colors.tranparent30}; */
       width: calc(100% - 350px);
       height: auto;
 

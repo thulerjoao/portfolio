@@ -10,11 +10,11 @@ const Welcome = () => {
       </div>
       <div className="about desktopAbout">
         <p>
-          Olá
+          Olá,
           <br />
-          me chamo <span className="colorful"> João Pedro Thuler Lima</span>,
+          me chamo <span className="colorful"> João Pedro Thuler Lima</span>
           <br />
-          sou desenvolvedor Full-stack
+          Desenvolvedor Full-stack
         </p>
       </div>
       <div className="about mobileAbout">
