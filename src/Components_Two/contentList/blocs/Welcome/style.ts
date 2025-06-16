@@ -107,4 +107,5 @@ export const WelcomeContainer = styled.div`
 export const DownArrow = styled(MdKeyboardDoubleArrowDown)`
   height: 60px;
   width: 60px;
+  z-index: 0;
 `;
