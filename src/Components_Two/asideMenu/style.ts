@@ -9,6 +9,7 @@ interface Props {
 
 export const AsideMenuContainer = styled.div<Props>`
   width: 100%;
+  height: 0px;
   position: fixed;
   left: 0;
   top: 0;
@@ -19,6 +20,7 @@ export const AsideMenuContainer = styled.div<Props>`
 
   .globalContainer {
     width: 100%;
+    height: 0px;
     max-width: 90rem;
     position: relative;
 
@@ -28,7 +30,6 @@ export const AsideMenuContainer = styled.div<Props>`
 
     .menuContent {
       z-index: 2;
-      /* background-color: #111111; */
       height: 100svh;
       width: 350px;
       padding: 60px 30px;
@@ -188,6 +189,7 @@ export const MenuButton = styled.button`
   color: ${theme.colors.fontColor2};
   height: 42px;
   border-radius: 19px;
+  border: 0px;
   width: 100%;
   margin-bottom: 16px;
   font-size: 16px;

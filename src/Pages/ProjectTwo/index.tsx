@@ -1,5 +1,5 @@
 import AsideMenu from "../../Components_Two/asideMenu"
-import ContentList from "../../Components_Two/contentList"
+import ContentList from "../../Components_Two/contentList/contentList"
 import { ProjectTwoContainer } from "./style"
 
 const ProjectTwo = () => {
