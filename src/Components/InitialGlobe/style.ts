@@ -5,7 +5,8 @@ interface Props {
 }
 
 export const BlowUp = styled.div<Props>`
-  cursor: ${({ wasClicked }) => (!wasClicked && "pointer")};
+  cursor: ${({ wasClicked }) => !wasClicked && "pointer"};
+
   ${({ theme }) => css`
     section {
       display: flex;
@@ -13,14 +14,14 @@ export const BlowUp = styled.div<Props>`
       top: 0rem;
       left: 0;
       height: 100svh;
-      min-width: 100vw;
+      width: 100%;
       background-color: ${theme.colors.backgroundColor};
       z-index: 99;
       justify-content: center;
       align-items: center;
       overflow: hidden;
       user-select: none;
-
+      overflow-y: none;
       div {
         transition: 2s ease-in-out;
       }
@@ -143,12 +144,12 @@ export const BlowUp = styled.div<Props>`
       display: none;
     }
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 600px) {
       img {
-          height: 60vw;
-          width: 60vw;
-          z-index: 99;
-        }
+        height: 60vw;
+        width: 60vw;
+        z-index: 99;
+      }
     }
   `}
 `;

@@ -1,8 +1,13 @@
-import { DownArrow, WelcomeContainer } from "./style";
 import "animate.css";
 import jptl from "../../../../assets/image/jptl.jpg";
+import { SectionsType } from "../../../../types/sectionsType";
+import { DownArrow, WelcomeContainer } from "./style";
 
-const Welcome = () => {
+interface Props {
+  scrollToSection: (sectionId: SectionsType) => void;
+}
+
+const Welcome = ({ scrollToSection }: Props) => {
   return (
     <WelcomeContainer>
       <div className="picture">
@@ -26,7 +31,10 @@ const Welcome = () => {
           Desenvolvedor Full-stack
         </p>
       </div>
-      <div className="scrollDown">
+      <div
+        className="scrollDown"
+        onClick={() => scrollToSection("qualifications")}
+      >
         <p>{"Confira abaixo \nminhas qualificações"}</p>
         <div className="animate__animated animate__bounce animate__infinite animate__duration-2s">
           <DownArrow />

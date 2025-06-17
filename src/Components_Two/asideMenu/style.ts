@@ -22,14 +22,14 @@ export const AsideMenuContainer = styled.div<Props>`
     width: 100%;
     max-width: 90rem;
     position: relative;
+    height: 0;
 
     .menuIcon {
       display: none;
     }
 
     .menuContent {
-      z-index: 2;
-      /* background-color: #111111; */
+      z-index: 1;
       height: 100svh;
       width: 350px;
       padding: 60px 30px;
@@ -38,31 +38,33 @@ export const AsideMenuContainer = styled.div<Props>`
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      
+
       .picAndName {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
         img {
           width: 100%;
           border-radius: 50%;
           border: 2px solid white;
           box-shadow: 0px 0px 25px 7px rgba(105, 59, 147, 1);
+          cursor: pointer;
         }
-        
+
         .nameText {
           p {
             white-space: pre-line;
           }
-          
+
           .name {
             font-size: 36px;
             margin-top: 36px;
             text-align: center;
+            cursor: pointer;
           }
-          
+
           .stack {
             font-size: 28px;
             color: ${theme.colors.gold};
@@ -72,22 +74,22 @@ export const AsideMenuContainer = styled.div<Props>`
           }
         }
       }
-      
+
       .buttonsList {
         display: flex;
         flex-direction: column;
         width: 100%;
       }
-      
+
       .links {
       }
     }
   }
-  
+
   .rightCoverArea {
     display: none;
   }
-  
+
   @media (max-width: 1399px) {
     .globalContainer {
       .menuContent {
@@ -151,14 +153,14 @@ export const AsideMenuContainer = styled.div<Props>`
           display: flex;
           flex-direction: row;
           align-items: center;
-          
+
           img {
             width: 80px;
             border-radius: 50%;
             border: 2px solid white;
             box-shadow: 0px 0px 25px 7px rgba(105, 59, 147, 1);
           }
-          
+
           .nameText {
             display: flex;
             flex-direction: column;
@@ -199,8 +201,13 @@ export const AsideMenuContainer = styled.div<Props>`
   }
 `;
 
-export const MenuButton = styled.button`
+interface ButtonProp {
+  active: boolean;
+}
+
+export const MenuButton = styled.button<ButtonProp>`
   background-color: ${theme.colors.fontColor};
+  background-color: ${({ active }) => active && theme.colors.gold};
   color: ${theme.colors.fontColor2};
   height: 42px;
   border-radius: 19px;
@@ -213,7 +220,8 @@ export const MenuButton = styled.button`
   font-style: italic;
 
   :hover {
-    background-color: ${theme.colors.gold};
+    box-shadow: 0px 0px 5px 5px ${theme.colors.cleanBc};
+    color: ${theme.colors.cleanBc};
   }
 `;
 

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import jptl from "../../assets/image/jptl.jpg";
+import { SectionsType } from "../../types/sectionsType";
 import {
   AsideMenuContainer,
   BtnGit,
@@ -8,7 +9,12 @@ import {
   MenuIcon,
 } from "./style";
 
-const AsideMenu = () => {
+interface Props {
+  activeSection: SectionsType;
+  scrollToSection: (sectionId: SectionsType) => void;
+}
+
+const AsideMenu = ({ activeSection, scrollToSection }: Props) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const name = "João Lima";
 
@@ -20,19 +26,19 @@ const AsideMenu = () => {
         </div>
         <div className="rightCoverArea" onClick={() => setIsOpen(false)} />
         <section className="menuContent">
-          <div className="picAndName">
-            <img alt="profile image" src={jptl} />
+          <div className="picAndName" >
+            <img alt="profile image" src={jptl}  onClick={() => scrollToSection("welcome")}/>
             <div className="nameText">
-              <p className="name">{name}</p>
+              <p className="name"  onClick={() => scrollToSection("welcome")}>{name}</p>
               <p className="stack">Desenvolver Full-Stack</p>
             </div>
           </div>
           <div className="buttonsList">
-            <MenuButton>Qualificações</MenuButton>
-            <MenuButton>Portfolio</MenuButton>
-            <MenuButton>Experiência</MenuButton>
-            <MenuButton>Sobre mim</MenuButton>
-            <MenuButton>Constato</MenuButton>
+            <MenuButton active={activeSection === "qualifications"} onClick={() => scrollToSection("qualifications")}>Qualificações</MenuButton>
+            <MenuButton active={activeSection === "portfolio"}  onClick={() => scrollToSection("portfolio")}>Portfolio</MenuButton>
+            <MenuButton active={activeSection === "experience"} onClick={() => scrollToSection("experience")}>Experiência</MenuButton>
+            <MenuButton active={activeSection === "about me"} onClick={() => scrollToSection("about me")}>Sobre mim</MenuButton>
+            <MenuButton active={activeSection === "contact"} onClick={() => scrollToSection("contact")}>Constato</MenuButton>
           </div>
           <footer>
             <a href="https://github.com/thulerjoao" target="_blank">

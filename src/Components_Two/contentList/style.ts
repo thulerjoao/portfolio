@@ -14,17 +14,15 @@ export const ContentListContainer = styled.div`
     max-width: 90rem;
     display: flex;
     justify-content: flex-end;
-    
+
     .contentList {
       /* background-color: ${theme.colors.tranparent30}; */
       width: calc(100% - 350px);
       height: auto;
 
-
-      .block{
-        width: 100%;
-        height: 100svh;
-        border-bottom: 1px solid white;
+      section {
+        display: flex;
+        justify-content: center;
       }
     }
   }
