@@ -5,7 +5,11 @@ import ContentList from "../../Components_Two/contentList/contentList";
 import { SectionsType } from "../../types/sectionsType";
 import { ProjectTwoContainer } from "./style";
 
-const ProjectTwo = () => {
+interface Props {
+  start: boolean;
+}
+
+const ProjectTwo = ({ start }: Props) => {
   const [activeSection, setActiveSection] = useState<SectionsType>("welcome");
 
   const scrollToSection = (sectionId: SectionsType) => {
@@ -39,7 +43,7 @@ const ProjectTwo = () => {
   }, []);
 
   return (
-    <ProjectTwoContainer>
+    <ProjectTwoContainer start={start}>
       <AsideMenu
         activeSection={activeSection}
         scrollToSection={scrollToSection}

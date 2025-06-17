@@ -12,7 +12,7 @@ const App = () => {
       {start && <StarsBackground />}
       {/* {true && <StarsBackground />} */}
       {/* <MainPage /> */}
-      <ProjectTwo />
+      <ProjectTwo start={start}/>
     </div>
   );
 };

@@ -30,7 +30,7 @@ const AsideMenu = ({ activeSection, scrollToSection }: Props) => {
             <img alt="profile image" src={jptl}  onClick={() => scrollToSection("welcome")}/>
             <div className="nameText">
               <p className="name"  onClick={() => scrollToSection("welcome")}>{name}</p>
-              <p className="stack">Desenvolver Full-Stack</p>
+              <p className="stack">Desenvolvedor Full-Stack</p>
             </div>
           </div>
           <div className="buttonsList">
