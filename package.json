@@ -10,12 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/simple-icons": "^5.21.1",
     "@types/styled-components": "^5.1.26",
     "animate.css": "^4.1.1",
     "deploy": "^1.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "simple-icons": "^15.2.0",
     "styled-components": "^5.3.9"
   },
   "devDependencies": {

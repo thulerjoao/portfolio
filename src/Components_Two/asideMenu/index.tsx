@@ -18,6 +18,11 @@ const AsideMenu = ({ activeSection, scrollToSection }: Props) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const name = "João Lima";
 
+  const handleClick = (section: SectionsType) => {
+    setIsOpen(false);
+    scrollToSection(section);
+  };
+
   return (
     <AsideMenuContainer isOpen={isOpen}>
       <section className="globalContainer">
@@ -26,19 +31,50 @@ const AsideMenu = ({ activeSection, scrollToSection }: Props) => {
         </div>
         <div className="rightCoverArea" onClick={() => setIsOpen(false)} />
         <section className="menuContent">
-          <div className="picAndName" >
-            <img alt="profile image" src={jptl}  onClick={() => scrollToSection("welcome")}/>
+          <div className="picAndName">
+            <img
+              alt="profile image"
+              src={jptl}
+              onClick={() => handleClick("welcome")}
+            />
             <div className="nameText">
-              <p className="name"  onClick={() => scrollToSection("welcome")}>{name}</p>
+              <p className="name" onClick={() => handleClick("welcome")}>
+                {name}
+              </p>
               <p className="stack">Desenvolvedor Full-Stack</p>
             </div>
           </div>
           <div className="buttonsList">
-            <MenuButton active={activeSection === "qualifications"} onClick={() => scrollToSection("qualifications")}>Qualificações</MenuButton>
-            <MenuButton active={activeSection === "portfolio"}  onClick={() => scrollToSection("portfolio")}>Portfolio</MenuButton>
-            <MenuButton active={activeSection === "experience"} onClick={() => scrollToSection("experience")}>Experiência</MenuButton>
-            <MenuButton active={activeSection === "about me"} onClick={() => scrollToSection("about me")}>Sobre mim</MenuButton>
-            <MenuButton active={activeSection === "contact"} onClick={() => scrollToSection("contact")}>Constato</MenuButton>
+            <MenuButton
+              active={activeSection === "qualifications"}
+              onClick={() => handleClick("qualifications")}
+            >
+              Qualificações
+            </MenuButton>
+            <MenuButton
+              active={activeSection === "portfolio"}
+              onClick={() => handleClick("portfolio")}
+            >
+              Portfolio
+            </MenuButton>
+            <MenuButton
+              active={activeSection === "experience"}
+              onClick={() => handleClick("experience")}
+            >
+              Experiência
+            </MenuButton>
+            <MenuButton
+              active={activeSection === "about me"}
+              onClick={() => handleClick("about me")}
+            >
+              Sobre mim
+            </MenuButton>
+            <MenuButton
+              active={activeSection === "contact"}
+              onClick={() => handleClick("contact")}
+            >
+              Constato
+            </MenuButton>
           </div>
           <footer>
             <a href="https://github.com/thulerjoao" target="_blank">

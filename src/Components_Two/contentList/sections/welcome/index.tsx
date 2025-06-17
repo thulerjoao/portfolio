@@ -25,9 +25,9 @@ const Welcome = ({ scrollToSection }: Props) => {
       </div>
       <div className="about mobileAbout">
         <p>
-          Olá
+          Olá,
           <br />
-          me chamo <span className="colorful"> João Lima</span>,
+          me chamo <span className="colorful"> João Lima</span>
           <br />
           Desenvolvedor Full-stack
         </p>

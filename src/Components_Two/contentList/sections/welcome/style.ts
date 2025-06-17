@@ -35,10 +35,11 @@ export const WelcomeContainer = styled.div`
   .scrollDown {
     margin-top: 48px;
     height: 190px;
-    width: 300px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 
     p {
       font-size: 28px;
