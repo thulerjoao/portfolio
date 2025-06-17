@@ -1,10 +1,12 @@
 import { SectionsType } from "../../types/sectionsType";
-import AboutMe from "./blocs/aboutMe";
-import Contact from "./blocs/contact";
-import Experience from "./blocs/experience";
-import Portfolio from "./blocs/portfolio";
-import Qualifications from "./blocs/qualifications";
-import Welcome from "./blocs/welcome";
+import AboutMe from "./sections/aboutMe";
+import Contact from "./sections/contact";
+import Experience from "./sections/experience";
+import Portfolio from "./sections/portfolio";
+import Qualifications from "./sections/qualifications";
+import Welcome from "./sections/welcome";
+
+
 
 import { ContentListContainer } from "./style";
 

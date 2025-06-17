@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import AsideMenu from "../../Components_Two/asideMenu";
+
 import ContentList from "../../Components_Two/contentList/contentList";
 import { SectionsType } from "../../types/sectionsType";
 import { ProjectTwoContainer } from "./style";
