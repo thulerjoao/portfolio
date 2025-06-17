@@ -3,6 +3,7 @@ import jptl from "../../../../assets/image/jptl.jpg";
 import { SectionsType } from "../../../../types/sectionsType";
 import { DownArrow, WelcomeContainer } from "./style";
 
+
 interface Props {
   scrollToSection: (sectionId: SectionsType) => void;
 }

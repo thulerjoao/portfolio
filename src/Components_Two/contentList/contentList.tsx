@@ -5,6 +5,7 @@ import Experience from "./blocs/experience";
 import Portfolio from "./blocs/portfolio";
 import Qualifications from "./blocs/qualifications";
 import Welcome from "./blocs/welcome";
+
 import { ContentListContainer } from "./style";
 
 interface Props {

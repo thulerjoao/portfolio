@@ -8,9 +8,9 @@ const App = () => {
   const [start, setStart] = useState<boolean>(false);
   return (
     <div>
-      {/* {!start && <InitialComponent setStart={setStart} />} */}
-      {/* {start && <StarsBackground />} */}
-      {true && <StarsBackground />}
+      {!start && <InitialComponent setStart={setStart} />}
+      {start && <StarsBackground />}
+      {/* {true && <StarsBackground />} */}
       {/* <MainPage /> */}
       <ProjectTwo />
     </div>
