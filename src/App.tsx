@@ -5,12 +5,12 @@ import MainPage from "./Pages/MainPage";
 import ProjectTwo from "./Pages/ProjectTwo";
 
 const App = () => {
-  const [start, setStart] = useState<boolean>(false);
+  const [start, setStart] = useState<boolean>(true);
   return (
     <div>
-      {!start && <InitialComponent setStart={setStart} />}
-      {start && <StarsBackground />}
-      {/* {true && <StarsBackground />} */}
+      {/* {!start && <InitialComponent setStart={setStart} />} */}
+      {/* {start && <StarsBackground />} */}
+      {true && <StarsBackground />}
       {/* <MainPage /> */}
       <ProjectTwo start={start}/>
     </div>
