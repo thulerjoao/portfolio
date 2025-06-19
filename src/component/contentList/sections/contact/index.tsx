@@ -1,4 +1,4 @@
-import Name from "./images/nameGold.png";
+import Name from "./images/nameGlodShort.png";
 import { BtnGit, BtnIn, ContactContainer, Email } from "./style";
 
 const Contact = () => {

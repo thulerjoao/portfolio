@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 
 import { SectionsType } from "../../types/sectionsType";
 import { MainPageContainer } from "./style";
-import AsideMenu from "../../components/asideMenu";
-import ContentList from "../../components/contentList/contentList";
+import AsideMenu from "../../component/asideMenu";
+import ContentList from "../../component/contentList/contentList";
 
 interface Props {
   start: boolean;

@@ -65,8 +65,8 @@ export const ContactContainer = styled.div`
   }
 
   img {
-    width: 80%;
-    max-width: 400px;
+    width: 60%;
+    max-width: 250px;
     margin-bottom: 64px;
   }
 

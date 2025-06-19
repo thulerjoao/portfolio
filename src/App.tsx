@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 import MainPage from "./Pages/mainPage";
-import InitialComponent from "./components/InitialGlobe";
-import StarsBackground from "./components/StarBackground";
+import InitialComponent from "./component/InitialGlobe";
+import StarsBackground from "./component/StarBackground";
 
 const App = () => {
   const [start, setStart] = useState<boolean>(false);
