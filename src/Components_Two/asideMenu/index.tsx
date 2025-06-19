@@ -77,10 +77,10 @@ const AsideMenu = ({ activeSection, scrollToSection }: Props) => {
             </MenuButton>
           </div>
           <footer>
-            <a href="https://github.com/thulerjoao" target="_blank">
+            <a href="https://github.com/thulerjoao" target="_blank" rel="noopener noreferrer">
               <BtnGit />
             </a>
-            <a href="http://www.linkedin.com/in/thulerjoao" target="_blank">
+            <a href="http://www.linkedin.com/in/thulerjoao" target="_blank" rel="noopener noreferrer">
               <BtnIn />
             </a>
           </footer>

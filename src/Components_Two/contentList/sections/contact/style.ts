@@ -27,13 +27,20 @@ export const ContactContainer = styled.div`
       margin-bottom: 120px;
     }
     .enviroment {
-      display: flex;
-      align-items: center;
       width: 300px;
       margin-top: 18px;
       cursor: pointer;
-      :hover {
+      
+      a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        text-decoration: none;
+        color: ${theme.colors.fontColor};
+        :hover {
         color: ${theme.colors.gold};
+      }
       }
 
       p {
