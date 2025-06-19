@@ -2,7 +2,8 @@ import { useState } from "react";
 
 import InitialComponent from "./component/InitialGlobe";
 import StarsBackground from "./component/StarBackground";
-import MainPage from "./pages/mainPage";
+import Page from "./pages/page";
+
 
 const App = () => {
   const [start, setStart] = useState<boolean>(false);
@@ -10,7 +11,7 @@ const App = () => {
     <div>
       {!start && <InitialComponent setStart={setStart} />}
       {start && <StarsBackground />}
-      <MainPage start={start} />
+      <Page start={start} />
     </div>
   );
 };

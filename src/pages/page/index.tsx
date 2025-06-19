@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
 
 import { SectionsType } from "../../types/sectionsType";
-import { MainPageContainer } from "./style";
+
 import AsideMenu from "../../component/asideMenu";
 import ContentList from "../../component/contentList/contentList";
+import { MainPageContainer } from "./style";
 
 interface Props {
   start: boolean;
 }
 
-const MainPage = ({ start }: Props) => {
+const Page = ({ start }: Props) => {
   const [activeSection, setActiveSection] = useState<SectionsType>("welcome");
 
   const scrollToSection = (sectionId: SectionsType) => {
@@ -56,4 +57,4 @@ const MainPage = ({ start }: Props) => {
   );
 };
 
-export default MainPage;
+export default Page;
