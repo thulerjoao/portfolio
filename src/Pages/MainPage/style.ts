@@ -4,15 +4,15 @@ export const MainPageComponent = styled.div`
   ${({ theme }) => css`
     /* background-color: ${theme.colors.backgroundColor}; */
     width: 100%;
-    min-height: 100svh;
-    max-height: 100svh;
+    min-height: 100vh;
+    max-height: 100vh;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
     overflow-y: hidden;
     
     .mainSection {
-      height: 100svh;
+      height: 100vh;
       width: 65%;
       max-width: 78rem;
       
