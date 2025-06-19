@@ -10,8 +10,6 @@ const App = () => {
     <div>
       {!start && <InitialComponent setStart={setStart} />}
       {start && <StarsBackground />}
-      {/* {true && <StarsBackground />} */}
-      {/* <MainPage /> */}
       <MainPage start={start}/>
     </div>
   );
