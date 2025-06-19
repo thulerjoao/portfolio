@@ -3,7 +3,7 @@ import styled from "styled-components";
 import theme from "../../../../styles/theme";
 
 export const WelcomeContainer = styled.div`
-  height: 100vh;
+  height: 100svh;
   width: 100%;
   padding: 60px;
   display: flex;

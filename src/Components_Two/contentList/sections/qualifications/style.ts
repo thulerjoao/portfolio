@@ -3,7 +3,7 @@ import theme from "../../../../styles/theme";
 
 export const QualificationsContainer = styled.div`
   width: 100%;
-  min-height: 100vh;
+  min-height: 100svh;
   padding: 60px;
   padding-right: 0px;
 
