@@ -30,7 +30,7 @@ export const AsideMenuContainer = styled.div<Props>`
 
     .menuContent {
       z-index: 1;
-      height: 100svh;
+      height: 100vh;
       width: 350px;
       padding: 60px 30px;
       color: white;
