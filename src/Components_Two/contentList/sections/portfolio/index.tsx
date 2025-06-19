@@ -28,7 +28,7 @@ const Portfolio = () => {
       <div className="cardsList">
         <Card
           title="Coffee App"
-          linkName="https://datarain.link/"
+          linkName="https://coffeeapp.link/"
           link="https://www.youtube.com/shorts/QnbG-5s9tPg"
           img={coffee}
           figma="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fxz7GoBLP3omHao64Uux4vg%2FUntitled%3Fnode-id%3D0%253A1%26t%3DBJjPRLJoA8tNPx0w-1"

@@ -57,12 +57,12 @@ const AsideMenu = ({ activeSection, scrollToSection }: Props) => {
             >
               Portfolio
             </MenuButton>
-            <MenuButton
+            {/* <MenuButton
               active={activeSection === "experience"}
               onClick={() => handleClick("experience")}
             >
               Experiência
-            </MenuButton>
+            </MenuButton> */}
             <MenuButton
               active={activeSection === "about me"}
               onClick={() => handleClick("about me")}

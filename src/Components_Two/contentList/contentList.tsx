@@ -1,12 +1,9 @@
 import { SectionsType } from "../../types/sectionsType";
 import AboutMe from "./sections/aboutMe";
 import Contact from "./sections/contact";
-import Experience from "./sections/experience";
 import Portfolio from "./sections/portfolio";
 import Qualifications from "./sections/qualifications";
 import Welcome from "./sections/welcome";
-
-
 
 import { ContentListContainer } from "./style";
 
@@ -29,9 +26,9 @@ const ContentList = ({ activeSection, scrollToSection }: Props) => {
           <section id="portfolio">
             <Portfolio />
           </section>
-          <section id="experience">
+          {/* <section id="experience">
             <Experience />
-          </section>
+          </section> */}
           <section id="about me">
             <AboutMe />
           </section>

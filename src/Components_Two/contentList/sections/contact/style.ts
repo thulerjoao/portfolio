@@ -1,8 +1,109 @@
+import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
+import { MdOutlineAlternateEmail } from "react-icons/md";
 import styled from "styled-components";
 import theme from "../../../../styles/theme";
 
 export const ContactContainer = styled.div`
   width: 100%;
-  height: 100svh;
-  background-color: ${theme.colors.tranparent30};
+  min-height: 100vh;
+  padding: 60px;
+  padding-right: 90px;
+  padding-left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  section {
+    display: flex;
+    flex-direction: column;
+
+    .contact {
+      font-size: 36px;
+      font-weight: 500;
+      color: ${theme.colors.fontColor};
+      text-align: center;
+      padding-right: 60px;
+      margin-bottom: 120px;
+    }
+    .enviroment {
+      display: flex;
+      align-items: center;
+      width: 300px;
+      margin-top: 18px;
+      cursor: pointer;
+      :hover {
+        color: ${theme.colors.gold};
+      }
+
+      p {
+        font-size: 22px;
+        font-style: italic;
+      }
+    }
+    .goodBye {
+      text-align: center;
+      font-size: 22px;
+      padding-right: 30px;
+      color: ${theme.colors.gold};
+      margin: 120px 0;
+    }
+
+    .lastName {
+      text-align: center;
+      padding-right: 30px;
+      font-size: 22px;
+      padding-right: 30px;
+    }
+  }
+
+  img {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: 1199px) {
+    padding-right: 60px;
+
+    section {
+      .contact {
+        padding: 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 30px;
+
+    section {
+      .contact {
+        padding: 0;
+      }
+    }
+
+    img {
+      margin-bottom: 16px;
+    }
+  }
+`;
+
+export const BtnGit = styled(AiOutlineGithub)`
+  width: 38px;
+  height: 38px;
+  margin: 0 0.6rem;
+  transition: 0.15s ease-in-out;
+`;
+export const BtnIn = styled(AiFillLinkedin)`
+  width: 38px;
+  height: 38px;
+  margin: 0 0.6rem;
+  transition: 0.15s ease-in-out;
+`;
+
+export const Email = styled(MdOutlineAlternateEmail)`
+  width: 38px;
+  height: 38px;
+  margin: 0 0.6rem;
+  transition: 0.15s ease-in-out;
 `;
