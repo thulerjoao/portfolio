@@ -130,6 +130,10 @@ export const AsideMenuContainer = styled.div<Props>`
         background-color: ${theme.colors.backgroundColor};
         box-shadow: ${({ isOpen }) =>
           isOpen && `-90px 0px 100px 1px ${theme.colors.white}`};
+
+        footer {
+          margin-bottom: 42px;
+        }
       }
 
       .rightCoverArea {
