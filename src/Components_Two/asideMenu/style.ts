@@ -132,7 +132,7 @@ export const AsideMenuContainer = styled.div<Props>`
           isOpen && `-90px 0px 100px 1px ${theme.colors.white}`};
 
         footer {
-          margin-bottom: 42px;
+          margin-bottom: 120px;
         }
       }
 
