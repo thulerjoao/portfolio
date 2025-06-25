@@ -5,6 +5,7 @@ import { SectionsType } from "../../types/sectionsType";
 import AsideMenu from "../../component/asideMenu";
 import ContentList from "../../component/contentList/contentList";
 import { MainPageContainer } from "./style";
+import { LanguageType } from "../../types/languageType";
 
 interface Props {
   start: boolean;
@@ -12,6 +13,7 @@ interface Props {
 
 const Page = ({ start }: Props) => {
   const [activeSection, setActiveSection] = useState<SectionsType>("welcome");
+  const [ language,  setLanguage ] = useState<LanguageType>("bra")
 
   const scrollToSection = (sectionId: SectionsType) => {
     setActiveSection(sectionId);
@@ -52,6 +54,8 @@ const Page = ({ start }: Props) => {
       <ContentList
         activeSection={activeSection}
         scrollToSection={scrollToSection}
+        language={language}
+        setLanguage={setLanguage}
       />
     </MainPageContainer>
   );

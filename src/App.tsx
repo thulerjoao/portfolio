@@ -6,11 +6,12 @@ import Page from "./pages/page";
 
 
 const App = () => {
-  const [start, setStart] = useState<boolean>(false);
+  const [start, setStart] = useState<boolean>(true);
   return (
     <div>
-      {!start && <InitialComponent setStart={setStart} />}
+      {/* {!start && <InitialComponent setStart={setStart} />} */}
       {start && <StarsBackground />}
+      <StarsBackground />
       <Page start={start} />
     </div>
   );

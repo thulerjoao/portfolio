@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import theme from "../../styles/theme";
+import { LanguageType } from "../../types/languageType";
 
 export const ContentListContainer = styled.div`
   width: 100%;
@@ -40,6 +41,36 @@ export const ContentListContainer = styled.div`
       .contentList {
         width: 100%;
       }
+    }
+  }
+`;
+
+export const LanguageSelectorContainer = styled.div`
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+
+  img {
+    height: 32px;
+    margin: 5px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+  }
+
+  .eua {
+    border-bottom: 2px solid ${theme.colors.gold};
+  }
+
+  .bra {
+    border-bottom: 2px solid ${theme.colors.gold};
+  }
+
+  @media (max-width: 768px) {
+    img {
+      height: 28px;
+      margin: 4px;
     }
   }
 `;
