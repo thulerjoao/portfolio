@@ -6,6 +6,7 @@ import AsideMenu from "../../component/asideMenu";
 import ContentList from "../../component/contentList/contentList";
 import { MainPageContainer } from "./style";
 import { LanguageType } from "../../types/languageType";
+import FullScreenShine from "../../component/FullscreenShine";
 
 interface Props {
   start: boolean;
@@ -47,6 +48,7 @@ const Page = ({ start }: Props) => {
 
   return (
     <MainPageContainer start={start}>
+      <FullScreenShine language={language} />
       <AsideMenu
         activeSection={activeSection}
         scrollToSection={scrollToSection}
