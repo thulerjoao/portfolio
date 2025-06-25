@@ -1,5 +1,6 @@
 import { useState } from "react";
 import jptl from "../../assets/image/jptl.jpg";
+import { LanguageType } from "../../types/languageType";
 import { SectionsType } from "../../types/sectionsType";
 import {
   AsideMenuContainer,
@@ -10,11 +11,12 @@ import {
 } from "./style";
 
 interface Props {
+  language: LanguageType;
   activeSection: SectionsType;
   scrollToSection: (sectionId: SectionsType) => void;
 }
 
-const AsideMenu = ({ activeSection, scrollToSection }: Props) => {
+const AsideMenu = ({ language, activeSection, scrollToSection }: Props) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const name = "João Lima";
 
@@ -41,7 +43,11 @@ const AsideMenu = ({ activeSection, scrollToSection }: Props) => {
               <p className="name" onClick={() => handleClick("welcome")}>
                 {name}
               </p>
-              <p className="stack">Desenvolvedor Full-Stack</p>
+              <p className="stack">
+                {language === "bra"
+                  ? "Desenvolvedor Full-Stack"
+                  : "Full-Stack developer"}
+              </p>
             </div>
           </div>
           <div className="buttonsList">
@@ -49,13 +55,13 @@ const AsideMenu = ({ activeSection, scrollToSection }: Props) => {
               active={activeSection === "qualifications"}
               onClick={() => handleClick("qualifications")}
             >
-              Qualificações
+              {language === "bra" ? "Qualificações" : "Qualifications"}
             </MenuButton>
             <MenuButton
               active={activeSection === "portfolio"}
               onClick={() => handleClick("portfolio")}
             >
-              Portfolio
+              {language === "bra" ? "Portfólio" : "Portfolio"}
             </MenuButton>
             {/* <MenuButton
               active={activeSection === "experience"}
@@ -67,20 +73,28 @@ const AsideMenu = ({ activeSection, scrollToSection }: Props) => {
               active={activeSection === "about me"}
               onClick={() => handleClick("about me")}
             >
-              Sobre mim
+              {language === "bra" ? "Sobre mim" : "About me"}
             </MenuButton>
             <MenuButton
               active={activeSection === "contact"}
               onClick={() => handleClick("contact")}
             >
-              Constato
+              {language === "bra" ? "Contato" : "Contact"}
             </MenuButton>
           </div>
           <footer>
-            <a href="https://github.com/thulerjoao" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/thulerjoao"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <BtnGit />
             </a>
-            <a href="http://www.linkedin.com/in/thulerjoao" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://www.linkedin.com/in/thulerjoao"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <BtnIn />
             </a>
           </footer>

@@ -30,11 +30,11 @@ const ShineOverlay = styled.div`
     background: linear-gradient(
       120deg,
       rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0.7) 50%,
       rgba(255, 255, 255, 0) 100%
     );
     transform: skewX(-20deg);
-    animation: ${shine} 0.8s forwards;
+    animation: ${shine} 0.5s forwards;
   }
 `;
 

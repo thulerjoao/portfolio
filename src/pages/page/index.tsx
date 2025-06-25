@@ -14,7 +14,7 @@ interface Props {
 
 const Page = ({ start }: Props) => {
   const [activeSection, setActiveSection] = useState<SectionsType>("welcome");
-  const [ language,  setLanguage ] = useState<LanguageType>("bra")
+  const [language, setLanguage] = useState<LanguageType>("bra");
 
   const scrollToSection = (sectionId: SectionsType) => {
     setActiveSection(sectionId);
@@ -50,6 +50,7 @@ const Page = ({ start }: Props) => {
     <MainPageContainer start={start}>
       <FullScreenShine language={language} />
       <AsideMenu
+        language={language}
         activeSection={activeSection}
         scrollToSection={scrollToSection}
       />
