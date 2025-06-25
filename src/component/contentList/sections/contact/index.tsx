@@ -1,7 +1,12 @@
+import { LanguageType } from "../../../../types/languageType";
 import Name from "./images/nameGlodShort.png";
 import { BtnGit, BtnIn, ContactContainer, Email } from "./style";
 
-const Contact = () => {
+interface Props {
+  language: LanguageType;
+}
+
+const Contact = ({ language }: Props) => {
   const handleCopy = () => {
     navigator.clipboard.writeText("thulerlima.dev@gmail.com");
     alert("Email copiado para a área de transferência.");
@@ -10,7 +15,7 @@ const Contact = () => {
   return (
     <ContactContainer>
       <section>
-        <p className="contact">Contato</p>
+        <p className="contact">{language === "bra" ? "Contato" : "Contact"}</p>
         <div className="enviroment" onClick={() => handleCopy()}>
           <a>
             <Email />

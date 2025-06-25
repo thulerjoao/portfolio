@@ -5,6 +5,7 @@ import theme from "../../../../styles/theme";
 
 export const AboutMeContainer = styled.div`
   width: 100%;
+  min-height: 100svh;
   padding: 60px;
   padding-right: 30px;
 

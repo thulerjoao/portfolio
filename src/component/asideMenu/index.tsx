@@ -46,7 +46,7 @@ const AsideMenu = ({ language, activeSection, scrollToSection }: Props) => {
               <p className="stack">
                 {language === "bra"
                   ? "Desenvolvedor Full-Stack"
-                  : "Full-Stack developer"}
+                  : "Full-Stack Developer"}
               </p>
             </div>
           </div>

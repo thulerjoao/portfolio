@@ -1,41 +1,48 @@
+import { LanguageType } from "../../../../types/languageType";
 import { AboutMeContainer, Cake, Location } from "./style";
 
-const AboutMe = () => {
-  const language = "bra";
-
-  function calculateAge(birthDate: string) {
-  const today = new Date();
-  const birth = new Date(birthDate);
-
-  let age = today.getFullYear() - birth.getFullYear();
-  const currentMonth = today.getMonth();
-  const currentDay = today.getDate();
-
-  const birthMonth = birth.getMonth();
-  const birthDay = birth.getDate();
-
-  // Check if the birthday hasn't occurred yet this year
-  if (
-    currentMonth < birthMonth ||
-    (currentMonth === birthMonth && currentDay < birthDay)
-  ) {
-    age--;
-  }
-
-  return age;
+interface Props {
+  language: LanguageType;
 }
+
+const AboutMe = ({ language }: Props) => {
+  function calculateAge(birthDate: string) {
+    const today = new Date();
+    const birth = new Date(birthDate);
+
+    let age = today.getFullYear() - birth.getFullYear();
+    const currentMonth = today.getMonth();
+    const currentDay = today.getDate();
+
+    const birthMonth = birth.getMonth();
+    const birthDay = birth.getDate();
+
+    // Check if the birthday hasn't occurred yet this year
+    if (
+      currentMonth < birthMonth ||
+      (currentMonth === birthMonth && currentDay < birthDay)
+    ) {
+      age--;
+    }
+
+    return age;
+  }
 
   return (
     <AboutMeContainer>
-      <p className="aboutMe">Sobre mim</p>
+      <p className="aboutMe">{language === "bra" ? "Sobre mim" : "About me"}</p>
       <p className="myName">João Pedro Thuler Lima</p>
       <div className="locationBirthday">
         <Cake />
-        <p>26/04/1993 ({calculateAge("1993-04-26")} anos)</p>
+        <p>
+          {language === "bra"
+            ? `26/04/1993 (${calculateAge("1993-04-26")} anos)`
+            : `04/26/93 (${calculateAge("1993-04-26")} years old)`}
+        </p>
       </div>
       <div className="locationBirthday">
         <Location />
-        <p>Brasil</p>
+        <p>{language === "bra" ? "Brasil" : "Brazil"}</p>
       </div>
       <div className="mainText">
         {language === "bra" ? (
@@ -59,9 +66,9 @@ const AboutMe = () => {
             <p style={{ textIndent: "2em" }}>
               Gosto de transformar ideias em experiências visuais e interativas,
               e meu maior interesse está em criar telas que unam estética,
-              usabilidade e performance. today, sigo evoluindo constantemente, em
-              busca de boas práticas, novas ferramentas e desafios que me façam
-              crescer como desenvolvedor.
+              usabilidade e performance. today, sigo evoluindo constantemente,
+              em busca de boas práticas, novas ferramentas e desafios que me
+              façam crescer como desenvolvedor.
             </p>
             <br />
             <p style={{ textIndent: "2em" }}>

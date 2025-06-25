@@ -1,13 +1,18 @@
+import { LanguageType } from "../../../../types/languageType";
 import Card from "./card";
 import coffee from "./images/coffee.png";
 import datarain from "./images/datarain.png";
 import roma from "./images/roma.png";
 import { PortfolioContainer } from "./style";
 
-const Portfolio = () => {
+interface Props {
+  language: LanguageType;
+}
+
+const Portfolio = ({ language }: Props) => {
   return (
     <PortfolioContainer>
-      <h2>Projetos Recentes</h2>
+      <h2>{language === "bra" ? "Projetos Recentes" : "Recent Projects"}</h2>
       <h3>React JS</h3>
       <div className="cardsList">
         <Card

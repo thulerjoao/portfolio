@@ -28,22 +28,22 @@ const ContentList = ({
       <section>
         <div className="contentList">
           <section id="welcome">
-            <Welcome scrollToSection={scrollToSection} />
+            <Welcome language={language} scrollToSection={scrollToSection} />
           </section>
           <section id="qualifications">
-            <Qualifications />
+            <Qualifications language={language} />
           </section>
           <section id="portfolio">
-            <Portfolio />
+            <Portfolio language={language}/>
           </section>
           {/* <section id="experience">
             <Experience />
             </section> */}
           <section id="about me">
-            <AboutMe />
+            <AboutMe language={language}/>
           </section>
           <section id="contact">
-            <Contact />
+            <Contact language={language}/>
           </section>
         </div>
         <LanguageSelectorContainer>

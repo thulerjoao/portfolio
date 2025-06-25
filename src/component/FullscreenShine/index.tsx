@@ -3,10 +3,10 @@ import styled, { keyframes } from "styled-components";
 
 const shine = keyframes`
   0% {
-    left: -50%;
+    left: -65%;
   }
   100% {
-    left: 150%;
+    left: 165%;
   }
 `;
 
@@ -25,7 +25,7 @@ const ShineOverlay = styled.div`
     position: absolute;
     top: 0;
     left: -50%;
-    width: 50%;
+    width: 65%;
     height: 100%;
     background: linear-gradient(
       120deg,

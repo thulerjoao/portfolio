@@ -16,13 +16,18 @@ import {
   siTypescript,
   siYarn,
 } from "simple-icons";
+import { LanguageType } from "../../../../types/languageType";
 import Card from "./card";
 import { QualificationsContainer } from "./style";
 
-const Qualifications = () => {
+interface Props {
+  language: LanguageType;
+}
+
+const Qualifications = ({ language }: Props) => {
   return (
     <QualificationsContainer>
-      <h2>Qualificações</h2>
+      <h2>{language === "bra" ? "Qualificações" : "Qualifications"}</h2>
       <h3>Front-end</h3>
       <div className="cardsList">
         <Card
@@ -32,7 +37,7 @@ const Qualifications = () => {
             </svg>
           }
           title="React JS"
-          description="+ de 3 anos de experiência"
+          description={language === "bra" ? "+ de 3 anos de experiência" : "3+ years of experience"}
         />
         <Card
           icon={
@@ -41,7 +46,7 @@ const Qualifications = () => {
             </svg>
           }
           title="React Native"
-          description="+ de 2 anos de experiência"
+          description={language === "bra" ? "+ de 2 anos de experiência" : "2+ years of experience"}
         />
         <Card
           icon={
@@ -50,7 +55,7 @@ const Qualifications = () => {
             </svg>
           }
           title="Next JS"
-          description="+ de 2 anos de experiência"
+          description={language === "bra" ? "+ de 2 anos de experiência" : "2+ years of experience"}
         />
         <Card
           icon={
@@ -59,7 +64,7 @@ const Qualifications = () => {
             </svg>
           }
           title="Type Script"
-          description="+ de 3 anos de experiência"
+          description={language === "bra" ? "+ de 3 anos de experiência" : "3+ years of experience"}
         />
         <Card
           icon={
@@ -68,7 +73,7 @@ const Qualifications = () => {
             </svg>
           }
           title="Java Script"
-          description="+ de 3 anos de experiência"
+          description={language === "bra" ? "+ de 3 anos de experiência" : "3+ years of experience"}
         />
         <Card
           icon={
@@ -77,7 +82,7 @@ const Qualifications = () => {
             </svg>
           }
           title="HTML"
-          description="+ de 3 anos de experiência"
+          description={language === "bra" ? "+ de 3 anos de experiência" : "3+ years of experience"}
         />
         <Card
           icon={
@@ -86,7 +91,7 @@ const Qualifications = () => {
             </svg>
           }
           title="CSS"
-          description="+ de 3 anos de experiência"
+          description={language === "bra" ? "+ de 3 anos de experiência" : "3+ years of experience"}
         />
       </div>
       <h3>Design and UX</h3>
@@ -98,7 +103,7 @@ const Qualifications = () => {
             </svg>
           }
           title="Figma"
-          description="Experiência acadêmica"
+          description={language === "bra" ? "Experiência acadêmica" : "Academic experience"}
         />
       </div>
       <h3>Back-end</h3>
@@ -110,7 +115,7 @@ const Qualifications = () => {
             </svg>
           }
           title="Nest JS"
-          description="Experiência acadêmica"
+          description={language === "bra" ? "Experiência acadêmica" : "Academic experience"}
         />
         <Card
           icon={
@@ -119,7 +124,7 @@ const Qualifications = () => {
             </svg>
           }
           title="Express"
-          description="Experiência acadêmica"
+          description={language === "bra" ? "Experiência acadêmica" : "Academic experience"}
         />
         <Card
           icon={
@@ -128,7 +133,7 @@ const Qualifications = () => {
             </svg>
           }
           title="Node JS"
-          description="Experiência acadêmica"
+          description={language === "bra" ? "Experiência acadêmica" : "Academic experience"}
         />
       </div>
       <h3>Database</h3>
@@ -140,7 +145,7 @@ const Qualifications = () => {
             </svg>
           }
           title="PostgreSQL"
-          description="Experiência acadêmica"
+          description={language === "bra" ? "Experiência acadêmica" : "Academic experience"}
         />
         <Card
           icon={
@@ -149,7 +154,7 @@ const Qualifications = () => {
             </svg>
           }
           title="MongoDb"
-          description="Experiência acadêmica"
+          description={language === "bra" ? "Experiência acadêmica" : "Academic experience"}
         />
       </div>
       <h3>Outros</h3>
@@ -161,7 +166,7 @@ const Qualifications = () => {
             </svg>
           }
           title="Git"
-          description="+ de 3 anos de experiência"
+          description={language === "bra" ? "+ de 3 anos de experiência" : "3+ years of experience"}
         />
         <Card
           icon={
@@ -170,7 +175,7 @@ const Qualifications = () => {
             </svg>
           }
           title="GitHub"
-          description="+ de 3 anos de experiência"
+          description={language === "bra" ? "+ de 3 anos de experiência" : "3+ years of experience"}
         />
         <Card
           icon={
@@ -179,9 +184,9 @@ const Qualifications = () => {
             </svg>
           }
           title="Docker"
-          description="+ de 1 ano de experiência"
+          description={language === "bra" ? "+ de 1 anos de experiência" : "1+ years of experience"}
         />
-        <Card
+        {/* <Card
           icon={
             <svg role="img">
               <path fill="#514c87" d={siYarn.path} />
@@ -189,7 +194,7 @@ const Qualifications = () => {
           }
           title="Workspace Yarn"
           description="+ de 1 ano de experiência"
-        />
+        /> */}
       </div>
     </QualificationsContainer>
   );
