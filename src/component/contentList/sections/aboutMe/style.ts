@@ -66,6 +66,13 @@ export const AboutMeContainer = styled.div`
         padding: 0;
     }
   }
+  @media (max-width: 576px){
+    padding: 60px 20px;
+
+    .myName {
+      text-align: center;
+    }
+  }
 `;
 
 export const Cake = styled(MdOutlineCake)`
