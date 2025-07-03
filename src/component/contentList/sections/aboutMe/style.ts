@@ -45,7 +45,7 @@ export const AboutMeContainer = styled.div`
     p {
       max-width: 48rem;
       width: 100%;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 300;
       text-align: justify;
     }
