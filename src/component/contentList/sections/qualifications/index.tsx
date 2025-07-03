@@ -52,8 +52,8 @@ const Qualifications = ({ language }: Props) => {
           title="React Native"
           description={
             language === "bra"
-              ? "+ de 2 anos de experiência"
-              : "2+ years of experience"
+              ? "+ de 1 ano de experiência"
+              : "1+ year of experience"
           }
         />
         <Card
@@ -65,8 +65,8 @@ const Qualifications = ({ language }: Props) => {
           title="Next JS"
           description={
             language === "bra"
-              ? "+ de 2 anos de experiência"
-              : "2+ years of experience"
+              ? "+ de 1 ano de experiência"
+              : "1+ year of experience"
           }
         />
         <Card
@@ -234,8 +234,8 @@ const Qualifications = ({ language }: Props) => {
           title="Docker"
           description={
             language === "bra"
-              ? "+ de 1 anos de experiência"
-              : "1+ years of experience"
+              ? "+ de 1 ano de experiência"
+              : "1+ year of experience"
           }
         />
         <Card
