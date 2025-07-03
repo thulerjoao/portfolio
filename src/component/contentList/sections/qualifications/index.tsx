@@ -7,6 +7,7 @@ import {
   siGithub,
   siHtml5,
   siJavascript,
+  siJest,
   siMongodb,
   siNestjs,
   siNextdotjs,
@@ -14,7 +15,6 @@ import {
   siPostgresql,
   siReact,
   siTypescript,
-  siYarn,
 } from "simple-icons";
 import { LanguageType } from "../../../../types/languageType";
 import Card from "./card";
@@ -37,7 +37,11 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="React JS"
-          description={language === "bra" ? "+ de 3 anos de experiência" : "3+ years of experience"}
+          description={
+            language === "bra"
+              ? "+ de 3 anos de experiência"
+              : "3+ years of experience"
+          }
         />
         <Card
           icon={
@@ -46,7 +50,11 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="React Native"
-          description={language === "bra" ? "+ de 2 anos de experiência" : "2+ years of experience"}
+          description={
+            language === "bra"
+              ? "+ de 2 anos de experiência"
+              : "2+ years of experience"
+          }
         />
         <Card
           icon={
@@ -55,7 +63,11 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="Next JS"
-          description={language === "bra" ? "+ de 2 anos de experiência" : "2+ years of experience"}
+          description={
+            language === "bra"
+              ? "+ de 2 anos de experiência"
+              : "2+ years of experience"
+          }
         />
         <Card
           icon={
@@ -64,7 +76,11 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="Type Script"
-          description={language === "bra" ? "+ de 3 anos de experiência" : "3+ years of experience"}
+          description={
+            language === "bra"
+              ? "+ de 3 anos de experiência"
+              : "3+ years of experience"
+          }
         />
         <Card
           icon={
@@ -73,7 +89,11 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="Java Script"
-          description={language === "bra" ? "+ de 3 anos de experiência" : "3+ years of experience"}
+          description={
+            language === "bra"
+              ? "+ de 3 anos de experiência"
+              : "3+ years of experience"
+          }
         />
         <Card
           icon={
@@ -82,7 +102,11 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="HTML"
-          description={language === "bra" ? "+ de 3 anos de experiência" : "3+ years of experience"}
+          description={
+            language === "bra"
+              ? "+ de 3 anos de experiência"
+              : "3+ years of experience"
+          }
         />
         <Card
           icon={
@@ -91,7 +115,11 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="CSS"
-          description={language === "bra" ? "+ de 3 anos de experiência" : "3+ years of experience"}
+          description={
+            language === "bra"
+              ? "+ de 3 anos de experiência"
+              : "3+ years of experience"
+          }
         />
       </div>
       <h3>Design and UX</h3>
@@ -103,7 +131,9 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="Figma"
-          description={language === "bra" ? "Experiência acadêmica" : "Academic experience"}
+          description={
+            language === "bra" ? "Experiência acadêmica" : "Academic experience"
+          }
         />
       </div>
       <h3>Back-end</h3>
@@ -115,7 +145,9 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="Nest JS"
-          description={language === "bra" ? "Experiência acadêmica" : "Academic experience"}
+          description={
+            language === "bra" ? "Experiência acadêmica" : "Academic experience"
+          }
         />
         <Card
           icon={
@@ -124,7 +156,9 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="Express"
-          description={language === "bra" ? "Experiência acadêmica" : "Academic experience"}
+          description={
+            language === "bra" ? "Experiência acadêmica" : "Academic experience"
+          }
         />
         <Card
           icon={
@@ -133,7 +167,9 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="Node JS"
-          description={language === "bra" ? "Experiência acadêmica" : "Academic experience"}
+          description={
+            language === "bra" ? "Experiência acadêmica" : "Academic experience"
+          }
         />
       </div>
       <h3>Database</h3>
@@ -145,7 +181,9 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="PostgreSQL"
-          description={language === "bra" ? "Experiência acadêmica" : "Academic experience"}
+          description={
+            language === "bra" ? "Experiência acadêmica" : "Academic experience"
+          }
         />
         <Card
           icon={
@@ -154,7 +192,9 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="MongoDb"
-          description={language === "bra" ? "Experiência acadêmica" : "Academic experience"}
+          description={
+            language === "bra" ? "Experiência acadêmica" : "Academic experience"
+          }
         />
       </div>
       <h3>Outros</h3>
@@ -166,7 +206,11 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="Git"
-          description={language === "bra" ? "+ de 3 anos de experiência" : "3+ years of experience"}
+          description={
+            language === "bra"
+              ? "+ de 3 anos de experiência"
+              : "3+ years of experience"
+          }
         />
         <Card
           icon={
@@ -175,7 +219,11 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="GitHub"
-          description={language === "bra" ? "+ de 3 anos de experiência" : "3+ years of experience"}
+          description={
+            language === "bra"
+              ? "+ de 3 anos de experiência"
+              : "3+ years of experience"
+          }
         />
         <Card
           icon={
@@ -184,17 +232,23 @@ const Qualifications = ({ language }: Props) => {
             </svg>
           }
           title="Docker"
-          description={language === "bra" ? "+ de 1 anos de experiência" : "1+ years of experience"}
+          description={
+            language === "bra"
+              ? "+ de 1 anos de experiência"
+              : "1+ years of experience"
+          }
         />
-        {/* <Card
+        <Card
           icon={
-            <svg role="img">
-              <path fill="#514c87" d={siYarn.path} />
+            <svg role="img" >
+              <path fill="#9c4861" d={siJest.path} />
             </svg>
           }
-          title="Workspace Yarn"
-          description="+ de 1 ano de experiência"
-        /> */}
+          title="Jest"
+          description={
+            language === "bra" ? "Experiência acadêmica" : "Academic experience"
+          }
+        />
       </div>
     </QualificationsContainer>
   );
