@@ -14,7 +14,7 @@ interface Props {
 
 const Page = ({ start }: Props) => {
   const [activeSection, setActiveSection] = useState<SectionsType>("welcome");
-  const [language, setLanguage] = useState<LanguageType>("bra");
+  const [language, setLanguage] = useState<LanguageType>("eua");
 
   const scrollToSection = (sectionId: SectionsType) => {
     setActiveSection(sectionId);
